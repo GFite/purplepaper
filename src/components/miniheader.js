@@ -4,8 +4,7 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Search from './algoliaSearch'
-// import Uni from '../images/uni.inline.svg'
-import Uni from '../images/FINX_LOGO.png'
+import Uni from '../images/FINX_LOGO.png' // import Uni from '../images/uni.inline.svg'
 import { Sun, Moon, Home } from 'react-feather'
 
 import MenuIcon from '../images/menu.inline.svg'
@@ -265,8 +264,8 @@ const Header = props => {
               <Discord />
             </a>
           </StyledButton>
-          <StyledButton fill>
-            <a href="https://github.com/Uniswap">
+          <StyledButton fill>Uni
+            <a href="https://github.com/FinX-IO/">
               <Github width={20} />
             </a>
           </StyledButton>
