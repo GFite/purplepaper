@@ -1,7 +1,7 @@
 # Name the node stage "builder"
 FROM node:10 AS builder
 # Set working directory
-WORKDIR /finx-uniswap-interface
+WORKDIR /finx-io
 # WORKDIR /app
 # Copy all files from current directory to working dir in image
 COPY . .
