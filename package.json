@@ -5,8 +5,7 @@
   "version": "0.1.0",
   "author": "Callil Capuozzo <callil.capuozzo@gmail.com>",
   "engines": {
-    "node_uni": "12.x",
-    "node": "15.x"
+    "node": "12.x",
   },
   "dependencies": {
     "@apollo/react-hooks": "^3.1.3",
