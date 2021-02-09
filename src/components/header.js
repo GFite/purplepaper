@@ -256,7 +256,7 @@ const Header = props => {
             textDecoration: `none`
           }}
         >
-          <StyledUni />
+          <StyledUni /><StyledFINX />
           <HeaderText>FINX</HeaderText>
         </StyledHomeLink>
       </StyledNavTitleWrapper>
