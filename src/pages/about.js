@@ -240,7 +240,7 @@ const About = props => {
       <StyledAbout>
         <span style={{ marginTop: '5rem' }}>
           <Title style={{ paddingBottom: '4rem' }}>
-            Guaranteed liquidity for thousands of users and hundreds of applications.{' '}
+            Guaranteed liquidity for thousands of Corporations.{' '}
           </Title>
 
           <Numbers id="about" style={{ flexDirection: 'column' }}>
@@ -265,13 +265,13 @@ const About = props => {
           </Numbers>
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
             <p>
-              Uniswap empowers developers, liquidity providers and traders to participate in a financial marketplace
-              that is open and accessible to all.
+              FINX empowers liquidity providers, corporations, ratings agencies and insurers
+              to participate in a financial marketplace that is open and accessible to all.
             </p>
-            <p>We are committed to open source software and building on the decentralized web.</p>
+            <p>We are committed to building more efficient counterparty arrangements on the decentralized web.</p>
 
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
-              <InternalLink to="/blog/uni">UNI token</InternalLink>
+              <InternalLink to="/blog/uni">FINX token</InternalLink>
               <InternalLink to="/whitepaper.pdf">
                 Whitepaper <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
@@ -287,37 +287,37 @@ const About = props => {
             <p>We are looking for talented people to join our team!</p>
 
             <span>
-              <a href="https://jobs.lever.co/Uniswap/5709e492-4c32-45de-bedc-2f65e9f86cfc">
+              <a href="#">
                 {' '}
                 <h3>Senior Frontend Engineer</h3>
               </a>
             </span>
             <span>
-              <a href="https://jobs.lever.co/Uniswap/7bc54d95-c6c2-4dda-a313-3f791ceb8c09">
+              <a href="#">
                 {' '}
                 <h3>Smart Contract Engineer</h3>
               </a>
             </span>
             <span>
-              <a href="https://jobs.lever.co/Uniswap/a1aa6e8c-bfea-4fbd-a473-ddae0c06cb7d">
+              <a href="#">
                 {' '}
                 <h3>Full Stack Engineer</h3>
               </a>
             </span>
             <span>
-              <a href="https://jobs.lever.co/Uniswap/401112a6-efe1-441b-a29d-19b687722acd">
+              <a href="#">
                 {' '}
                 <h3>Software Engineering Intern</h3>
               </a>
             </span>
             <span>
-              <a href="https://angel.co/company/uniswap/jobs/888942-community-manager">
+              <a href="#">
                 {' '}
                 <h3>Community Manager</h3>
               </a>
             </span>
             <p>
-              Uniswap welcomes all qualified persons to apply regardless of race, religion, gender, gender identity or
+              FINX welcomes all qualified persons to apply regardless of race, religion, gender, gender identity or
               expression, sexual orientation, national origin, genetics, disability, age, or veteran status.
               Compensation will be competitive and commensurate with experience. This is a full time role which includes
               health insurance and other benefits.
@@ -327,11 +327,11 @@ const About = props => {
           <StyledSectionFlex id="contact" style={{ flexDirection: 'column' }}>
             <h2 style={{ width: '100%' }}>Contact</h2>
             <p>
-              To get in touch, please email <a href="mailto:contact@uniswap.org">contact@uniswap.org</a>
+              To get in touch, please email <a href="mailto:info@finx.io">info@finx.io</a>
             </p>
 
             <p>
-              We encourage anyone facing issues with their wallet, transaction or Uniswap related question to join our
+              We encourage anyone facing issues with their wallet, transaction or FINX related question to join our
               active community discord.
             </p>
 
