@@ -291,7 +291,7 @@ const IndexPage = props => {
       />
       <StyledBody>
         <StyledTitle>
-          <StyledBodyTitle>Decentralized Debt Capital Protocol</StyledBodyTitle>
+          <StyledBodyTitle>Decentralized Debt Capital Pools</StyledBodyTitle>
           <StyledBodySubTitle style={{ marginBottom: '3rem' }}>
             Guaranteed 24/7 liquidity for corporations provided by millions of users.
           </StyledBodySubTitle>
