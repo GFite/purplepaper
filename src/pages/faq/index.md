@@ -4,21 +4,34 @@ title: FAQ
 
 <Info>Didn't find an answer? Join the <a href="https://discord.gg/FCfyBSbCU5">community Discord</a> to get support</Info>
 
-# What is Uniswap?
+# What is FINX?
 
-Uniswap is a protocol for creating liquidity and trading ERC-20 tokens on [Ethereum](https://ethereum.org/en/what-is-ethereum/). It eliminates trusted intermediaries and unnecessary forms of rent extraction, allowing for fast, efficient trading. Where it makes tradeoffs decentralization, censorship resistance, and security are prioritized. Uniswap is open-source software licensed under GPL.
+FINX is a protocol for creating liquidity and trading ERC-20 tokens on [Ethereum](https://ethereum.org/en/what-is-ethereum/).
+
+FINX enables trusted intermediaries such as large-scale liquidity providers, credit underwriters, insurers and ratings agencies to participate in the rapidly growing decentralized finance ecosystem. Corporations will increasingly conduct commerce using ERC-20 tokens and FINX is the solution to providing liquidity beyond basic collateral pools.
+
+The FINX protocol leverages and extends base DeFi protocols such as Uniswap, Aave, Synthetix, Compound, Balancer, and others. Uniswap in particular is designed to eliminate trusted intermediaries and unnecessary forms of rent extraction, allowing for fast, efficient trading.
+
+FINX fills the gap between "Pure Collateral Pools" and the underwriting, ratings and other financial services that are necessary for large-scale financing.
+
 
 If you want to dive into details check out the [docs](/docs/v2/).
 
-# How do I use Uniswap?
+# How do I use FINX?
 
-First you'll need an [Ethereum Wallet](https://ethereum.org/en/wallets/) and some [ETH](https://ethereum.org/en/get-eth/). Once completed, head over to the [app](http://app.uniswap.org/) to start using the protocol to provide liquidity or swap tokens. Remember that each transaction on Ethereum costs ETH (this is called the ["gas fee"](https://www.youtube.com/watch?v=AJvzNICwcwc&feature=emb_title) and it's paid to miners to keep the network running).
+First you'll need an [Ethereum Wallet](https://ethereum.org/en/wallets/) and some [ETH](https://ethereum.org/en/get-eth/). Once completed, head over to the [app](http://app.finx.io/) to start using the protocol to provide liquidity or swap tokens. Remember that each transaction on Ethereum costs ETH (this is called the ["gas fee"](https://www.youtube.com/watch?v=AJvzNICwcwc&feature=emb_title) and it's paid to miners to keep the network running).
 
-# How does Uniswap work?
+# How does FINX work?
 
-Uniswap is an [automated liquidity protocol](https://ethereum.org/en/get-eth/#dex). In practical terms this means there are template smart contracts that define a standard way to make liquidity pools and corresponding markets that are compatible with eachother. There is no orderbook, no centralized party and no central facilitator of trade. Each pool is defined by a smart contract that includes a few functions to enable swapping tokens, adding liquidity and more. At its core each pool uses the function `x*y=k` to maintain a curve along which trades can happen. The pools keep track of reserves(liquidity) and updates those reserves every single time someone trades. Because the reserves are automated rebalanced a Uniswap pool can always be used to buy or sell a token without required a counterparty on the other side of your trade.
+FINX is an [automated liquidity protocol](https://ethereum.org/en/get-eth/#dex). In practical terms this means there are template smart contracts that define a standard way to make liquidity pools and corresponding markets that are compatible with each other. There is no order book, no centralized party and no central facilitator of trade. Each pool is defined by a smart contract that includes a few functions to enable swapping tokens, adding liquidity and more. 
 
-For a more in depth description. Check out the [How Uniswap works](/docs/v2/protocol-overview/how-uniswap-works/) from the documentation.
+At its core each pool uses the function `x*y=k` to maintain a curve along which trades can happen. The pools keep track of reserves(liquidity) and updates those reserves every single time someone trades. 
+
+Existing base pools such as Uniswap require "pair tradable" collateralization in order to maintain the balance of Uniswap contract pools. This is not practical for many corporations due to the fact that Credit is an important tool in financing.
+
+In addition to staked "paired" collateral, FINX provides a way for 3rd party underwriters to collateralize the pool along with the borrowing corporation, using a series of burnable smart contract tokens that can be exchaged for services.
+
+For a more in depth description. Check out the [How FINX works](/docs/v2/protocol-overview/how-uniswap-works/) from the documentation.
 
 # How are prices determined?
 
