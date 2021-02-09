@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Search from './algoliaSearch'
 // import Uni from '../images/uni.inline.svg'
-import Uni from '../images/FINX_LOGO.svg'
+import Uni from '../images/FINX_LOGO.png'
 import { Sun, Moon, Home } from 'react-feather'
 
 import MenuIcon from '../images/menu.inline.svg'
