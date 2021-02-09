@@ -287,13 +287,13 @@ const IndexPage = props => {
       <SEO
         title="Home"
         path={props.location.pathname}
-        description={'A fully decentralized protocol for automated liquidity provision on Ethereum with collateral contracts for corporations'}
+        description={'A fully decentralized protocol for automated corporate liquidity'}
       />
       <StyledBody>
         <StyledTitle>
           <StyledBodyTitle>Decentralized Debt Capital Protocol</StyledBodyTitle>
           <StyledBodySubTitle style={{ marginBottom: '3rem' }}>
-            Guaranteed liquidity for corporations provided by millions of users and hundreds of Ethereum applications.
+            Guaranteed 24/7 liquidity for corporations provided by millions of users.
           </StyledBodySubTitle>
 
           <StyledItemRow>
@@ -306,7 +306,7 @@ const IndexPage = props => {
               target="_blank"
               href="https://app.uniswap.org/"
             >
-              Use Uniswap
+              Use FINX App
             </Button>
             <Button
               outlined
@@ -371,8 +371,8 @@ const DeveloperSection = props => {
     <>
       <StyledSectionTitle>A growing protocol ecosystem.</StyledSectionTitle>
       <StyledBodySubText>
-        The Uniswap protocol empowers developers, liquidity providers and traders to participate in a financial
-        marketplace that is open and accessible to all.
+        The FINX protocol empowers developers, liquidity provider, corporations, ratings agencies and insurers
+        to participate in a financial marketplace that is open and accessible to all.
       </StyledBodySubText>
       <StyledBannerImage fadeIn={false} fluid={props.data.banner.childImageSharp.fluid} />
     </>
