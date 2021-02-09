@@ -272,7 +272,7 @@ const About = props => {
 
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
               <InternalLink to="/blog/uni">FINX token</InternalLink>
-              <InternalLink to="/whitepaper.pdf">
+              <InternalLink to="./whitepaper.pdf">http://34.216.220.238:8000/whitepaper.pdf
                 Whitepaper <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
               <InternalLink to="/audit.html">
