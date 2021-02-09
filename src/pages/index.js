@@ -304,7 +304,8 @@ const IndexPage = props => {
                 fontSize: '20px'
               }}
               target="_blank"
-              href="https://app.uniswap.org/"
+              // href="https://app.uniswap.org/"
+              href="https://app.finx.io/"
             >
               Use FINX App
             </Button>
@@ -369,9 +370,9 @@ const StyledSectionTitle = styled.h1`
 const DeveloperSection = props => {
   return (
     <>
-      <StyledSectionTitle>A growing protocol ecosystem.</StyledSectionTitle>
+      <StyledSectionTitle>A decentralized corporate finance ecosystem.</StyledSectionTitle>
       <StyledBodySubText>
-        The FINX protocol empowers developers, liquidity provider, corporations, ratings agencies and insurers
+        The FINX protocol empowers liquidity providers, corporations, ratings agencies and insurers
         to participate in a financial marketplace that is open and accessible to all.
       </StyledBodySubText>
       <StyledBannerImage fadeIn={false} fluid={props.data.banner.childImageSharp.fluid} />

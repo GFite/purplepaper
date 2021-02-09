@@ -257,7 +257,7 @@ const Header = props => {
           }}
         >
           <StyledUni />
-          <HeaderText>Uniswap</HeaderText>
+          <HeaderText>FINX</HeaderText>
         </StyledHomeLink>
       </StyledNavTitleWrapper>
       <MenuToggle ref={button} open={isMenuOpen} onClick={() => updateIsMenuOpen(!isMenuOpen)}>
@@ -280,9 +280,10 @@ const Header = props => {
               color: 'white'
             }}
             target="_blank"
-            href="https://app.uniswap.org/"
+            // href="https://app.uniswap.org/"
+            href="https://app.finx.io/"
           >
-            Use Uniswap
+            Use FINX
           </StyledTradeLink>
         )}
       </StyledNav>
