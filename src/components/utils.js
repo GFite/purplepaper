@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import uImage from '../images/big_unicorn_fade_bak.png'
+import uImage from '../images/big_unicorn_fade.png'
 import noise from '../images/noise.png'
 import { Link } from 'gatsby'
 
