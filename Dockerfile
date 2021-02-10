@@ -8,8 +8,9 @@ RUN pwd
 COPY finx-io/* /finx-io/finx-io/
 # install node modules and build assets
 WORKDIR /finx-io/finx-io
-RUN npx browserslist@latest --update-db
-RUN yarn install && yarn build
+#RUN npx browserslist@latest --update-db
+RUN pwd
+#RUN yarn install && yarn build
 RUN yarn && yarn start
 ## install PORTIS
 RUN npm install web3 @portis/web3
