@@ -1,5 +1,5 @@
 # Name the node stage "builder"
-FROM node:10 AS builder
+FROM node:12 AS builder
 # Set working directory
 WORKDIR /finx-io
 # WORKDIR /app
