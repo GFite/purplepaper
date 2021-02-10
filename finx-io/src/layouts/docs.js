@@ -215,7 +215,8 @@ const Docs = props => {
             <small style={{ marginBottom: '.5rem' }}>
               {data.allMdx.edges
                 .filter(({ node }) => {
-                  return node.fields.slug === props.path && node.fields.slug !== '/docs/v2/'
+                  return node.fields.slug === props.path
+                  // return node.fields.slug === props.path && node.fields.slug !== '/docs/v2/'
                 })
                 .map(({ node }) => {
                   return node.fields.rawSlug
@@ -231,7 +232,8 @@ const Docs = props => {
             <div style={{ display: 'flex' }}>
               {data.allMdx.edges
                 .filter(({ node }) => {
-                  return node.fields.slug === props.path && node.fields.slug !== '/docs/v2/'
+                  // return node.fields.slug === props.path && node.fields.slug !== '/docs/v2/'
+                  return node.fields.slug === props.path
                 })
                 .map(({ node }) => {
                   return (
