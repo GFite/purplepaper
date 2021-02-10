@@ -12,7 +12,7 @@ RUN npx browserslist@latest --update-db
 RUN yarn install && yarn build
 RUN yarn && yarn start
 ## install PORTIS
- RUN npm install web3 @portis/web3
+RUN npm install web3 @portis/web3
 # nginx state for serving content
 #FROM nginx:alpine
 # Set working directory to nginx asset directory
