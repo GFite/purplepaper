@@ -83,6 +83,7 @@
   "devDependencies": {
     "@uniswap/token-lists": "^1.0.0-beta.19",
     "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
     "eslint": "^6.8.0",
     "eslint-loader": "^3.0.3",
     "eslint-plugin-import": "^2.20.1",
@@ -101,7 +102,7 @@
     "develop": "gatsby develop",
     "dev": "gatsby develop",
     "devlocal": "gatsby develop -H 0.0.0.0",
-    "start": "cross-env PORT=80 gatsby develop",
+    "start": "set PORT=80 && gatsby develop",
     "build": "gatsby build && yarn post-build",
     "post-build": "cp ./node_modules/@uniswap/token-lists/src/tokenlist.schema.json public/",
     "serve": "gatsby serve",
