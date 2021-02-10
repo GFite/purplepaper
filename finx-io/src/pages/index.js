@@ -383,10 +383,10 @@ const DeveloperSection = props => {
 const ProductsSection = props => {
   return (
     <>
-      <StyledSectionTitle>A suite of tools for a tokenized world.</StyledSectionTitle>
+      <StyledSectionTitle>Smart Contracts for Providing Debt Capital to the Crypto Markets</StyledSectionTitle>
       <StyledBodySubText>
-        We build state of the art open source apps to access the Uniswap protocol and contribute to the world of
-        decentralized finance.
+          We facilitate complex, large scale arrangements for Corporations that require Debt Pools.
+          Smart Contract Debt Pools are on Etheryeum 2, as ERC-20 Smart Contracts. This gives anyone access to the world of Decentralized Debt Capital.
       </StyledBodySubText>
       <StyledItemRow>
         <StyledExternalLink href={'https://socks.uniswap.org'} target="_blank">
@@ -406,10 +406,10 @@ const ProductsSection = props => {
         </StyledExternalLink>
       </StyledItemRow>
 
-      <StyledSectionTitle>Superpowers for DEFI developers.</StyledSectionTitle>
+      <StyledSectionTitle>Superpowers for Corporate DeFi Teams.</StyledSectionTitle>
       <StyledBodySubText>
         Check out the <Link to="/docs/v2/">documentation</Link>, the{' '}
-        <Link to="/docs/v2/javascript-SDK/quick-start/">quick start</Link> or a guide below to integrate your project
+        <Link to="/docs/v2/javascript-SDK/quick-start/">quick start</Link> or a guide below to integrate your Corporate Finance
         with thousands of tokens and billions in liquidity.
       </StyledBodySubText>
       <StyledSectionFlex style={{ paddingBottom: '0px', paddingTop: '1rem' }}>
@@ -418,7 +418,7 @@ const ProductsSection = props => {
 
       <StyledSectionTitle>A global community.</StyledSectionTitle>
       <StyledBodySubText>
-        Learn more about Uniswap, chat with the team, others in the community, and have your say in shaping the future
+        Learn more about FINX, chat with the team, others in the community, and have your say in shaping the future
         of the Uniswap protocol.
       </StyledBodySubText>
       <StyledItemRow>
