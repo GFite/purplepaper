@@ -16,13 +16,13 @@ services:
       - REACT_APP_AUTH0_DOMAIN=dev-h30jneic.us.auth0.com
       - REACT_APP_AUTH0_CLIENT_ID=01wuvxu4zQZhRxA0zvsDBNkE8GfQ71Df
       - SKIP_PREFLIGHT_CHECK=true
-      - PORT=3000
+      - PORT=8000
     volumes:
       - ./finx-io:/finx-io
     ports:
-      - "3000:3000"
+      - "8000:8000"
     expose:
-      - "3000"
+      - "8000"
   # nginx
   nginx:
     image: nginx:latest
