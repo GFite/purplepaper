@@ -54,10 +54,10 @@ const menu = [
         name: 'Uniswap Documentation',
         link: '/docs/v2'
       },
-      { name: 'GitHub', link: 'https://github.com/Uniswap' },
-      { name: 'Whitepaper', link: '/whitepaper.pdf' },
-      { name: 'Audit', link: '/audit.html' },
-      { name: 'Bug Bounty', link: '/bug-bounty' }
+      { name: 'Uniswap GitHub', link: 'https://github.com/Uniswap' },
+      { name: 'Uniswap Whitepaper', link: '/whitepaper.pdf' },
+      { name: 'Uniswap Audit', link: '/audit.html' },
+      { name: 'Uniswap Bug Bounty', link: '/bug-bounty' }
     ]
   },
   {
@@ -76,7 +76,7 @@ const menu = [
       },
       { name: 'Forum', link: 'https://gov.uniswap.org/' },
       { name: 'Voting Portal', link: 'https://app.uniswap.org/#/vote' },
-      { name: 'Documentation', link: '/docs/v2/governance/overview' }
+      { name: 'UniDocumentation', link: '/docs/v2/governance/overview' }
     ]
   },
   {
