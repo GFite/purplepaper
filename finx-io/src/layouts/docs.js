@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-import Layout from '.'
+import Layout from './index'
 import SidebarV2 from '../components/sidebarV2'
 import SidebarV1 from '../components/sidebarV1'
 import SEO from '../components/seo'

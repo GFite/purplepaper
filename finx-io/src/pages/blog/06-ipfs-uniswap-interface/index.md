@@ -87,7 +87,7 @@ You can check what build you are being served from Cloudflare's IPFS gateway by 
 
 Cloudflare's gateway uses the IPFS hash of the deployment in the `etag` header, and reports the resolved IPNS path in the `x-ipfs-path` header.
 
-![](./verifying-build.png)
+![](verifying-build.png)
 
 ## How you can help
 

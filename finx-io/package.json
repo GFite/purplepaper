@@ -106,7 +106,7 @@
     "post-build": "cp ./node_modules/@uniswap/token-lists/src/tokenlist.schema.json public/",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "format": "prettier --write \"src/**/*.{js,jsx,md,mdx}\"",
+    "format": "prettier --write \\\"src/**/*.{js,jsx,md,mdx}\\\"",
     "deploy": "gatsby-plugin-s3 deploy"
   },
   "repository": {

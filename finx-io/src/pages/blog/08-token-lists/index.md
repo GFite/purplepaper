@@ -39,7 +39,7 @@ Since all tokens use a standard interface, infrastructure-layer applications, su
 
 Adding a new ERC20 token to the Uniswap protocol is as simple as calling a public function on a permissionless and immutable smart contract. In fact, about** 100 new Uniswap V2 liquidity pools are deployed every day**, with over 6,000 pools added since it launched in May 2020.
 
-![Uniswap pairs created per day](./image1.png "Uniswap pairs created per day")
+![Uniswap pairs created per day](image1.png "Uniswap pairs created per day")
 
 ## Decoupling Discovery + Reputation from Gatekeeping
 

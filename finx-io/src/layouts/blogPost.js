@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '.'
+import Layout from './index'
 import styled from 'styled-components'
 import Moment from 'react-moment'
 import { graphql, useStaticQuery, Link } from 'gatsby'
