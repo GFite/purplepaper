@@ -4,11 +4,11 @@ FROM node:12 AS builder
 WORKDIR /finx-io
 # WORKDIR /app
 # Copy all files from current directory to working dir in image
-COPY .. .
+COPY ./ ./
 # install node modules and build assets
 RUN npx browserslist@latest --update-db
 #RUN yarn install && yarn build
-RUN yarn && yarn start
+#RUN yarn && yarn start
 ## install PORTIS
 # RUN npm install web3 @portis/web3
 # nginx state for serving content
