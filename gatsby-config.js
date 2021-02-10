@@ -1,4 +1,4 @@
-const menu = require('./src/utils/menu')
+const menu = require('./src/utils/menu.js')
 
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`
