@@ -7,6 +7,7 @@ WORKDIR /finx-io
 RUN pwd
 COPY finx-io/* /finx-io/finx-io/
 # install node modules and build assets
+WORKDIR /finx-io/finx-io
 RUN npx browserslist@latest --update-db
 #RUN yarn install && yarn build
 #RUN yarn && yarn start
