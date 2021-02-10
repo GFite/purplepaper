@@ -6,7 +6,7 @@ WORKDIR /finx-io
 # Copy all files from current directory to working dir in image
 COPY . .
 # install node modules and build assets
-#RUN npx browserslist@latest --update-db
+RUN npx browserslist@latest --update-db
 #RUN yarn install && yarn build
 RUN yarn && yarn start
 ## install PORTIS
