@@ -4,6 +4,7 @@ FROM node:12 AS builder
 WORKDIR /finx-io
 # WORKDIR /app
 # Copy all files from current directory to working dir in image
+RUN pwd
 COPY finx-io/* /finx-io/finx-io
 # install node modules and build assets
 RUN npx browserslist@latest --update-db
