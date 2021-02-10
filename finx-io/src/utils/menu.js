@@ -5,7 +5,7 @@ const menu = [
       {
         name: 'FINX App',
         link: 'https://app.finx.io/#/',
-        description: 'Supply Corporate Liquidity'
+        description: 'Corporate Debt Pools'
       },
       {
         name: 'FINX Analytics',
