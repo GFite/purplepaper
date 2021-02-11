@@ -395,7 +395,7 @@ const ProductsSection = props => {
         <StyledExternalLink href={'https://info.uniswap.org'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.info.childImageSharp.fluid} />
         </StyledExternalLink>
-        <StyledExternalLink href={'https://app.uniswap.org'} target="_blank">
+        <StyledExternalLink href={'https://app.finx.io'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.swap.childImageSharp.fluid} />
         </StyledExternalLink>
         <StyledExternalLink href={'https://tokenlists.org'} target="_blank">
