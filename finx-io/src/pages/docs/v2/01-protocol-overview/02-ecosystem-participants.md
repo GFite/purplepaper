@@ -6,7 +6,15 @@ related: '/docs/v2/core-concepts/pools'
 
 ![](/images/participants.jpg)
 
-The Uniswap ecosystem is primarily comprised of three types of users: liquidity providers, traders, and developers. Liquidity providers are incentivized to contribute [ERC-20](https://eips.ethereum.org/EIPS/eip-20) tokens to common liquidity pools. Traders can swap these tokens for one another for a fixed <Link to="/docs/v2/advanced-topics/fees">0.30% fee</Link> (which goes to liquidity providers). Developers can integrate directly with Uniswap smart contracts to power new and exciting interactions with tokens, trading interfaces, retail experiences, and more.
+The FINX ecosystem is primarily comprised of three types of users: Liquidity Providers, Borrowers, and Developers. 
+Liquidity providers are incentivized to contribute [ERC-20](https://eips.ethereum.org/EIPS/eip-20) tokens to common 
+liquidity pools that provide the capital for Borrowers to take out debt positions. Liability providers and Borrowers
+can swap amongs each other for a fixed <Link to="/docs/v2/advanced-topics/fees">0.30% fee</Link> (which goes to 
+liquidity providers). Credit Facility Providers contribute tokens representing the service provided which are contributed
+to the Etheryeum Contract along with any Tokenized Collateral, such that the total value ot Collateral plus Underwritten
+Collateral Value meets the debt service rules.
+
+Developers can integrate directly with FINX smart contracts to power new and exciting interactions with tokens, trading interfaces, retail experiences, and more.
 
 In total, interactions between these classes create a positive feedback loop, fueling digital economies by defining a common language through which tokens can be pooled, traded and used.
 
@@ -22,7 +30,7 @@ Liquidity providers, or LPs, are not a homogenous group:
 
 - Finally, some DeFi pioneers are exploring complex liquidity provision interactions like incentivized liquidity, liquidity as collateral, and other experimental strategies. Uniswap is the perfect protocol for projects to experiment with these kinds of ideas.
 
-# Traders
+# Borrowers
 
 There are a several categories of traders in the protocol ecosystem:
 
@@ -36,7 +44,7 @@ There are a several categories of traders in the protocol ecosystem:
 
 In all cases, trades are subject to the same flat fee for trading on the protocol. Each is important for increasing the accuracy of prices and incentivizing liquidity.
 
-# Developers/Projects
+# Credit Facility Service Providers
 
 There are far too many ways Uniswap is used in the wider Ethereum ecosystem to count, but some examples include:
 
@@ -48,6 +56,6 @@ There are far too many ways Uniswap is used in the wider Ethereum ecosystem to c
 
 - Smart contract developers use the suite of functions available to invent new DeFi tools and other various experimental ideas. See projects like [Unisocks](https://unisocks.exchange/) or [Zora](https://ourzora.com/), among many, many others.
 
-# Uniswap Team and Community
+# FINX Team and Community
 
-The Uniswap team along with the broader Uniswap community drives development of the protocol and ecosystem.
+The FINX team along with the broader FINX community drives development of the protocol and ecosystem.

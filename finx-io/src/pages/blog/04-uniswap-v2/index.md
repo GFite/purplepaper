@@ -1,20 +1,33 @@
 ---
-title: 'Uniswap V2 Overview'
-date: '2020-03-23'
-author: 'Hayden Adams'
+title: 'FINX Overview'
+date: '2021-02-11'
+author: 'Geoff Fite'
 featuredImage: ./featured.jpg
-previewText: 'All about Uniswap V2. Price oracles, optimistic swaps and much much more. Launching April 2020.'
+previewText: 'All about FINX. Debt Pool Service oracles, 24x7 Corporate Debt Liquidity, Swaps and more. Launching May 2021.'
 ---
 
-**Uniswap V1** was the proof-of-concept for a new type of decentralized marketplace.
+**FINX** is a new type of decentralized marketplace that adds CREDIT to Decentralized Token Pools.
 
-As a venue for pooled, automated liquidity provision on Ethereum, the Uniswap protocol (Uniswap) functions without upkeep, providing an unstoppable platform for ERC20 token conversion. **Uniswap V1 will continue to work for as long as Ethereum exists**, and so far, it has worked very nicely for a wide variety of use cases.
+As a venue for pooled, automated liquidity provision on Ethereum, the FINX protocol (FINX) functions without upkeep, 
+providing an unstoppable platform for ERC20 token conversion. **FINX will continue to work for as long as Ethereum exists**.
+
+FINX is not an intermediary, custodian or brokering party. FINX authors Industry-Standard and Audited contracts that enable
+all parties, including traditional finance firms, to participate in the new Decentralized Finance markets and capabilities.
 
 ![Uniswap V1 Liquidity Growth](v1_liquidity.png)
 
-However, pooled automated liquidity remains nascent technology, and **we have only just begun to realize its potential**. For this reason, last year [we raised a seed round](https://finance.yahoo.com/news/paradigm-backs-decentralized-exchange-protocol-184824051.html) and formed a dedicated team to research and develop Uniswap alongside the broader Ethereum community.
+Automated Pools are a very new technology, and the growth curve will be steep. The current ecosystems that have come online
+since the release of Etheryeum 2 have focused on the basic building blocks of financial relationships, and they are intended
+to encourage value-added expansions of the contract ecosystem. 
 
-**Uniswap V2** is our second iteration of Uniswap and includes many new features and improvements. This article will serve as a high-level overview of these changes including:
+FINX is an important expansion of these basic components - SWAPS, POOLS, DEPOSITS, LOANS, and FLASH TRANSACTIONS - as alone 
+they cannot supply capital required for Commercial purposes. In order to borrow against an Aave pool or swap a Uniswap contract,
+there must be sufficient Collateral to commit the transaction.
+
+FINX provides an Ecosystem of Tokenized Guarantees that enable Credit to extend into DeFi.
+
+We are currently raising a [seed round](token_sale) to form the basis of the capital pools. The design and implementation of the 
+contracts and the announcement of Credit Facility Service Providers will be announced as per the schedule.
 
 - [ERC20 / ERC20 Pairs](#erc20--erc20-pairs)
 - [Price Oracles](#price-oracles)
