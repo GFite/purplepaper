@@ -12,10 +12,13 @@ previewText: 'FINX, the FINX Governance Protocol token, is Open for Pre-Trade Sa
 
 - FINX Seed Sale Contract Address: [0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984](https://etherscan.io/token/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984)
 
-- 60% of the FINX genesis supply is allocated to FINX community members and available for Seed Purchase.
-  , a quarter of which (15% of total supply) has already been distributed to past users
+# FINX Tokenomics
 
-- To start, UNI is available through four liquidity mining pools: UNI holders may vote to add more pools after an initial 30-day governance grace period
+
+- 60% of the FINX genesis supply is allocated to FINX community members and available for Seed Purchase.
+  , a quarter of which (15% of total supply) is sold to Institutional Partners
+
+- To start, FINX is available through four liquidity mining pools: UNI holders may vote to add more pools after an initial 30-day governance grace period
 
 **Community-led Growth**
 
