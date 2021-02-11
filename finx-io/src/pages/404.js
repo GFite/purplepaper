@@ -1,4 +1,4 @@
-import React from 'react'
+404.jsimport React from 'react'
 
 import Layout from '../layouts'
 import SEO from '../components/seo'
