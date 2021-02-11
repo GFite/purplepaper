@@ -1,41 +1,36 @@
-## Author: Jake Mathai
-## Purpose: Compose file for CLI client node with web app (py environment)
-#version: '3'
-#volumes:
-#  node-modules:
-#services:
-#  # React frontend
-#  finx-io:
-#    build:
-#      context: .
-#      dockerfile: Dockerfile
-#    hostname: finx-io
-#    container_name: finx-io
-#    command: ["npm", "start"]
-#    environment:
-#      - REACT_APP_AUTH0_DOMAIN=dev-h30jneic.us.auth0.com
-#      - REACT_APP_AUTH0_CLIENT_ID=01wuvxu4zQZhRxA0zvsDBNkE8GfQ71Df
-#      - SKIP_PREFLIGHT_CHECK=true
-#      - PORT=8000
-#    volumes:
-#      - ./finx-io:/finx-io
-#    ports:
-#      - "8000:8000"
-#    expose:
-#      - "8000"
-#  # nginx
-#  nginx:
-#    image: nginx:latest
-#    hostname: nginx
-#    container_name: nginx
-#    volumes:
-#      - ./nginx/:/etc/nginx/conf.d
-#    ports:
-#      - "80:8000"
-#    expose:
-#      - "80"
-##    depends_on:
-#networks:
-#  beam-network:
-#    external:
-#      name: finx-network
+# Author: Dick Mule
+# Purpose: Compose file for CLI client node with web app (py environment)
+version: '3'
+volumes:
+  node-modules:
+services:
+  # nginx
+  nginx:
+    image: nginx:latest
+    hostname: nginx
+    container_name: nginx
+    volumes:
+      - ./nginx/:/etc/nginx/conf.d
+    ports:
+      - "80:8000"
+    expose:
+      - "80"
+  # React frontend
+  finx-io:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    hostname: finx-io
+    container_name: finx-io
+    command: bash -c 'yarn && yarn start'
+    environment:
+      - REACT_APP_AUTH0_DOMAIN=dev-h30jneic.us.auth0.com
+      - REACT_APP_AUTH0_CLIENT_ID=01wuvxu4zQZhRxA0zvsDBNkE8GfQ71Df
+      - SKIP_PREFLIGHT_CHECK=true
+      - PORT=3000
+    volumes:
+      - ./finx-io:/finx-io/finx-io
+    ports:
+      - "3000:3000"
+    expose:
+      - "3000"
