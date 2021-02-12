@@ -240,8 +240,11 @@ const About = props => {
       <StyledAbout>
         <span style={{ marginTop: '5rem' }}>
           <Title style={{ paddingBottom: '4rem' }}>
-            FINX enables <span><strong>Guaranteed Liquidity</strong></span> for 1000s of Corporations that conduct commerce in crypto.{' '}
+            FINX is a Credit Distributed Exchange (<span><strong>CDEX</strong></span>)
           </Title>
+          <SubTitle style={{ paddingBottom: '4rem' }}>
+            <span><strong>Guaranteed Liquidity</strong></span> for 1000s of Global Corporations conducting commerce in crypto.{' '}
+          </SubTitle>
 
           <Numbers id="about" style={{ flexDirection: 'column' }}>
             <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between', margin: 0 }}>
@@ -265,8 +268,8 @@ const About = props => {
           </Numbers>
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
             <p>
-              FINX empowers liquidity providers, corporations, ratings agencies and insurers
-              to participate in a financial marketplace that is open and accessible to all.
+              FINX is a Decentralized Exchange (<span><strong>DEX</strong></span>) that provides a way for all Capital Market Participants
+              to conduct decentralized commerce in crypto.
             </p>
             <p>We are committed to building more efficient counterparty arrangements on the decentralized web.</p>
 
