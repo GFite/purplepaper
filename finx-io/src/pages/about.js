@@ -240,7 +240,7 @@ const About = props => {
       <StyledAbout>
         <span style={{ marginTop: '5rem' }}>
           <Title style={{ paddingBottom: '4rem' }}>
-            Guaranteed liquidity for thousands of Corporations.{' '}
+            FINX enables <span><strong>Guaranteed Liquidity</strong></span> for 1000s of Corporations that conduct commerce in crypto.{' '}
           </Title>
 
           <Numbers id="about" style={{ flexDirection: 'column' }}>
