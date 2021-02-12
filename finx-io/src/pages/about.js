@@ -275,7 +275,7 @@ const About = props => {
             Borrowers that act as collateral against Collateralized Pools on the Ethereum Mainnet. The ERC20 contracts stipulate
             repayment periods, interest models, liquidity provisions, workout and dispute resolution.</p>
             <p>FINX committed to building more efficient counterparty arrangements on the decentralized web.</p>
-            <h3>FINX is currently conducting a <a href="/blog/uni"><strong>Genesis Token Sale</strong></a> from February 15 through March 15.</h3>
+            <h3>FINX is currently conducting a <InternalLink to="/blog/uni"><strong>Genesis Token Sale</strong></InternalLink> from February 15 through March 15.</h3>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
               <InternalLink to="/blog/uni">FINX token</InternalLink>
               <InternalLink to="./whitepaper.pdf">
