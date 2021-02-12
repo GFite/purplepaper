@@ -224,4 +224,4 @@ We will be releasing additional updates, information, and documentation over the
 
 - [Join the Uniswap community discord](https://discord.gg/FCfyBSbCU5)
 - [Follow Uniswap on Twitter](https://twitter.com/UniswapProtocol)
-- Subscribe to the <Link to='/blog/'>Uniswap blog</Link>
+- Subscribe to the <Link to='/blog/'>FINX blog</Link>
