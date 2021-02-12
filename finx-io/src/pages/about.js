@@ -242,9 +242,9 @@ const About = props => {
           <Title style={{ paddingBottom: '4rem' }}>
             FINX is a Credit Distributed Exchange (<span><strong>CDEX</strong></span>)
           </Title>
-          <H2 style={{ paddingBottom: '4rem' }}>
+          <h2 style={{ paddingBottom: '4rem' }}>
             <span><strong>Guaranteed Liquidity</strong></span> for 1000s of Global Corporations conducting commerce in crypto.{' '}
-          </H2>
+          </h2>
 
           <Numbers id="about" style={{ flexDirection: 'column' }}>
             <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between', margin: 0 }}>
