@@ -24,7 +24,7 @@ export const theme = darkMode => ({
   textColor: darkMode ? white : '#010101',
   invertedTextColor: darkMode ? '#010101' : white,
   greyText: darkMode ? white : '#6C7284',
-  buttonBorder: darkMode ? `#FFFFFF30` : '#01010130',
+  buttonBorder: darkMode ? `#B6E2EA` : '#506366',
 
   heroBG: darkMode
     ? 'radial-gradient(76.02% 75.41% at 1.84% 0%, #ff007a 0%, #021d43 100%)'
@@ -44,7 +44,7 @@ export const theme = darkMode => ({
 
   inputBackground: darkMode ? '#202124' : white,
   placeholderGray: darkMode ? '#5F5F5F' : '#E1E1E1',
-  shadowColor: darkMode ? '#000' : '#2F80ED',
+  shadowColor: darkMode ? '#000' : '#6ED4E6',
 
   // grays
   concreteGray: darkMode ? '#292C2F' : '#FAFAFA',
@@ -54,8 +54,8 @@ export const theme = darkMode => ({
   doveGray: darkMode ? '#C4C4C4' : '#737373',
 
   colors: {
-    blue1: darkMode ? '#3b80ff' : '#D4E4FA',
-    blue2: darkMode ? '#1966D2' : '#A9C8F5',
+    blue1: darkMode ? '#6ED4E6' : '#B6E2EA',
+    blue2: darkMode ? '#56A5B3' : '#6ED4E6',
     blue3: darkMode ? '#165BBB' : '#7DACF0',
     blue4: darkMode ? '#2D47A6' : '#5190EB',
     blue5: darkMode ? '#C4D9F8' : '#2172E5',
@@ -83,20 +83,26 @@ export const theme = darkMode => ({
     white: '#FFFFFF',
     black: '#000000',
 
-    green1: '#E6F3EC',
-    green2: '#27AE60',
+    green1: '#B6E657',
+    green2: '#74992B',
 
-    pink1: darkMode ? '#2F80ED' : '#FF007A',
-    pink2: '#FF8EC4',
-    pink3: '#FFD7EA',
+    // pink1: darkMode ? '#2F80ED' : '#FF007A',
+    // pink2: '#FF8EC4',
+    // pink3: '#FFD7EA',
 
-    yellow1: darkMode ? '#F3BE1E' : '#F3BE1E',
-    yellow2: darkMode ? '#ffe490' : '#ffe490',
+    pink1: darkMode ? '#7A1C99' : '#D3FF7A',
+    pink2: '#74992B',
+    pink3: '#B6E657',
+
+    yellow1: darkMode ? '#6ED4E6' : '#6ED4E6',
+    yellow2: darkMode ? '#E6914C' : '#E6914C',
 
     red1: '#FF6871',
 
-    link: darkMode ? '#2F80ED' : '#FF007A',
-    invertedLink: darkMode ? '#2F80ED' : '#FF007A'
+    // link: darkMode ? '#2F80ED' : '#FF007A',
+    // invertedLink: darkMode ? '#2F80ED' : '#FF007A'
+    link: darkMode ? '#7A1C99' : '#D3FF7A',
+    invertedLink: darkMode ? '#7A1C99' : '#D3FF7A'
   },
 
   shadows: {
