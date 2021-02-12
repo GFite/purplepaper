@@ -1,20 +1,41 @@
+/*@font-face {*/
+/*  font-family: 'Inter Roman';*/
+/*  src: url('/fonts/Inter-roman.otf') format('opentype');*/
+/*  font-weight: normal;*/
+/*}*/
+
+/*@supports (font-variation-settings: normal) {*/
+/*  html {*/
+/*    font-family: 'Inter var', sans-serif;*/
+/*  }*/
+/*}*/
+/*@font-face {*/
+/*  font-family: 'GT Haptik Medium';*/
+/*  src: url('/fonts/GT-Haptik-Medium.woff2');*/
+/*}*/
+
+/*@font-face {*/
+/*  font-family: 'GT Haptik Regular';*/
+/*  src: url('/fonts/GT-Haptik-Regular.woff2');*/
+/*}*/
+
 @font-face {
-  font-family: 'Inter Roman';
-  src: url('/fonts/Inter-roman.otf') format('opentype');
+  font-family: 'Lato';
+  src: url('/fonts/Lato-Regular.ttf') format('truetype');
   font-weight: normal;
 }
 
 @supports (font-variation-settings: normal) {
   html {
-    font-family: 'Inter var', sans-serif;
+    font-family: 'Lato', sans-serif;
   }
 }
 @font-face {
-  font-family: 'GT Haptik Medium';
-  src: url('/fonts/GT-Haptik-Medium.woff2');
+  font-family: 'Lato Thin';
+  src: url('/fonts/Lato-Thin.ttf');
 }
 
 @font-face {
   font-family: 'GT Haptik Regular';
-  src: url('/fonts/GT-Haptik-Regular.woff2');
+  src: url('/fonts/Lato-Regular.ttf');
 }

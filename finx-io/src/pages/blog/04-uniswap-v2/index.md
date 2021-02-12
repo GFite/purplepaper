@@ -6,7 +6,8 @@ featuredImage: ./featured.jpg
 previewText: 'All about FINX. Debt Pool Service oracles, 24x7 Corporate Debt Liquidity, Swaps and more. Launching May 2021.'
 ---
 
-**FINX** is a new type of decentralized marketplace that adds CREDIT to Decentralized Token Pools.
+**FINX** is an Ethereum 2 ERC-20 Token that powers the FINX Protocol, a new type of decentralized marketplace that 
+adds CREDIT to Decentralized Token Pools.
 
 As a venue for pooled, automated liquidity provision on Ethereum, the FINX protocol (FINX) functions without upkeep, 
 providing an unstoppable platform for ERC20 token conversion. **FINX will continue to work for as long as Ethereum exists**.
