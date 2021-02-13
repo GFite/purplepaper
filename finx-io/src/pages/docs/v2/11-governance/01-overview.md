@@ -5,15 +5,15 @@ tags: smart-contracts, documentation
 
 # Code
 
-[`governance`](https://github.com/Uniswap/governance)
+[`governance`](https://github.com/FinX-IO/governance)
 
 # Documentation
 
-For reference material on the Uniswap Governance system please see [Governance Reference](https://uniswap.org/docs/v2/governance/governance-reference).
+For reference material on the FINX Governance system please see [Governance Reference](https://finx.io/docs/v2/governance/governance-reference).
 
-# UNI Address
+# FINX Address
 
-`Uni` is deployed at `0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984` on the Ethereum [mainnet](https://etherscan.io/address/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984), and the [Ropsten](https://ropsten.etherscan.io/address/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984), [Rinkeby](https://rinkeby.etherscan.io/address/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984), [Görli](https://goerli.etherscan.io/address/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984), and [Kovan](https://kovan.etherscan.io/address/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984) testnets. It was built from commit [ab22c08](https://github.com/Uniswap/governance/commit/ab22c084bacb2636a1aebf9759890063eb6e4946).
+`FINX` is deployed at `0x137cd72c356593fB20c90bd83450B9854DEcffde` on the Ethereum [mainnet](https://etherscan.io/address/0x137cd72c356593fB20c90bd83450B9854DEcffde), and the [Ropsten](https://ropsten.etherscan.io/address/0x137cd72c356593fB20c90bd83450B9854DEcffde), [Rinkeby](https://rinkeby.etherscan.io/address/0x137cd72c356593fB20c90bd83450B9854DEcffde), [Görli](https://goerli.etherscan.io/address/0x137cd72c356593fB20c90bd83450B9854DEcffde), and [Kovan](https://kovan.etherscan.io/address/0x137cd72c356593fB20c90bd83450B9854DEcffde) testnets. It was built from commit [ab22c08](https://github.com/FinX-IO/governance/commit/[commit]).
 
 ## ABI
 

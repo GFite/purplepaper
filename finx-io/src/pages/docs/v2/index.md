@@ -24,18 +24,9 @@ For a high-level overview of FINX, see the <Link to='/blog/uniswap-v2'>introduct
 
 Explore the sidebar to find more specific documentation covering other aspects of the protocol.
 
-## Developer links
-
-The Uniswap codebase is comprised of an ecosystem of open source components.
-
-- [`uniswap-v2-core`](https://github.com/Uniswap/uniswap-v2-core)
-- [`uniswap-v2-periphery`](https://github.com/Uniswap/uniswap-v2-periphery)
-- [`uniswap-frontend`](https://github.com/Uniswap/uniswap-frontend)
-- [`uniswap-sdk`](https://github.com/Uniswap/uniswap-sdk)
-
 ## Reference materials
 
-Get to know the Uniswap SDK and smart contract API objects, methods, attributes, and responses.
+Get to know the FINX SDK and smart contract API objects, methods, attributes, and responses.
 
 - <Link to="/docs/v2/SDK">SDK</Link>
 - <Link to="/docs/v2/API">API</Link>
