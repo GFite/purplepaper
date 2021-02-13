@@ -1,9 +1,9 @@
 {
-  "name": "@uniswap/org",
+  "name": "@finx/io",
   "private": true,
-  "description": "Uniswap homepage and knowledgebase",
+  "description": "FINX homepage and knowledgebase",
   "version": "0.1.0",
-  "author": "Callil Capuozzo <callil.capuozzo@gmail.com>",
+  "author": "Geoff Fite <geoff@fiteanalytics.com>",
   "engines": {
     "node": "12.x"
   },
@@ -112,9 +112,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Uniswap/uniswap-org"
+    "url": "https://github.com/FinX-IO/finx-io"
   },
   "bugs": {
-    "url": "https://github.com/Uniswap/uniswap-org/issues"
+    "url": "https://github.com/FinX-IO/finx-io/issues"
   }
 }

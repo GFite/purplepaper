@@ -108,11 +108,11 @@ module.exports = {
           {
             resolve: `gatsby-remark-twitter-cards`,
             options: {
-              title: 'Uniswap', // website title
+              title: 'FINX', // website title
               separator: '|', // default
-              author: '@UniswapProtocol',
+              author: '@FINXProtocol',
               background: require.resolve('./static/images/twitter_card_bg.jpg'), // path to 1200x630px file or hex code, defaults to black (#000000)
-              fontColor: '#FF3093', // defaults to white (#ffffff)
+              fontColor: '#D3FF7A', // defaults to white (#ffffff)
               fontStyle: 'sans-serif', // default
               titleFontSize: 124, // default
               fontFile: require.resolve('./static/fonts/GT-Haptik-Regular.ttf') // will override fontStyle - path to custom TTF font
@@ -137,8 +137,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#7A1C99`,
+        theme_color: `#7A1C99`,
         display: `minimal-ui`,
         icon: `src/images/fav.ico` // This path is relative to the root of the site.
       }
@@ -192,7 +192,7 @@ module.exports = {
             }
             `,
             output: '/rss.xml',
-            title: 'Uniswap Blog RSS Feed'
+            title: 'FINX Blog RSS Feed'
           }
         ]
       }

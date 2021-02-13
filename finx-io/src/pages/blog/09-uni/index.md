@@ -1,20 +1,24 @@
 ---
-title: 'Introducing UNI'
+title: 'Introducing FINX'
 date: '2020-09-16'
-author: '🦄 '
+author: 'FINX'
 featuredImage: ./banner.jpg
-previewText: 'UNI, the Uniswap Protocol token, is live!'
+previewText: 'FINX, the FINX Governance Protocol token, is Open for Pre-Trade Sale!'
 ---
 
 ![](banner_top.jpg)
 
-- UNI, the Uniswap Protocol token, is live!
+- FINX, the FINX Governance Protocol token, is now available for purchase in Seed Sale Stage!
 
-- UNI contract address: [0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984](https://etherscan.io/token/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984)
+- FINX Seed Sale Contract Address: [0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984](https://etherscan.io/token/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984)
 
-- 60% of the UNI genesis supply is allocated to Uniswap community members, a quarter of which (15% of total supply) has already been distributed to past users
+# FINX Tokenomics
 
-- To start, UNI is available through four liquidity mining pools: UNI holders may vote to add more pools after an initial 30-day governance grace period
+
+- 60% of the FINX genesis supply is allocated to FINX community members and available for Seed Purchase.
+  , a quarter of which (15% of total supply) is sold to Institutional Partners
+
+- To start, FINX is available through four liquidity mining pools: UNI holders may vote to add more pools after an initial 30-day governance grace period
 
 **Community-led Growth**
 

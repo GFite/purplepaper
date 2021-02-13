@@ -240,8 +240,11 @@ const About = props => {
       <StyledAbout>
         <span style={{ marginTop: '5rem' }}>
           <Title style={{ paddingBottom: '4rem' }}>
-            Guaranteed liquidity for thousands of Corporations.{' '}
+            FINX is a Credit Distributed Exchange (<span><strong>C-DEX</strong></span>)
           </Title>
+          <h2 style={{ paddingBottom: '4rem' }}>
+            <span><strong>Guaranteed Liquidity</strong></span> for 1000s of Global Corporations conducting commerce in crypto.{' '}
+          </h2>
 
           <Numbers id="about" style={{ flexDirection: 'column' }}>
             <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between', margin: 0 }}>
@@ -264,12 +267,10 @@ const About = props => {
             </div>
           </Numbers>
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
-            <p>
-              FINX empowers liquidity providers, corporations, ratings agencies and insurers
-              to participate in a financial marketplace that is open and accessible to all.
-            </p>
-            <p>We are committed to building more efficient counterparty arrangements on the decentralized web.</p>
-
+            <p>FINX is a Decentralized Exchange (<span><strong>DEX</strong></span>) that provides a way for all Capital Market Participant to conduct decentralized commerce in crypto.</p>
+            <p>Underwriters, Insurers, Ratings Agencies, Collateral Valuators and others can provide services to Corporate Borrowers that act as collateral against Collateralized Pools on the Ethereum Mainnet. The ERC20 contracts stipulate repayment periods, interest models, liquidity provisions, workout and dispute resolution.</p>
+            <p>FINX committed to building more efficient counterparty arrangements on the decentralized web.</p>
+            <h3>FINX is currently conducting a <InternalLink to="/blog/uni"><strong>Genesis Token Sale</strong></InternalLink> from February 15 through March 15.</h3>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
               <InternalLink to="/blog/uni">FINX token</InternalLink>
               <InternalLink to="./whitepaper.pdf">

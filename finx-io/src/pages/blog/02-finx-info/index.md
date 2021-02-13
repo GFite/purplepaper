@@ -1,14 +1,19 @@
 ---
-title: 'New Uniswap.info'
-date: '2019-11-05'
-author: 'Hayden Adams'
+title: 'FINX Token Contract'
+date: '2021-02-11'
+author: 'Geoff Fite'
 featuredImage: ./featured.jpg
-previewText: 'A new and improved Uniswap.info with more detailed information about the Uniswap ecosystem and token pools.'
+previewText: 'News about the upcoming FINX ERC20 Launch'
 ---
 
 ![](https://cdn-images-1.medium.com/max/3200/1*QwjSzdnwzAYoU7rXCjEF5A.jpeg)
 
-We’re excited to release a new and improved [Uniswap.info](http://uniswap.info/) with more detailed information about the Uniswap ecosystem and token exchanges. For this release we focused providing more complete and accurate data, better UI/UX and the ability to buy and sell tokens with the Uniswap iframe integration.
+We are excited to announce the release of our new site, https://finx.io
+
+FINX is the first and largest Credit Distributed Exchange (DEX) on the Ethereum Mainnet.
+
+
+We’re excited to announce the release of our new site:release a new and improved [Uniswap.info](http://uniswap.info/) with more detailed information about the Uniswap ecosystem and token exchanges. For this release we focused providing more complete and accurate data, better UI/UX and the ability to buy and sell tokens with the Uniswap iframe integratio
 
 Keep reading below for a breakdown of the new features.
 

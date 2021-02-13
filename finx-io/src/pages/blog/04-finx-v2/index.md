@@ -6,17 +6,25 @@ featuredImage: ./featured.jpg
 previewText: 'All about FINX. Debt Pool Service oracles, 24x7 Corporate Debt Liquidity, Swaps and more. Launching May 2021.'
 ---
 
-**FINX** is a new type of decentralized marketplace that adds CREDIT to Decentralized Token Pools.
+**FINX** is an Ethereum 2 ERC-20 Token that powers the FINX Protocol, a new type of decentralized marketplace that 
+adds CREDIT to Decentralized Token Pools.
 
 As a venue for pooled, automated liquidity provision on Ethereum, the FINX protocol (FINX) functions without upkeep, 
 providing an unstoppable platform for ERC20 token conversion. **FINX will continue to work for as long as Ethereum exists**.
 
-FINX is not an intermediary, custodian or brokering party. FINX authors Industry-Standard and Audited contracts that enable
+FINX is not an intermediary, custodian or brokering party. FINX authors open-source Industry-Standard and Audited contracts that enable
 all parties, including traditional finance firms, to participate in the new Decentralized Finance markets and capabilities.
 
-![Uniswap V1 Liquidity Growth](v1_liquidity.png)
+The FINX contracts are the most cost-effective method of making the Crypto Markets accessible to global Corporations.
 
-Automated Pools are a very new technology, and the growth curve will be steep. The current ecosystems that have come online
+The growth in liquidity on the [Ethereum Mainnet](https://etherscan.io/) is currently parabolic and represents the demand for 
+low-friction transactions and the elimination of wasteful intermediary expense.
+
+![Liquidity Growth on Uniswap DEX, captured 12 FEB 2021](uniswap_liquidity.png)
+[Liquidity Growth on Uniswap DEX, captured 12 FEB 2021](https://info.uniswap.org)
+
+Automated Pools are a very new technology, and the growth curve will continue as this still represents an extremely small portion 
+of overall global commerce. The current ecosystems that have come online
 since the release of Etheryeum 2 have focused on the basic building blocks of financial relationships, and they are intended
 to encourage value-added expansions of the contract ecosystem. 
 
@@ -39,12 +47,16 @@ contracts and the announcement of Credit Facility Service Providers will be anno
 
 For full details check out the:
 
-- [Core smart contracts](https://github.com/Uniswap/uniswap-v2-core/)
-- [Periphery smart contracts](https://github.com/Uniswap/uniswap-v2-periphery)
+- [Uniswap V2 Core smart contracts](https://github.com/Uniswap/uniswap-v2-core/)
+- [Uniswap V2 Periphery smart contracts](https://github.com/Uniswap/uniswap-v2-periphery)
 - <a href='/whitepaper.pdf' target='_blank' rel='noopener noreferrer'>Uniswap V2 Technical Whitepaper</a>
-- <Link to='/docs/v2/'>Uniswap V2 Documentation</Link> (in progress!)
+- [FINX Documentation](/docs/v2/)
 
-## ERC20 / ERC20 Pairs
+## ERC20 Tokens
+
+FINX uses various ERC20 tokens in different ways. FINX currently supports any ERC20 Token that has a valid Uniswap V2 pool contract 
+available and that has been audited. FINX does not support custom, unpooled or unaudited ERC20 tokens.
+
 
 In Uniswap V2, **any ERC20 token can be pooled directly with any other ERC20 token**. Wrapped Ether (WETH) is used instead of native ETH in the core contracts, although end users can still use ETH through helper contracts.
 
@@ -223,4 +235,4 @@ We will be releasing additional updates, information, and documentation over the
 
 - [Join the Uniswap community discord](https://discord.gg/FCfyBSbCU5)
 - [Follow Uniswap on Twitter](https://twitter.com/UniswapProtocol)
-- Subscribe to the <Link to='/blog/'>Uniswap blog</Link>
+- Subscribe to the <Link to='/blog/'>FINX blog</Link>
