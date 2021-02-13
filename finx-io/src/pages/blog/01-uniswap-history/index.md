@@ -1,6 +1,6 @@
 ---
 title: 'A short history of FINX'
-date: '2019-11-02'
+date: '2020-11-02'
 author: 'Geoff Fite'
 featuredImage: ./featured.jpg
 previewText: 'FINX Genesis'
@@ -21,8 +21,8 @@ The idea worked well, but it became obvious that a Private Network was antitheti
 Principles of anonymity, true transparency, public right to information, and the theoretical difficulty a party will have in creating 
 a monopoly all are possible if we are able to cooperatively interact on a public network. Additionally, the Ethereum 2 network is 
 designed such that the cost of participation is exactly the cost of the resources you consume. By contrast, our current system allows 
-dark pools dominate equity trading in the name of providing liquidity, as though to achieve both would be impossible. Ethereum 2 does 
-just that.
+dark pools dominate equity trading in the name of providing liquidity, as though to achieve both transparency and liquidity 
+would be impossible. Ethereum 2 does just that.
 
 So, it became clear to us that Ethereum was both 1) an answer to much of the challenges of coordinating complex logical 
 interaction amongst newtork participants, and 2) incredibly misunderstood. What an opportunity to make open source finally issue 
