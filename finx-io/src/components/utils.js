@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import uImage from '../images/big_unicorn_fade.png'
+// import uImage from '../images/big_unicorn_fade.png'
+import uImage from '../images/solar_sunrise.jpeg'
 import noise from '../images/noise.png'
 import { Link } from 'gatsby'
 
@@ -8,7 +9,7 @@ export const CardBGImage = styled.span`
   background: url(${uImage});
   width: 100%;
   height: 100%;
-  opacity: 0.5;
+  opacity: 0.75;
   background-size: contain;
   position: absolute;
   left: 0;
