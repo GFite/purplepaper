@@ -1,6 +1,6 @@
 const menu = [
   {
-    name: 'Products',
+    name: 'Ecosystem',
     sublinks: [
       {
         name: 'FINX App',
@@ -13,9 +13,9 @@ const menu = [
         description: 'FINX analytics and historical data'
       },
       {
-        name: 'Uniswap Analytics',
-        link: 'https://uniswap.info/',
-        description: 'Uniswap analytics and historical data'
+        name: 'Uniswap V2',
+        link: 'https://uniswap.org/',
+        description: 'Uniswap V2 DEX'
       },
       {
         name: 'Token Lists',
@@ -39,7 +39,7 @@ const menu = [
     ]
   },
   {
-    name: 'Documentation',
+    name: 'Documents',
     sublinks: [
       {
         name: 'FINX Overview',
@@ -54,21 +54,12 @@ const menu = [
     name: 'Developers',
     sublinks: [
       {
-        name: 'FINX Documentation',
+        name: 'Tech Docs',
         link: '/docs/v2'
       },
       { name: 'GitHub', link: 'https://github.com/FinX-IO' },
       { name: 'Whitepaper', link: '/whitepaper.pdf' },
-      { name: 'Audit', link: '/audit.html' },
-      { name: 'Bug Bounty', link: '/bug-bounty' },
-      {
-        name: 'Uniswap Documentation',
-        link: '/docs/v2'
-      },
-      { name: 'Uniswap GitHub', link: 'https://github.com/Uniswap' },
-      { name: 'Uniswap Whitepaper', link: '/whitepaper.pdf' },
-      { name: 'Uniswap Audit', link: '/audit.html' },
-      { name: 'Uniswap Bug Bounty', link: '/bug-bounty' }
+      { name: 'Bug Bounty', link: '/bug-bounty' }
     ]
   },
   {
@@ -78,16 +69,10 @@ const menu = [
         name: 'FINX Token',
         link: '/blog/uni'
       },
+      { name: 'Audit', link: '/audit.html' },
       { name: 'Forum', link: 'https://gov.finx.io/' },
       { name: 'Voting Portal', link: 'https://app.finx.io/#/vote' },
-      { name: 'Documentation', link: '/docs/v2/governance/overview' },
-      {
-        name: 'UNI Token',
-        link: '/blog/uni'
-      },
-      { name: 'Forum', link: 'https://gov.uniswap.org/' },
-      { name: 'Voting Portal', link: 'https://app.uniswap.org/#/vote' },
-      { name: 'UniDocumentation', link: '/docs/v2/governance/overview' }
+      { name: 'Documentation', link: '/docs/v2/governance/overview' }
     ]
   },
   {
@@ -95,10 +80,7 @@ const menu = [
     sublinks: [
       { name: 'FINX Discord', link: 'https://discord.gg/FCfyBSbCU5' },
       { name: 'FINX Twitter', link: 'https://twitter.com/Uniswap' },
-      { name: 'FINX Reddit', link: 'https://www.reddit.com/r/Uniswap' },
-      { name: 'Uniswap Discord', link: 'https://discord.gg/FCfyBSbCU5' },
-      { name: 'Uniswap Twitter', link: 'https://twitter.com/Uniswap' },
-      { name: 'Uniswap Reddit', link: 'https://www.reddit.com/r/Uniswap' }
+      { name: 'FINX Reddit', link: 'https://www.reddit.com/r/Uniswap' }
     ]
   },
   {
