@@ -22,21 +22,32 @@ const menu = [
         link: 'https://tokenlists.org/',
         description: 'A new Ethereum token list standard.'
       },
-      // {
-      //   name: 'Unisocks',
-      //   link: 'https://unisocks.exchange/',
-      //   description: 'Dynamically priced socks'
-      // },
       {
         name: 'Sybil',
         link: 'https://sybil.org/#/',
         description: 'Identities for governance'
       }
-      // {
-      //   name: 'Unipig',
-      //   link: 'https://unipig.exchange/',
-      //   description: 'Optimistic rollup demo'
-      // }
+    ]
+  },
+  {
+    name: 'Token Sale',
+    sublinks: [
+      {
+        name: 'Genesis Token Sale',
+        link: '/blog/finx'
+      }
+    ]
+  },
+  {
+    name: 'Documentation',
+    sublinks: [
+      {
+        name: 'FINX Overview',
+        link: '/blog/finx-info'
+      },
+      { name: 'FINX Core Concepts', link: '/docs/v2/core-concepts' },
+      { name: 'Whitepaper', link: '/whitepaper.pdf' },
+      { name: 'Governance', link: '/docs/v2/governance' }
     ]
   },
   {
