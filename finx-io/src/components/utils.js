@@ -9,7 +9,7 @@ export const CardBGImage = styled.span`
   background: url(${uImage});
   width: 100%;
   height: 100%;
-  opacity: 0.75;
+  opacity: 1.0;
   background-size: contain;
   position: absolute;
   left: 0;
