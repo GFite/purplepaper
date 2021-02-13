@@ -240,7 +240,7 @@ const About = props => {
       <StyledAbout>
         <span style={{ marginTop: '5rem' }}>
           <Title style={{ paddingBottom: '4rem' }}>
-            FINX is a Credit Distributed Exchange (<span><strong>CDEX</strong></span>)
+            FINX is a Credit Distributed Exchange (<span><strong>C-DEX</strong></span>)
           </Title>
           <h2 style={{ paddingBottom: '4rem' }}>
             <span><strong>Guaranteed Liquidity</strong></span> for 1000s of Global Corporations conducting commerce in crypto.{' '}
