@@ -18,8 +18,7 @@ of the Asset with the Ratings Agency necessary for placement in regulated portfo
 a saleble financial arrangement was the primary purpose.
 
 The idea worked, but it became obvious that a Private Network was antithetical to the whole idea of Decentralized Finance. 
-Principles of anonymity, true transparency, public right to information, and the theoretical difficulty a party will have in creating 
-a monopoly all are possible if we are able to cooperatively interact on a public network. Additionally, the Ethereum 2 network is 
+Principles of anonymity, true transparency, public right to information, and natural anti-monopoly features all are possible because we are able to cooperatively interact on a public network. Additionally, the Ethereum 2 network is 
 designed such that the cost of participation is exactly the cost of the resources you consume. By contrast, our current system allows 
 dark pools dominate equity trading in the name of providing liquidity, as though to achieve both transparency and liquidity 
 would be impossible. Ethereum 2 does just that.

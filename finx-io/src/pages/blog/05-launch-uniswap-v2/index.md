@@ -1,6 +1,6 @@
 ---
 title: 'Uniswap V2 Mainnet Launch!'
-date: '2020-05-18'
+date: '2021-02'
 author: 'Hayden Adams'
 featuredImage: ./featured.png
 previewText: 'Uniswap V2 the second iteration of the Uniswap protocol has been deployed to the Ethereum mainnet!'
@@ -69,4 +69,4 @@ Uniswap V1 is an automated, decentralized set of smart contracts. It will contin
 
 ## All other questions
 
-For all questions, you can join and engage with the community in the [Uniswap Discord](https://discord.gg/FCfyBSbCU5).
+For all questions, you can join and engage with the community in the [FINX Discord](https://discord.gg/dc7ZKnUe).

@@ -1,5 +1,5 @@
 ---
-title: 'info.finx.io'
+title: 'FINX Token Contract'
 date: '2021-02-11'
 author: 'Geoff Fite'
 featuredImage: ./featured.jpg
