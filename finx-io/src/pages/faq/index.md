@@ -2,7 +2,7 @@
 title: FAQ
 ---
 
-<Info>Didn't find an answer? Join the <a href="https://discord.gg/dc7ZKnUe">community Discord</a> 
+<Info>Didn't find an answer? Join the <a href="https://discord.gg/dc7ZKnUe"> FINX community Discord</a> 
 to get support</Info>
 
 # What is FINX?
@@ -36,8 +36,8 @@ FINX Governance Tokens are available for pre-trading sale starting February 15 2
 
 # When will FINX Governance Tokens be available in DeFi Liquidity Pools?
 
-We will establish a FINX-ETH pool for trading on March 16 2021 at the close of 
-the FINX Governance Token sale. FINX-ETH pool size will be 50% of Token Sale.
+We will establish a FINX-ETH pool for trading on May 1 once the Token Sale is complete and the 
+audits and security testing is finished. The FINX-ETH pool size will be 50% of Token Sale.
 
 # What will be the price of FINX Governance Tokens?
 
