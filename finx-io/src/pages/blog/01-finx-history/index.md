@@ -17,7 +17,7 @@ here, but the traditional vendors in the structured finance space enjoy unregula
 of the Asset with the Ratings Agency necessary for placement in regulated portfolios, and having them interact directly to produce 
 a saleble financial arrangement was the primary purpose.
 
-The idea worked well, but it became obvious that a Private Network was antithetical to the whole idea of Decentralized Finance. 
+The idea worked, but it became obvious that a Private Network was antithetical to the whole idea of Decentralized Finance. 
 Principles of anonymity, true transparency, public right to information, and the theoretical difficulty a party will have in creating 
 a monopoly all are possible if we are able to cooperatively interact on a public network. Additionally, the Ethereum 2 network is 
 designed such that the cost of participation is exactly the cost of the resources you consume. By contrast, our current system allows 
@@ -31,9 +31,8 @@ dividends in the capital markets!
 In this very frontier-like time that we find ourselves, it might be easy to look at some of the effects of ERC20 and say "that 
 can't possibly be right! There must be something silly afoot." I challenge you to look at it from another direction:
 
-When we see Stablecoin returning annual yields of 20% or more, I challenge you to consider that 
-perhaps the capital pools simply haven't leveled off yet, and - more importantly - it appears that the waste in our existing financial 
-system has parasitically sucked all the returns out of the market.
+When we see Stablecoin returning annual yields of 20% or more, perhaps the capital pools simply haven't leveled off yet, and - 
+more importantly - it appears that the waste in our existing financial system has parasitically sucked all the returns out of the market.
 
 Necessity really is the mother of invention, don't you think?
 
