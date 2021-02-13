@@ -34,7 +34,7 @@ The contracts will be published on May 1 2021 once audits and security testing i
 FINX Governance Tokens are available for pre-trading sale starting February 15 2021 and will last 
 4 weeks to March 15 2021.
 
-# When will FINX Governance Tokens be available in DeFi Liquidity Pools?
+# When will FINX Governance Tokens be available in Uniswap V2 Liquidity Pools?
 
 We will establish a FINX-ETH pool for trading on May 1 once the Token Sale is complete and the 
 audits and security testing is finished. The FINX-ETH pool size will be 50% of Token Sale.
