@@ -32,7 +32,7 @@ Get to know the FINX SDK and smart contract API objects, methods, attributes, an
 - <Link to="/docs/v2/API">API</Link>
 - <Link to="/docs/v2/smart-contracts">Smart Contracts</Link>
 - [Whitepaper](/whitepaper.md)
-[comment]: <> (- [Whitepaper]&#40;/whitepaper.pdf&#41;)
+- [Old Whitepaper](/whitepaper.pdf)
 - <Link to="/docs/v2/governance/governance-reference">Governance</Link>
 
 ### Developer community
