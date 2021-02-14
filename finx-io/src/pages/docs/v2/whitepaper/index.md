@@ -76,3 +76,54 @@ pool and its proceeds or losses.
 
 Liquidity Providers may select Capital Pools according to characteristics that meet certain objectives and risk
 profiles.
+
+#### Debt Service Providers
+
+#### Borrowers
+
+A Borrower is a counterparty that borrows Tokens from a Lending Pool and thereby establishes a loan with the
+pool that is to be repaid according to the pool-defined set of Capital Flows and Capital Limits.
+
+Borrowers my borrow from any Lending Pool for which they are qualified (see Borrower Qualification)
+
+##### Borrower Qualification
+
+Borrow Qualification is the process by which a Borrow is qualified to borrow from a specific Lending Pool. Qualification
+is similar to traditional underwriting, where a third party guarantees the difference between any Collateral placed by
+the Borrower and the amount of the loan taken by the Borrower.
+
+Borrower qualification may be at the discretion of third parties, but in the FINX base qualification contract implements
+the following logic:
+
+`Qualified Borrowing Amount = Collateral Pool Deposit Balance + Credit Pool Deposit Balance`
+
+For example, if a Borrower wishes to deposit 10 ETH into a Collateral Pool and borrow 100 ETH from a Lending Pool then
+the amount to be deposited to the Credit Pool is 90 ETH.
+
+#### Stakeholders
+
+A FINX Stakeholder is a counterparty that holds FINX tokens and stakes them with the Protocol, thereby providing a
+Security Buffer to underwrite the protocol.
+
+#### Liquidity Pools
+
+A Capital Pool is a reserve of a currency. A Uniswap V2 Capital Pool has an address as do all ERC20 contracts once deployed and carries swappable balances of tokens. Some tokens are ERC20 contracts, and can also be pools.
+
+Available tokens are all commonly-traded stablecoin equivalents (USD, EUR, GBP, YEN…), and Bitcoin and ETH20 tokens
+that have sufficient capitalization and liquidity (BTC, ETH, USDC, DAI, UNI, BAL, AAVE).
+
+There are several types of Capital Pool used in the FINX Protocol. Each is described below:
+- Liquidity Pools
+- Credit Pools
+- Lending Pools
+
+See End Notes for a bried disussion of Capital Pool complexity and its impact on transaction fees (gas costs).
+
+#### Credit Pools
+
+A Credit Pool is a pool of tokens provided by Stakeholders and Debt Service Providers, that can be allocated to a loan
+taken out against the Lending Pool in addition to any tokens on deposit by the Borrower as collateral.
+
+Borrowers claim use of tokens in the Credit Pool by possessing FINXC tokens in the wallet that is used to establish the
+loan. Borrowers my acquire FINXC tokens only at the discretion of authorized Debt Service Providers.
+
