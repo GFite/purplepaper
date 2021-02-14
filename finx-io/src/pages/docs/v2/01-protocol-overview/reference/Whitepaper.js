@@ -6,5 +6,5 @@ import { Redirect } from '@reach/router'
 // }
 
 export default function Redirector({ path }) {
-  return <Redirect from={path} to={`/whitepaper`} noThrow />
+  return <Redirect from={path} to={`/docs/v2/whitepaper`} noThrow />
 }

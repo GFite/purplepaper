@@ -31,7 +31,7 @@ Get to know the FINX SDK and smart contract API objects, methods, attributes, an
 - [SDK](/docs/v2/SDK)
 - [API](/docs/v2/API)
 - [Smart Contracts](/docs/v2/smart-contracts)
-- [Whitepaper](/whitepaper)
+- [Whitepaper](/docs/v2/whitepaper)
 - [Old Whitepaper](/whitepaper.pdf)
 - [Governance](/docs/v2/governance/governance-reference)
 

@@ -33,7 +33,7 @@ const menu = [
     name: 'Token Sale',
     sublinks: [
       {
-        name: 'Genesis Token Sale',
+        name: 'Genesis FINX Token Sale',
         link: '/blog/finx'
       }
     ]
@@ -46,8 +46,8 @@ const menu = [
         link: '/blog/finx-info'
       },
       { name: 'FINX Core Concepts', link: '/docs/v2/core-concepts' },
-      { name: 'Whitepaper', link: '/whitepaper.pdf' },
-      { name: 'Governance', link: '/docs/v2/governance' }
+      { name: 'Whitepaper', link: '/docs/v2/whitepaper' },
+      { name: 'Uniswap V2 Whitepaper', link: '/whitepaper.pdf' }
     ]
   },
   {
@@ -58,7 +58,7 @@ const menu = [
         link: '/docs/v2'
       },
       { name: 'GitHub', link: 'https://github.com/FinX-IO' },
-      { name: 'Whitepaper', link: '/whitepaper.pdf' },
+      { name: 'Whitepaper', link: '/docs/v2/whitepaper' },
       { name: 'Bug Bounty', link: '/bug-bounty' }
     ]
   },
