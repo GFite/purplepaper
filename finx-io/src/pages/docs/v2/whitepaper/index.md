@@ -29,9 +29,9 @@ FINX provides a collection of Oracles which provide inputs from Stakeholders in 
 
 ## Introduction
 
-Corporations that require access to Debt Financing have multiple sources when it comes to securing capital but all sources are slow and expensive for Borrowers and Lenders alike. Typical sources of capital for corporations include bank lending, the ‘public’ bond markets, senior/subordinated debt, and private equity lending. All of the currently available options come at a high cost, take significant amounts of time and resources, and diminish the overall liquidity available to our economy. Even during ultra-low rate environments such as the 2016-2020 period, high costs persisted among unrated debt, with such companies paying spreads above LIBOR of 500 bps or more. For rated debt, the process to obtain a rating is extremely expensive, and despite over-subscription of most ‘investment-grade’ offerings these securities are generally unattractive to most investors as historical spread to money policy has remained extremely tight.
+Corporations that require access to Debt Financing have multiple sources when it comes to securing capital but all sources are slow and expensive for Borrowers and Lenders alike. Typical sources of capital for corporations include bank lending, issuing equity (stocks) on a centralized exchange, issuing public debt securities (bonds), and the private equity and debt markets. All of these currently available options come at a high cost, take significant amounts of time and resources, and diminish the overall liquidity available to the economy as a whole. Even during ultra-low rate environments such as the current 2016- period, high origination and servicing expense of corporate debt has persisted. For unrated debt, borrowing interest rates for corporations can be as much as 10% over indices such as LIBOR. For rated debt, borrowing rates can be extremely low, but the process to obtain a rating is extremely expensive, and despite over-subscription of most ‘investment-grade’ offerings these securities are generally unattractive to most investors as historical spread to money policy has remained extremely tight.
 
-Some of today’s stakeholders in the corporate debt markets -- Underwriters, Ratings Agencies, Traders, Broker/Dealers -- rely on friction to generate fees that pay for their value-add. This has caused an inability to automate the origination and underwriting process, as well as the issuance and ratings process; to automate would reduce fee-based income.
+Some of today’s stakeholders in the corporate debt markets -- Underwriters, Ratings Agencies, Traders, Broker/Dealers -- rely on centralized control of the financial markets to generate fees. Many of the critical components of our current financial system are provided by monopolistic arrangements, some of which are directly sanctioned and supported by law. As a result, automation and innovation in Debt Capital has been severely constrained and a significant amount of capital has been redirected away from the Lenders and Borrowers, towards large intermediaries that seek to preserve their privileged status.
 
 High costs of borrowing restrict investor returns, and in turn limits the availability of capital to the market as a whole. "Cost of Sales" in issuing corporate debt includes significant human energy on activitie such as Underwriting, Collateral Valuation, and issuing Ratings. The problem is compounded by the fact that information is monopoly-priced, and as the result many investors cannot afford to purchase the information reuquired to analyze the security. High yielding securities are generally more expensive to analyze so only wealthy firms have been able to invest in certain segments of the market.
 
@@ -67,7 +67,7 @@ In standard Uniswap V2 contracts provided by Uniswap, Balancer and others, capit
 - [FINXC](#token-finxc)
 - [FINXB](#token-finxb)
 
-The FINX protocol facilitates pools make from ERC20 Tokens. FINX participates in the Uniswap project [tokenlists.org](https://tokenlists.org) and uses the emerging industry standard Token List.
+The FINX protocol facilitates pools make from ERC20 Tokens. FINX participates in the Uniswap project [tokenlists.org](https://tokenlists.org) and uses the emerging industry standard Token List.  
 
 #### Liquidity Providers
 
@@ -113,9 +113,9 @@ Available tokens are all commonly-traded stablecoin equivalents (USD, EUR, GBP, 
 that have sufficient capitalization and liquidity (BTC, ETH, USDC, DAI, UNI, BAL, AAVE).
 
 There are several types of Capital Pool used in the FINX Protocol. Each is described below:
-- Liquidity Pools
-- Credit Pools
-- Lending Pools
+ - Liquidity Pools
+ - Credit Pools
+ - Lending Pools
 
 See End Notes for a bried disussion of Capital Pool complexity and its impact on transaction fees (gas costs).
 
@@ -126,4 +126,3 @@ taken out against the Lending Pool in addition to any tokens on deposit by the B
 
 Borrowers claim use of tokens in the Credit Pool by possessing FINXC tokens in the wallet that is used to establish the
 loan. Borrowers my acquire FINXC tokens only at the discretion of authorized Debt Service Providers.
-
