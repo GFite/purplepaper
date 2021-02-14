@@ -61,7 +61,7 @@ const StyledTitle = styled.div`
 `
 
 const StyledBodyTitle = styled.h1`
-  font-size: 104px;
+  font-size: 96px;
   margin: 4rem 0 3rem 0;
   pointer-events: none;
   white-space: wrap;
@@ -109,7 +109,7 @@ const StyledBannerImage = styled(Img)`
   max-width: 720px;
   background-color: none;
   margin-top: 1rem;
-  border-radius: 12px;
+  border-radius: 0px;
   box-shadow: ${({ theme }) => theme.shadows.huge};
   @media (max-width: 960px) {
     min-width: unset;
@@ -122,7 +122,7 @@ const StyledProductImage = styled(Img)`
   min-width: 220px;
   max-width: 220px;
   background-color: none;
-  border-radius: 12px;
+  border-radius: 0px;
   box-shadow: ${({ theme }) => theme.shadows.huge};
 
   /* @media (max-width: 960px) {
