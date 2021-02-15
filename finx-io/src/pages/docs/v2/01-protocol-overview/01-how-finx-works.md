@@ -8,11 +8,14 @@ tags: protocol-overview, documentation
 FINX is an automated liquidity protocol that is powered by a <Link to="/docs/v2/protocol-overview/glossary/#credit-risk-formula">credit risk formula</Link> 
 and implemented in a system of non-upgradeable smart contracts on the [Ethereum](https://ethereum.org/) blockchain.
 
-The primary purpose of FINX is to provide _**Non-Collateralized**_ Credit Pools on the [Ethereum](https://ethereum.org/) blockchain.
+The primary purpose of FINX is to extend Collateralized Loans protocols with Credit Pools on the 
+[Ethereum](https://ethereum.org/) blockchain.
 
 FINX provides a role for Underwriters, Guarantors and Other Stakeholders to facilitate Credit on 
 Decentralized Finance ("DeFi"). FINX contracts constitute a Decentralized Ecosystem for providers of Credit Facilities, 
-which are used as Guarantees against Collateralized Pools and Money Markets provided by Uniswap, Aave, Balancer, and Compound contracts. Insurers, Underwriters, Credit Professionals, Ratings Agencies, and other Stakeholders can participate in the credit pools, providing credit facilities to be used in place of collateral.
+which are used as Guarantees against Collateralized Pools and Money Markets provided by Uniswap, Aave, and others. 
+Insurers, Underwriters, Credit Professionals, Ratings Agencies, and other Stakeholders can participate in the 
+credit pools, providing credit facilities to be used in place of collateral.
 
 FINX prioritizes decentralization, censorship resistance, and security.
 

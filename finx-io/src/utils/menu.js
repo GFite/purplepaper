@@ -42,10 +42,9 @@ const menu = [
     name: 'Documents',
     sublinks: [
       {
-        name: 'FINX Overview',
-        link: '/blog/finx-info'
+        name: 'FINX Documents',
+        link: '/docs/v2'
       },
-      { name: 'FINX Core Concepts', link: '/docs/v2/core-concepts' },
       { name: 'Whitepaper', link: '/docs/v2/whitepaper' },
       { name: 'Uniswap V2 Whitepaper', link: '/whitepaper.pdf' }
     ]
@@ -53,12 +52,8 @@ const menu = [
   {
     name: 'Developers',
     sublinks: [
-      {
-        name: 'Tech Docs',
-        link: '/docs/v2'
-      },
       { name: 'GitHub', link: 'https://github.com/FinX-IO' },
-      { name: 'Whitepaper', link: '/docs/v2/whitepaper' },
+      { name: 'Developer Guide', link: '/docs/v2/sdk'},
       { name: 'Bug Bounty', link: '/bug-bounty' }
     ]
   },
@@ -67,7 +62,7 @@ const menu = [
     sublinks: [
       {
         name: 'FINX Token',
-        link: '/blog/uni'
+        link: '/blog/finx'
       },
       { name: 'Audit', link: '/audit.html' },
       { name: 'Forum', link: 'https://gov.finx.io/' },
@@ -101,10 +96,6 @@ const menu = [
       {
         name: 'Jobs',
         link: '/about#jobs'
-      },
-      {
-        name: 'Logo & Brand',
-        link: '/about#brand'
       }
     ]
   }
