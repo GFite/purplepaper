@@ -16,28 +16,34 @@
 
 This document describes the theory, design, definitions and implementation of the FINX protocol version 1.0.
 
-The FINX protocol is a Corporate Debt Financing protocol that matches investors, borrowers and stakeholders in
-Decentralized Capital Pools.
+The FINX protocol (FINX) is a Corporate Debt Financing protocol that matches investors, borrowers and stakeholders in Decentralized Capital Pools.
 
-The FINX protocol is an Ethereum ERC20 contract which extends the following protocols: Uniswap V2 protocol, Aave V2 protocol, and Balancer protocol. The FINX protocol is open source and we encourage others to extend the functionality to create a decentralized financial system for the future.
+The FINX protocol is a series of Ethereum ERC20 contracts which extend several of the emerging standard DeFi protocols (Uniswap V2, Aave V2, Balancer, and others). The FINX protocol is open source under GPL and we encourage extension of the functionality to create a decentralized financial system for the future.
 
-FINX provisions decentralize lending pools which are assembled and used by Liquidity Providers, Borrowers, and Credit Providers. FINX defines the roles by which any individual, corporation, government or other entity can interact with the FINX Credit DEX (Distributed Exchange).
+FINX provisions Decentralized Pools which are assembled and used by Liquidity Providers, Borrowers, and Debt Service Providers, and Stakeholders. FINX defines the roles by which any individual, corporation, government or other entity can interact with the FINX Credit DEX (Distributed Exchange). FINX also establishes the Information Security, Governance, Audit, and other necessary structures in order for the ecosystem to flourish for the benefit of all.
 
-FINX provides a collection of Oracles which provide inputs from Stakeholders in order to facilitate the automation of collateral monitoring, valuation, settlement and liquidation of Non-Token-Collateralized Debt Pools.
+FINX establishes Decentralized Risk Assessment that weigh Opinions based on
+a range of factors, which are collectively valued by the community and which represent the decentralized risk in the system. The intent of the design is to eliminate certain features such as those which create the need for the "Too Big to Fail" doctrine, government-established interest rates, and licenses of privilege which redirect profits. The FINX DRA Contract is a contribution to the Decentralized Finance space as an ecosystem of credit.
+
+FINX defines a collection of Oracles which provide inputs from Stakeholders in order to facilitate the automation of collateral monitoring, valuation, settlement and liquidation of Non-Token-Collateralized Debt Pools.
+
+FINX provides an extension to the Graph protocol for the Debt Capital Markets in order to enhance the ecosystem, increase awareness, and maximize community safety and security.
 
 ---
 
 ## Introduction
 
-Corporations that require access to Debt Financing have multiple sources when it comes to securing capital but all sources are slow and expensive for Borrowers and Lenders alike. Typical sources of capital for corporations include bank lending, issuing equity (stocks) on a centralized exchange, issuing public debt securities (bonds), and the private equity and debt markets. All of these currently available options come at a high cost, take significant amounts of time and resources, and diminish the overall liquidity available to the economy as a whole. Even during ultra-low rate environments such as the current 2016- period, high origination and servicing expense of corporate debt has persisted. For unrated debt, borrowing interest rates for corporations can be as much as 10% over indices such as LIBOR. For rated debt, borrowing rates can be extremely low, but the process to obtain a rating is extremely expensive, and despite over-subscription of most ‘investment-grade’ offerings these securities are generally unattractive to most investors as historical spread to money policy has remained extremely tight.
+Corporations that require access to Debt Financing have multiple sources when it comes to securing capital but all sources are slow and expensive for Borrowers and Lenders alike. Typical sources of capital for corporations include bank lending, issuing equity (stocks) on a centralized exchange, issuing public debt securities (bonds), and the private equity and debt markets. All of these currently available options come at a high cost, take significant amounts of time and resources, and diminish the overall liquidity available to the economy as a whole. Even during ultra-low rate environments such as the current 2016- period, high origination costs and servicing expense of corporate debt has persisted. For unrated debt, borrowing interest rates for corporations can be 10% over more above indices such as LIBOR or SOPHR. For "investment grade" rated debt, borrowing rates can be low, but the origination and rating process is extremely expensive and time consuming.
 
 Some of today’s stakeholders in the corporate debt markets -- Underwriters, Ratings Agencies, Traders, Broker/Dealers -- rely on centralized control of the financial markets to generate fees. Many of the critical components of our current financial system are provided by monopolistic arrangements, some of which are directly sanctioned and supported by law. As a result, automation and innovation in Debt Capital has been severely constrained and a significant amount of capital has been redirected away from the Lenders and Borrowers, towards large intermediaries that seek to preserve their privileged status.
 
-High costs of borrowing restrict investor returns, and in turn limits the availability of capital to the market as a whole. "Cost of Sales" in issuing corporate debt includes significant human energy on activitie such as Underwriting, Collateral Valuation, and issuing Ratings. The problem is compounded by the fact that information is monopoly-priced, and as the result many investors cannot afford to purchase the information reuquired to analyze the security. High yielding securities are generally more expensive to analyze so only wealthy firms have been able to invest in certain segments of the market.
+These high costs of borrowing restrict investor returns, and in turn limits the availability of capital to the market as a whole. There is no 'instant' capital available to corporations when they need it.
 
-We believe that the debt-capital markets are underfunded as a result of high fees and high barriers to entry for both Borrowers and Investors. The FINX Protocol seeks to solve these problems through Technology and Transparent Policy that can be understood by all stakeholders, and that gives anyone the ability to participate in the market.
+We believe that the debt-capital markets are underfunded as a result of high fees, bureaucratic processes, and monopoly barriers to entry for both Borrowers and Investors. The FINX Protocol seeks to address these problems through Decentralization, Transparency, Information Security, Auditability and Speed that will benefit all stakeholders and anyone wishing to gain access to this very large market.
 
-The FINX Protocol is a Distributed Capital Market that provides on-demand access to capital for corporations of all sizes, while at the same time providing high-return, low-risk securities that are accessible to any investor globally. This will result in greatly expanded liquidity for corporations and enhanced opportunities for investors.
+The innovation in Web3 technology, specifically Ethereum 2.0 and the ERC20 contract standard, provide the opportunity to practically provide an alternative debt financing market. FINX is created to assist corporations doing commerce in the Tokenized Economy and to encourage the facilitation of credit therein.
+
+The FINX Protocol is a Distributed Capital Market that provides on-demand access to capital for corporations of all sizes, while at the same time providing high-return, low-risk tokens that are accessible to any investor globally. This will result in greatly expanded liquidity for corporations and enhanced opportunities for all market participants.
 
 ---
 
@@ -67,7 +73,7 @@ In standard Uniswap V2 contracts provided by Uniswap, Balancer and others, capit
 - [FINXC](#token-finxc)
 - [FINXB](#token-finxb)
 
-The FINX protocol facilitates pools make from ERC20 Tokens. FINX participates in the Uniswap project [tokenlists.org](https://tokenlists.org) and uses the emerging industry standard Token List.  
+The FINX protocol facilitates pools make from ERC20 Tokens. FINX participates in the Uniswap project [tokenlists.org](https://tokenlists.org) and uses the emerging industry standard Token List.
 
 #### Liquidity Providers
 
@@ -78,6 +84,8 @@ Liquidity Providers may select Capital Pools according to characteristics that m
 profiles.
 
 #### Debt Service Providers
+
+A Debt Service Provider is a counterparty that provides value to the Credit
 
 #### Borrowers
 
@@ -113,9 +121,9 @@ Available tokens are all commonly-traded stablecoin equivalents (USD, EUR, GBP, 
 that have sufficient capitalization and liquidity (BTC, ETH, USDC, DAI, UNI, BAL, AAVE).
 
 There are several types of Capital Pool used in the FINX Protocol. Each is described below:
- - Liquidity Pools
- - Credit Pools
- - Lending Pools
+- Liquidity Pools
+- Credit Pools
+- Lending Pools
 
 See End Notes for a bried disussion of Capital Pool complexity and its impact on transaction fees (gas costs).
 
@@ -126,3 +134,31 @@ taken out against the Lending Pool in addition to any tokens on deposit by the B
 
 Borrowers claim use of tokens in the Credit Pool by possessing FINXC tokens in the wallet that is used to establish the
 loan. Borrowers my acquire FINXC tokens only at the discretion of authorized Debt Service Providers.
+
+### Capital Flows
+
+A Capital Flow is a contracted schedule of future transactions. Capital Flows are defined in the Flow Contract portion
+of the Lending Pool Contract. Capital Flows define the payment schedule, interest rate, prepayment rules and other
+events that determine when tokens are exchanged to fulfill the contract(s).
+
+### Capital Limits
+
+Capital Limits are a set of rules that govern how currencies flow amongst counterparties (Lenders, Borrowers,
+Stakeholders).
+
+### Collateral Pool
+
+A Collateral Pool is a pool of tokens provided by Borrowers that can be allocated to a loan and taken out against the
+Lending Pool as collateral. Collateral Pool portions may be paired with Credit Pool portions to offset loan collateral
+deposit requirements.
+
+The Uniswap V2 swap and flash loan contracts  require matched Collateral to Debt, subject to various measures such as
+Loan-to-Value and swap pool mechanics that determine interest rates.
+
+The FINX Protocol adds Credit Pools that can be matched with Collateral Pools in Uniswap V2 swap and flash loan
+contracts in order to extend crypto lending to corporations.
+
+### Lending Pool
+
+A Lending Pool is a pool of tokens that is used to fund loans to Borrowers. The Lending Pool is backed by Collateral
+Pools and Credit Pools. Lending Pools generate interest as AAVE v2 contracts.
