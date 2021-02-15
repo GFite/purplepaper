@@ -13,6 +13,14 @@ import { useDarkMode } from '../contexts/Application'
 
 import { CardBGImage, CardFade, CardNoise, StyledExternalLink } from '../components/utils'
 
+import TagManager from 'react-gtm-module'
+
+const tagManagerArgs = {
+    gtmId: 'GTM-53HFS7D'
+}
+
+TagManager.initialize(tagManagerArgs)
+
 const BGCard = styled.span`
   width: 100vw;
   height: 100vh;
