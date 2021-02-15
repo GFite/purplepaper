@@ -43,7 +43,7 @@ const menu = [
     sublinks: [
       {
         name: 'FINX Documents',
-        link: '/docs/v2'
+        link: 'docs/v2/protocol-overview/how-finx-works'
       },
       { name: 'Whitepaper', link: '/docs/v2/whitepaper' },
       { name: 'Uniswap V2 Whitepaper', link: '/whitepaper.pdf' }
