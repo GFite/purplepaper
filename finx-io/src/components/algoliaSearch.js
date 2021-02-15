@@ -86,9 +86,9 @@ export default function Search(props) {
     if (window.docsearch) {
       try {
         window.docsearch({
-          apiKey: '8962240e69e6d23a88432f501c115470',
-          indexName: 'uniswap_v2_docs',
-          appId: 'VZ0CVS8XCW',
+          apiKey: '6a3ab376256d9c3b6dd7a6f5f8d2c909',
+          indexName: 'finx',
+          appId: 'T24GMD3OKF',
           inputSelector: '.docsearch', // the selector of my search input
           transformData: handleResults
         })
