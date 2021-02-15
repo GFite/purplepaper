@@ -217,10 +217,10 @@ Token flows are distributed as follows:
 
 - Loans taken from Borrower Pool
 - Repayments plus interest repaid to Borrower Pool
-- 100% of repayments remain in Borrower Pool
-- 25% of interest remains in Borrower Pool
-- 25% of interest is distributed to FINX Work Pool
-- 50% of interest paid distributed to reserves
+- 100% of repayments distributed to Liquidity Pool
+- 60% of interest distributed to Liquidity Pool
+- 40% of interest is distributed to FINX Work Pool
+- 20% of interest paid distributed to reserves
     - 25% Protocol Safety Reserve
     - 50% Liquidity Module
     - 20% Credit Loss Reserve
