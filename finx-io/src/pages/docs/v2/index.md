@@ -70,7 +70,7 @@ In standard Uniswap V2 contracts provided by Uniswap, Balancer and others, capit
 - [Swappable Pairs](#swappable-pairs)
 - [FINX](#token-finx)
 - [FINXC](#token-finxc)
-- [USDC](#https://www.centre.io/)
+- [USDC](https://www.centre.io/)
 
 The FINX protocol facilitates pools make from ERC20 Tokens. FINX participates in the Uniswap project [tokenlists.org](https://tokenlists.org) and uses the emerging industry standard Token List.
 
