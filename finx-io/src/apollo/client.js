@@ -11,7 +11,7 @@ export const blockClient = new ApolloClient({
   fetch
 })
 
-export const client = AppoloClient({
-  uri: 'https://api.thegraph.com/subgraphs/name/finx/finx',
-  fetch
-})
+// export const client = AppoloClient({
+//   uri: 'https://api.thegraph.com/subgraphs/name/finx/finx',
+//   fetch
+// })
