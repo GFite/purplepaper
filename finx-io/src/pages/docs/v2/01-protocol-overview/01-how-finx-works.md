@@ -3,7 +3,7 @@ title: How FINX works
 tags: protocol-overview, documentation
 ---
 
-![](/images/FINX_How_it_works.png)
+![](./images/FINX_How_it_works.png)
 
 FINX is an automated liquidity protocol that is powered by a <Link to="/docs/v2/protocol-overview/glossary/#credit-risk-formula">credit risk formula</Link> 
 and implemented in a system of non-upgradeable smart contracts on the [Ethereum](https://ethereum.org/) blockchain.
