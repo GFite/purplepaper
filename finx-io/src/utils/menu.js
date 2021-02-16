@@ -65,7 +65,6 @@ const menu = [
         link: '/blog/finx'
       },
       { name: 'Audit', link: '/audit.html' },
-      { name: 'Forum', link: 'https://gov.finx.io/' },
       { name: 'Voting Portal', link: 'https://app.finx.io/#/vote' },
       { name: 'Documentation', link: '/docs/v2/governance/overview' }
     ]
@@ -74,8 +73,8 @@ const menu = [
     name: 'Community',
     sublinks: [
       { name: 'FINX Discord', link: 'https://discord.gg/FCfyBSbCU5' },
-      { name: 'FINX Twitter', link: 'https://twitter.com/Uniswap' },
-      { name: 'FINX Reddit', link: 'https://www.reddit.com/r/Uniswap' }
+      { name: 'FINX Twitter', link: 'https://twitter.com/FinX_io' },
+      { name: 'FINX Reddit', link: 'https://www.reddit.com/r/FINX' }
     ]
   },
   {
