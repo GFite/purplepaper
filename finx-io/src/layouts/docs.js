@@ -263,7 +263,7 @@ const Docs = props => {
               return (
                 <StyledDocsNavWrapper key={node.id}>
                   <StyledDocsNav>
-                    {/* index.md file is considered the "last" based on the sort order. Check to remove links when not relevant */}
+                    {/* index_bak.md file is considered the "last" based on the sort order. Check to remove links when not relevant */}
                     {previous &&
                       node.fields.slug !== '/docs/v2/' &&
                       previous.fields.parentDir === node.fields.parentDir && (
@@ -274,7 +274,7 @@ const Docs = props => {
                       )}
                   </StyledDocsNav>
                   <StyledDocsNav>
-                    {/* index.md file is considered the "last" based on the sort order. Check to remove when not relevant */}
+                    {/* index_bak.md file is considered the "last" based on the sort order. Check to remove when not relevant */}
                     {next && next.fields.slug !== '/docs/v2/' && next.fields.parentDir === node.fields.parentDir && (
                       <StyledLink style={{ alignItems: 'flex-start' }} to={next.fields.slug} rel="next">
                         <small>Next</small>
