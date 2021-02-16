@@ -20,7 +20,7 @@ The FINX protocol (FINX) is a Corporate Debt Financing protocol that matches inv
 
 The FINX protocol is a series of Ethereum ERC20 contracts which extend several of the emerging standard DeFi protocols (Uniswap V2, Aave V2, Balancer, and others). The FINX protocol is open source under GPL and we encourage extension of the functionality to create a decentralized financial system for the future.
 
-FINX provisions Decentralized Pools which are assembled and used by Liquidity Providers, Borrowers, and Debt Service Providers, and Stakeholders. FINX defines the roles by which any individual, corporation, government or other entity can interact with the FINX Credit DEX (Distributed Exchange). FINX also establishes the Information Security, Governance, Audit, and other necessary structures in order for the ecosystem to flourish for the benefit of all.
+FINX provisions Decentralized Pools which are assembled and used by Liquidity Providers, Borrowers, Debt Service Providers, and Stakeholders. FINX defines the roles by which any individual, corporation, government or other entity can interact with the FINX Credit DEX (Distributed Exchange). FINX also establishes the Information Security, Governance, Audit, and other necessary structures in order for the ecosystem to flourish for the benefit of all.
 
 FINX establishes Decentralized Risk Assessment that weigh Opinions based on
 a range of factors, which are collectively valued by the community and which represent the decentralized risk in the system. The intent of the design is to eliminate certain features such as those which create the need for the "Too Big to Fail" doctrine, government-established interest rates, and licenses of privilege which redirect profits. The FINX DRA Contract is a contribution to the Decentralized Finance space as an ecosystem of credit.
@@ -69,9 +69,8 @@ In standard Uniswap V2 contracts provided by Uniswap, Balancer and others, capit
 ### TOKENS
 - [Swappable Pairs](#swappable-pairs)
 - [FINX](#token-finx)
-- [FINXL](#token-finxl)
 - [FINXC](#token-finxc)
-- [FINXB](#token-finxb)
+- [USDC](https://www.centre.io/)
 
 The FINX protocol facilitates pools make from ERC20 Tokens. FINX participates in the Uniswap project [tokenlists.org](https://tokenlists.org) and uses the emerging industry standard Token List.
 
@@ -135,10 +134,10 @@ taken out against the Lending Pool in addition to any tokens on deposit by the B
 Borrowers claim use of tokens in the Credit Pool by possessing FINXC tokens in the wallet that is used to establish the
 loan. Borrowers my acquire FINXC tokens only at the discretion of authorized Debt Service Providers.
 
-### Capital Flows
+### Token Flows
 
-A Capital Flow is a contracted schedule of future transactions. Capital Flows are defined in the Flow Contract portion
-of the Lending Pool Contract. Capital Flows define the payment schedule, interest rate, prepayment rules and other
+A Token Flow is a contracted schedule of future transactions. Token Flows are defined in the Flow Contract portion
+of a FINXC Contract. Token Flows define the payment schedule, interest rate, prepayment rules and other
 events that determine when tokens are exchanged to fulfill the contract(s).
 
 ### Capital Limits
@@ -162,3 +161,72 @@ contracts in order to extend crypto lending to corporations.
 
 A Lending Pool is a pool of tokens that is used to fund loans to Borrowers. The Lending Pool is backed by Collateral
 Pools and Credit Pools. Lending Pools generate interest as AAVE v2 contracts.
+
+### Token FINX
+
+The FINX token is designed to provide Safety to the FINX Protocol. FINX tokens may be staked in the FINX Safety
+Module as a liquidity reserve for FINX Borrower Pool contracts and
+insurance for the ecosystem as a whole.
+
+In order for a Decentralized Exchange to be resilient, it must have critical mass and the appropriate level of controls
+such that the health of the ecosystem takes priority over invididual stakeholder interests; and, that individual
+stakeholders may conduct any transaction they choose with any other party so long as it does not harm the overall
+health of the ecosystem.
+
+Therefore FINX tokens are a Proxy of Trust, in which stakeholders agree as a group to support the ecosystem for
+themselves and their peers. FINX Tokens, when staked, make the holder of those tokens a Stakeholder in the Ecosystem in
+literal terms. Stakeholders (by weight of their staked FINX) vote on all changes to the Protocol in a purely egalitarian
+democracy.
+
+FINX tokens when staked receive rewards according to the [FINX Safety Incentives Schedule](#safety-incentives).
+
+#### Safety Incentives
+
+35,000 FINX distributed to the Safety Module every 24 hours (continually). Each stakeholder receives their portion of the
+pool in FINX safety incentive tokens.
+
+Staked FINX has a cooldown period of 10 days, which is the time that will elapse between when you request to withdraw any
+staked FINX and the time when it will be unlocked for conversion back to unstaked FINX in your wallet.
+
+### Token FINXC
+
+The FINXC token is the work token by which Debt Service Providers will exchange services and that can be used by the
+bearer as collateral against debt.
+
+The FINXC token is intended to have a value of 1 USDC at all times, and is managed to that end in a pool at a ratio of
+1 USDC : 1 FINXC. That is, the goal is to have 1 FINXC have a net present value of 1 USDC.
+
+### Monetary Policy
+
+The Monetary Policy sets the parameters for the ecosystem to self-determine interest rates. FINX protocol selects pools
+in the Aave protocol and return standard money-market rates. See[Aave Money Markets](https://https://app.aave.com/markets)
+
+### Risk Policy
+
+The Risk Policy sets the parameters for the ecosystem to set pool levels required for appropriate reserve for [Expected
+Loss](#expected-loss). The FINX protocol reserve levels are as follows:
+
+- Borrower Pool (1 ETH : 1800 USDC)
+- Liquidity Module (1 ETH : 1800 USDC)
+- Protocol Safety Reserve (2 FINX : .000555 ETH : 1 USDC)
+- Credit Loss Reserve (2 FINX : .00055 ETH : 1 USDC)
+- Extreme Loss Reserve (5 FINX : .000555 ETH : 1 USDC)
+- FINX Work Pool (1 FINXC : 1 USDC)
+
+Token flows are distributed as follows:
+
+- Loans taken from Borrower Pool
+- Repayments plus interest repaid to Borrower Pool
+- 100% of repayments distributed to Liquidity Pool
+- 60% of interest distributed to Liquidity Pool
+- 40% of interest is distributed to FINX Work Pool
+- 20% of interest paid distributed to reserves
+    - 25% Protocol Safety Reserve
+    - 50% Liquidity Module
+    - 20% Credit Loss Reserve
+    - 5% Extreme Loss Reserve
+
+### InfoSec Policy
+
+The InfoSec Policy sets the processes and measurement of the security of the protocol from nefarious actors, breaches,
+and fraud of any kind.
