@@ -86,7 +86,7 @@ const StyledTradeLink = styled.a`
   background-color: ${({ theme }) => theme.textColor};
   text-decoration: none;
   color: ${({ theme }) => theme.invertedTextColor};
-  border-radius: 12px;
+  border-radius: 0px;
   display: inline-block;
   transition: transform 0.25s ease;
   font-weight: 600;
@@ -277,7 +277,7 @@ const Header = props => {
         {props.path !== undefined && (
           <StyledTradeLink
             style={{
-              background: `linear-gradient(128.17deg, #BD00FF -14.78%, #FF1F8A 110.05%)`,
+              background: `linear-gradient(128.17deg, #7A1C99 -14.78%, #D3FF7A 110.05%)`,
               color: 'white'
             }}
             target="_blank"

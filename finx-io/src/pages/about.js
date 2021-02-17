@@ -273,7 +273,7 @@ const About = props => {
             <h3>FINX is currently conducting a <InternalLink to="/blog/uni"><strong>Genesis Token Sale</strong></InternalLink> from February 15 through March 15.</h3>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
               <InternalLink to="/blog/uni">FINX token</InternalLink>
-              <InternalLink to="./whitepaper.pdf">
+              <InternalLink to="/docs/v2/whitepaper">
                 Whitepaper <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
               <InternalLink to="/audit.html">

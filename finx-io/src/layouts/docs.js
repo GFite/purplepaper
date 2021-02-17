@@ -71,7 +71,7 @@ const StyledDocsNav = styled.li`
 const StyledLink = styled(Link)`
   font-size: 1.25rem;
   border: 1px solid ${({ theme }) => theme.colors.grey2};
-  border-radius: 0.25rem;
+  border-radius: 0rem;
   padding: 0.5rem 1rem;
   text-decoration: none;
   display: flex;
@@ -202,7 +202,7 @@ const Docs = props => {
             <SEO
               key={node.fields.slug}
               title={props.pageContext.frontmatter.title}
-              site={'Uniswap ' + title}
+              site={'FINX ' + title}
               path={props.location.pathname}
               description={node.excerpt}
             />
@@ -263,7 +263,7 @@ const Docs = props => {
               return (
                 <StyledDocsNavWrapper key={node.id}>
                   <StyledDocsNav>
-                    {/* index.md file is considered the "last" based on the sort order. Check to remove links when not relevent */}
+                    {/* index_bak.md file is considered the "last" based on the sort order. Check to remove links when not relevant */}
                     {previous &&
                       node.fields.slug !== '/docs/v2/' &&
                       previous.fields.parentDir === node.fields.parentDir && (
@@ -274,7 +274,7 @@ const Docs = props => {
                       )}
                   </StyledDocsNav>
                   <StyledDocsNav>
-                    {/* index.md file is considered the "last" based on the sort order. Check to remove when not relevent */}
+                    {/* index_bak.md file is considered the "last" based on the sort order. Check to remove when not relevant */}
                     {next && next.fields.slug !== '/docs/v2/' && next.fields.parentDir === node.fields.parentDir && (
                       <StyledLink style={{ alignItems: 'flex-start' }} to={next.fields.slug} rel="next">
                         <small>Next</small>
@@ -284,7 +284,7 @@ const Docs = props => {
                     {node.fields.slug === '/docs/v2/' && (
                       <StyledLink style={{ alignItems: 'flex-start' }} to={'/docs/v2/protocol-overview/'} rel="next">
                         <small>Next</small>
-                        <span>How Uniswap works →</span>
+                        <span>How FINX works →</span>
                       </StyledLink>
                     )}
                   </StyledDocsNav>

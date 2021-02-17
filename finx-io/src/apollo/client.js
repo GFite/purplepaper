@@ -10,3 +10,8 @@ export const blockClient = new ApolloClient({
   uri: 'https://api.thegraph.com/subgraphs/name/blocklytics/ethereum-blocks',
   fetch
 })
+
+// export const client = AppoloClient({
+//   uri: 'https://api.thegraph.com/subgraphs/name/finx/finx',
+//   fetch
+// })

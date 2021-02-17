@@ -13,6 +13,14 @@ import { useDarkMode } from '../contexts/Application'
 
 import { CardBGImage, CardFade, CardNoise, StyledExternalLink } from '../components/utils'
 
+import TagManager from 'react-gtm-module'
+
+const tagManagerArgs = {
+    gtmId: 'GTM-53HFS7D'
+}
+
+TagManager.initialize(tagManagerArgs)
+
 const BGCard = styled.span`
   width: 100vw;
   height: 100vh;
@@ -61,7 +69,7 @@ const StyledTitle = styled.div`
 `
 
 const StyledBodyTitle = styled.h1`
-  font-size: 104px;
+  font-size: 96px;
   margin: 4rem 0 3rem 0;
   pointer-events: none;
   white-space: wrap;
@@ -109,7 +117,7 @@ const StyledBannerImage = styled(Img)`
   max-width: 720px;
   background-color: none;
   margin-top: 1rem;
-  border-radius: 12px;
+  border-radius: 0px;
   box-shadow: ${({ theme }) => theme.shadows.huge};
   @media (max-width: 960px) {
     min-width: unset;
@@ -122,7 +130,7 @@ const StyledProductImage = styled(Img)`
   min-width: 220px;
   max-width: 220px;
   background-color: none;
-  border-radius: 12px;
+  border-radius: 0px;
   box-shadow: ${({ theme }) => theme.shadows.huge};
 
   /* @media (max-width: 960px) {
@@ -291,15 +299,16 @@ const IndexPage = props => {
       />
       <StyledBody>
         <StyledTitle>
-          <StyledBodyTitle>Decentralized Debt Capital Pools</StyledBodyTitle>
+          <StyledBodyTitle>Corporate Debt Decentralized</StyledBodyTitle>
           <StyledBodySubTitle style={{ marginBottom: '3rem' }}>
             Guaranteed 24/7 liquidity for corporations provided by millions of users.
           </StyledBodySubTitle>
-
           <StyledItemRow>
             <Button
               style={{
-                background: `linear-gradient(128.17deg, #BD00FF -14.78%, #FF1F8A 110.05%)`,
+                // background: `linear-gradient(128.17deg, #BD00FF -14.78%, #FF1F8A 110.05%)`,
+                  // '#7A1C99' : '#D3FF7A'
+                background: `linear-gradient(128.17deg, #7A1C99 -14.78%, #D3FF7A 110.05%)`,
                 color: 'white',
                 fontSize: '20px'
               }}

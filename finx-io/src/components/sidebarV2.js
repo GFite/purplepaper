@@ -390,8 +390,11 @@ const SideBar = props => {
             <StyledListItem>
               <StyledLink to={'/docs/v2/smart-contracts/factory'}>Smart Contracts</StyledLink>
             </StyledListItem>
+            {/*<StyledListItem>*/}
+            {/*  <StyledLink to={'/whitepaper.pdf'}>Whitepaper</StyledLink>*/}
+            {/*</StyledListItem>*/}
             <StyledListItem>
-              <StyledLink to={'/whitepaper.pdf'}>Whitepaper</StyledLink>
+              <StyledLink to={'/docs/v2/whitepaper'}>Whitepaper</StyledLink>
             </StyledListItem>
             <StyledListItem>
               <StyledLink to={'/docs/v2/governance/governance-reference'}>Governance</StyledLink>

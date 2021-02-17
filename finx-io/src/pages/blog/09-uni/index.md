@@ -159,15 +159,15 @@ Initial governance parameters are as follows:
 
 All historical users, liquidity providers, and SOCKS redeemers can [claim their UNI now](https://app.uniswap.org/).
 
-![](claim.gif)
+![](./claim.gif)
 
 Liquidity providers in the preliminary set of targeted pools can [deposit](https://app.uniswap.org/#/uni) their liquidity tokens. Mining will begin on September 18th 2020 12am UTC.
 
-![](deposit.gif)
+![](./deposit.gif)
 
 UNI tokens can be delegated and used to vote through the [governance portal](https://app.uniswap.org/#/vote).
 
-![](vote.gif)
+![](./vote.gif)
 
 Set up an account on [gov.uniswap.org](https://gov.uniswap.org) to start shaping and participating in protocol governance
 
