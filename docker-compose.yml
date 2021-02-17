@@ -4,19 +4,6 @@ version: '3'
 volumes:
   node-modules:
 services:
-  # nginx
-  nginx:
-    image: nginx:latest
-    hostname: nginx
-    container_name: nginx
-    volumes:
-      - ./nginx/:/etc/nginx/conf.d
-    ports:
-      - "80:8000"
-    expose:
-      - "80"
-    depends_on:
-      - finx-io
   # React frontend
   finx-io:
     build:
@@ -36,3 +23,17 @@ services:
       - "3000:3000"
     expose:
       - "3000"
+  # nginx
+  nginx:
+    image: nginx:latest
+    hostname: nginx
+    container_name: nginx
+    command: bash -c 'yarn && yarn add react-gtm-module && yarn start'
+    volumes:
+      - ./nginx/:/etc/nginx/conf.d
+    ports:
+      - "80:8000"
+    expose:
+      - "80"
+    depends_on:
+      - finx-io
