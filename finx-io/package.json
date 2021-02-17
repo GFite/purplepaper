@@ -68,6 +68,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.8",
     "react-feather": "^2.0.8",
+    "react-gtm-module": "^2.0.11",
     "react-helmet": "^6.1.0",
     "react-instantsearch-dom": "^6.6.0",
     "react-intersection-observer": "^8.26.1",

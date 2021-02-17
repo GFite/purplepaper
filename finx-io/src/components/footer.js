@@ -141,7 +141,7 @@ const Footer = () => {
       <StyledSection>
         <StyledFooterSection>
           <EmailSection />
-          <p>© 2020 Uniswap</p>
+          <p>©2020 FINX</p>
         </StyledFooterSection>
       </StyledSection>
     </StyledFooter>
@@ -225,7 +225,7 @@ const EmailSection = () => {
       <p>Subscribe to our newsletter for updates</p>
 
       <EmailRow
-        action="https://uniswap.us19.list-manage.com/subscribe/post?u=c93471c1443f1e6365b5ca093&amp;id=7d591bff13"
+        action="https://finx.us1.list-manage.com/subscribe/post?u=777e7ec4f60a5308c16a3373b&amp;id=5709658c7b"
         method="post"
         id="mc-embedded-subscribe-form"
         name="mc-embedded-subscribe-form"
