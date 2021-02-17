@@ -15,8 +15,6 @@ services:
       - "80:8000"
     expose:
       - "80"
-    depends_on:
-      - finx-io
   # React frontend
   finx-io:
     build:
