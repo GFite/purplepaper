@@ -17,7 +17,7 @@ import { CardBGImage, CardFade, CardNoise, StyledExternalLink } from '../compone
 import TagManager from 'react-gtm-module'
 
 const tagManagerArgs = {
-    gtmId: 'GTM-53HFS7D'
+    gtmId: 'GTM-WWQGVVV'
 }
 
 TagManager.initialize(tagManagerArgs)
