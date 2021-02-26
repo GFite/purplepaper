@@ -381,7 +381,7 @@ const DeveloperSection = props => {
     <>
       <StyledSectionTitle>One Subscription for your Institutional Platform.</StyledSectionTitle>
       <StyledBodySubText>
-        Fite Analytics`'` APIs and Batch services are provided under a simple subscription model. All reference data,
+        Fite Analytics APIs and Batch services are provided under a simple subscription model. All reference data,
           curves and other components are included in the subscription. You tell us the security identifiers and position
           values and we handle the rest.
       </StyledBodySubText>
