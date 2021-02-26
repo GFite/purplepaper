@@ -213,27 +213,27 @@ const ProtocolData = () => {
         </BigNumbers>  */}
         <BigNumbers>
         <span>
-          corporates<span style={{ opacity: '0.1' }}></span>
+          CORP<span style={{ opacity: '0.1' }}></span>
         </span>
-          <p style={{ fontSize: '14px' }}>Global Coverage</p>
+          <p style={{ fontSize: '14px' }}>global coverage</p>
         </BigNumbers>
         <BigNumbers>
         <span>
-          municipals<span style={{ opacity: '0.1' }}></span>
+          MUNI<span style={{ opacity: '0.1' }}></span>
         </span>
           <p style={{ fontSize: '14px' }}>30M CUSIPs</p>
         </BigNumbers>
         <BigNumbers>
         <span>
-          government<span style={{ opacity: '0.1' }}></span>
+          GOV<span style={{ opacity: '0.1' }}></span>
         </span>
           <p style={{ fontSize: '14px' }}>All Currencies</p>
         </BigNumbers>
         <BigNumbers>
         <span>
-          structured products<span style={{ opacity: '0.1' }}></span>
+          STRUCTURED<span style={{ opacity: '0.1' }}></span>
         </span>
-          <p style={{ fontSize: '14px' }}>RMBS  CMBS  CMO  CLO  CDO  ABS</p>
+          <p style={{ fontSize: '14px' }}>RMBS  CMBS  CMO  CLO  CDO  ABS  TBAs</p>
         </BigNumbers>
       </div>
     </Numbers>
