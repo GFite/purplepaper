@@ -48,11 +48,11 @@ const Numbers = styled(StyledSectionFlex)`
 `
 
 const BigNumbers = styled(StyledSectionFlex)`
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 700;
   flex-direction: column;
   @media (max-width: 960px) {
-    font-size: 32px;
+    font-size: 24px;
   }
 `
 

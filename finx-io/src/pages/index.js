@@ -380,11 +380,9 @@ const StyledSectionTitle = styled.h1`
 const DeveloperSection = props => {
   return (
     <>
-      <StyledSectionTitle>One Subscription for sectors of the Bond Markets.</StyledSectionTitle>
+      <StyledSectionTitle>One Subscription for All Sectors of the Global Bond Markets.</StyledSectionTitle>
       <StyledBodySubText>
-        Fite Analytics APIs and Batch services are provided under a simple subscription model. All reference data,
-          curves and other components are included in the subscription. You tell us the security identifiers and position
-          values and we handle the rest.
+        A single subscription includes all reference data -- terms and conditions, schedules, curves, swap rates and prepayment models.
       </StyledBodySubText>
         <PlatformData />
       <StyledBannerImage fadeIn={false} fluid={props.data.banner.childImageSharp.fluid} />
