@@ -1,92 +1,53 @@
 ---
-title: 'FINX Token Contract'
-date: '2021-02-11'
+title: 'Northern Trust Uses Fite Analytics'
+date: '2020-07-15'
 author: 'Geoff Fite'
 featuredImage: ./featured.jpg
 previewText: 'News about the upcoming FINX ERC20 Launch'
 ---
 
-![](https://cdn-images-1.medium.com/max/3200/1*QwjSzdnwzAYoU7rXCjEF5A.jpeg)
+![](nt-logo.png)
 
-We are excited to announce the release of our new site, https://finx.io
+## Fite Analytics LLC to Provide Innovative Bond Analytics Solution for Northern Trust
 
-FINX is the first and largest Credit Distributed Exchange (DEX) on the Ethereum Mainnet.
+### Northern Trust Adopts Fite Analytics’ Cloud-Native Fixed Income Security Analytics
 
 
-We’re excited to announce the release of our new site:release a new and improved [Uniswap.info](http://uniswap.info/) with more detailed information about the Uniswap ecosystem and token exchanges. For this release we focused providing more complete and accurate data, better UI/UX and the ability to buy and sell tokens with the Uniswap iframe integratio
+July 15, 2020 10:00 AM Eastern Daylight Time
 
-Keep reading below for a breakdown of the new features.
 
----
 
-# Overview Page
+LOS ANGELES--(BUSINESS WIRE)—Fite Analytics announced today that Northern Trust (Nasdaq: NTRS) has enhanced its market-leading risk analytics with Fite Analytics’ innovative cloud-native Bond Analytics Service to calculate daily risk measures for fixed income securities. The solution provides street-standard analytics across all sectors of the bond market, including corporate, municipal, agency, government, mortgage, asset- backed, commercial real estate and other hard-to-analyze securities.
 
-![](https://cdn-images-1.medium.com/max/1900/1*hLD1rKF9GHBZZTevW1YZsg.gif)
 
-We’ve built a new overview page with high level data about exchanges on Uniswap. Detailed stats like 24 hour volume, total liquidity and daily transactions are now available at a glance. We’ve also listed the top exchanges sortable by price, volume, liquidity and more to help you explore different aspects of the most active pools.
 
-# Exchange Pages
+The Fite Analytics solution includes descriptive analytical information, a scalable calculation grid, and APIs and file exchanges for simple implementation and high performance. Fite Analytics’ cutting-edge technology is built upon Amazon Web Services (AWS), with broad coverage across the fixed income security database, easy to access APIs, and a developer’s sandbox to preview API results, prior to implementation.
 
-![](https://cdn-images-1.medium.com/max/6208/1*CJuUyxt3cbBh3WIsPqHdFg.png)
 
-We’ve updated the design to give you a better overview of the exchange price and performance including 24 hour stats in USD and ETH. The chart view has been improved and shows historical liquidity, volume and price across across a number of timeframes.
 
-We now show a sortable and filterable list of of all transactions in the last 24 hours as well.
+Paul d’Ouville, Global Head of Product and Client Solutions at Northern Trust Asset Servicing, said: “Our data strategy is predicated around providing innovative solutions to meet client needs. Fite’s technology offers unprecedented calculation speeds, which enable our clients to achieve faster analytical insights to power their portfolio decisions. The flexible architecture facilitates rapid development, continuous delivery of new features, and expanded capability options for the future.”
 
-# Buy any token using Uniswap.info
 
-![](https://cdn-images-1.medium.com/max/1900/1*keV-2_v_vCp-V7m_WTvVrQ.gif)
 
-Using a [app.uniswap.org](http://app.uniswap.org) iFrame integration, you can now directly buy and sell any token from the exchange info page. If you are a hardcore DAI trader you might consider bookmarking this page for a one stop shop for data, analytics and trading.
+Geoff Fite, CEO, Fite Analytics, said: “Northern Trust’s deployment of the Fite Analytics service confirms that today’s cloud-native technologies, combined with new approaches to managing massive data and calculation loads, is a vast improvement over what is being used by most risk and trading professionals. Our goal is to simplify the commercial and technology burden of analyzing the capital markets. We handle the heavy lifting of data and calculations for our customers, enabling experts like Northern Trust to deliver first class results for their clients.”
 
-Uniswap.info automatically shows all tokens on the Uniswap protocol as long as there is at least 0.1 ETH in liquidity. This means it can be used to trade tokens that are not shown on the default list of app.uniswap.org. We highly recommend you verify the address of any tokens traded.
 
-_If you’re interested in doing something similar on your site, you can [read more](https://uniswap.org/docs/v2/interface-integration/iframe-integration/) about how to embed app.uniswap.org)_
 
-# Linking
+About Fite Analytics
 
-Analytics for a specific pool can be linked to directly using the tokens address.
 
-[https://uniswap.info/token/0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359](https://uniswap.info/token/0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359)
+Based in Los Angeles, Fite Analytics is a privately held corporation founded in 2016 to provide leading edge data processing and analytics services to institutional investors by including comprehensive global market data, ultra-high-speed analytics, and implementation-free cloud-native technology.
 
-# Data!
 
-The updated Uniswap.info was built using data from [The Graph](https://thegraph.com/). We’ve worked closely with [The Graph](https://thegraph.com/) team to upgrade the [Uniswap subgraph](https://thegraph.com/explorer/subgraph/graphprotocol/uniswap) to support for better views, historical data and transactions. We’ve added historical data for Uniswap as a whole with daily volumes and liquidity over time.
 
-_If you are building a uniswap data tool you may consider building off [the new subgraph.](https://github.com/graphprotocol/uniswap-subgraph)_
+Contacts
 
-# UI and UX polish
 
-Along with a fresh coat of paint, we’ve updated the UI to better support denser data views and a consistent layout that flexes smoothly to a mobile view. All the prices denominated in ETH can now be swapped for USD with a toggle in the top right and we’ve cleaned up the units across the site.
+Geoff Fite
 
-The charts are now easier to read and have a tab view to switch between data and each token page will now extract a color from the token to apply a unique style.
++1 310-944-5812
 
-![](https://cdn-images-1.medium.com/max/9312/1*r-W2LsxkkKEubO1P-V9bNQ.jpeg)
+geoff@fiteanalytics.com
 
-# Upcoming Features
 
-We’ve got a lot planned for this site in the future…
-
-- Liquidity Provider specific pages and support
-
-- Data around holdings, ROI, etc
-
-- Data export (CSV)
-
-- Top LPs
-
-- Top performing pools
-
-- Live data for transactions and prices
-
-- More statistics, rankings, insights
-
-- Exchange health statistics
-
-If you have any ideas for things you’d like to see that isn’t on this list we’d love to hear [feedback](https://forms.gle/G2QWdCWnaaQYJboR7).
-
----
-
-If you are looking for more Uniswap analytics tools check out [https://github.com/Uniswap/universe](https://github.com/Uniswap/universe) for a list of tools.
-
-You can check out the repo on [github](https://github.com/Uniswap/uniswap-info) if you’d like to explore how everything works.
+click here for PDF version
