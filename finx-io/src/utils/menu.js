@@ -10,7 +10,7 @@ const menu = [
       {
         name: 'Security Cash Flows',
         link: 'docs/v2/methodology/security-cash-flows',
-        description: 'accurate cash flows for asset-liability management'
+        description: 'high-fidelity cash flows for ALM'
       },
       {
         name: 'Portfolio Analytics',

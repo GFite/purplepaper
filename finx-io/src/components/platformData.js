@@ -233,7 +233,7 @@ const ProtocolData = () => {
         <span>
           STRUCTURED<span style={{ opacity: '0.1' }}></span>
         </span>
-          <p style={{ fontSize: '14px' }}>RMBS  CMBS  CMO  CLO  CDO  ABS  TBAs</p>
+          <p style={{ fontSize: '14px' }}>RMBS  CMBS  CMO  CLO  CDO  ABS</p>
         </BigNumbers>
       </div>
     </Numbers>
