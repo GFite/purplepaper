@@ -225,7 +225,7 @@ const ProtocolData = () => {
         </BigNumbers>
         <BigNumbers>
           <span>
-            40 minutes<span style={{ opacity: '0.1' }}>+</span>
+            40 min<span style={{ opacity: '0.1' }}></span>
           </span>
           <p style={{ fontSize: '14px' }}>time to analyze 300,000 securities</p>
         </BigNumbers>

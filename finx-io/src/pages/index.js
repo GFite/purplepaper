@@ -21,6 +21,15 @@ const tagManagerArgs = {
 
 TagManager.initialize(tagManagerArgs)
 
+const BigNumbers = styled(StyledSectionFlex)`
+  font-size: 48px;
+  font-weight: 700;
+  flex-direction: column;
+  @media (max-width: 960px) {
+    font-size: 32px;
+  }
+`
+
 const BGCard = styled.span`
   width: 100vw;
   height: 100vh;
@@ -379,12 +388,36 @@ const StyledSectionTitle = styled.h1`
 const DeveloperSection = props => {
   return (
     <>
-      <StyledSectionTitle>One Subscription for your Institutional Platform.</StyledSectionTitle>
+      <StyledSectionTitle>One Subscription for sectors of the Bond Markets.</StyledSectionTitle>
       <StyledBodySubText>
         Fite Analytics APIs and Batch services are provided under a simple subscription model. All reference data,
           curves and other components are included in the subscription. You tell us the security identifiers and position
           values and we handle the rest.
       </StyledBodySubText>
+      <BigNumbers>
+        <span>
+          corporates<span style={{ opacity: '0.1' }}></span>
+        </span>
+          <p style={{ fontSize: '14px' }}>Global Coverage</p>
+      </BigNumbers>
+        <BigNumbers>
+        <span>
+          municipals<span style={{ opacity: '0.1' }}></span>
+        </span>
+            <p style={{ fontSize: '14px' }}>30M CUSIPs</p>
+        </BigNumbers>
+        <BigNumbers>
+        <span>
+          government<span style={{ opacity: '0.1' }}></span>
+        </span>
+            <p style={{ fontSize: '14px' }}>All Currencies</p>
+        </BigNumbers>
+        <BigNumbers>
+        <span>
+          structured products<span style={{ opacity: '0.1' }}></span>
+        </span>
+            <p style={{ fontSize: '14px' }}>RMBS / CMBS / CMO / CLO / CDO</p>
+        </BigNumbers>
       <StyledBannerImage fadeIn={false} fluid={props.data.banner.childImageSharp.fluid} />
     </>
   )
