@@ -141,7 +141,7 @@ const Footer = () => {
       <StyledSection>
         <StyledFooterSection>
           <EmailSection />
-          <p>©2020 FINX</p>
+          <p>©2021 Fite Analytics LLC</p>
         </StyledFooterSection>
       </StyledSection>
     </StyledFooter>

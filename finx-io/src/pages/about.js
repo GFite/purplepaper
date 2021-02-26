@@ -240,32 +240,12 @@ const About = props => {
       <StyledAbout>
         <span style={{ marginTop: '5rem' }}>
           <Title style={{ paddingBottom: '4rem' }}>
-            FINX is a Credit Distributed Exchange (<span><strong>C-DEX</strong></span>)
+            Fite Analytics is a data processinga and analytics company.
           </Title>
           <h2 style={{ paddingBottom: '4rem' }}>
-            <span><strong>Guaranteed Liquidity</strong></span> for 1000s of Global Corporations conducting commerce in crypto.{' '}
+            <span><strong>Widest coverage and fastest speeds</strong></span> for institutional investors.{' '}
           </h2>
 
-          <Numbers id="about" style={{ flexDirection: 'column' }}>
-            <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between', margin: 0 }}>
-              <h2 style={{ fontSize: '32px' }}>
-                {UniStats.exchanges}
-                <p style={{ fontSize: '14px' }}>Token Pairs </p>
-              </h2>
-              <h2 style={{ fontSize: '32px' }}>
-                {UniStats.volume}
-                <p style={{ fontSize: '14px' }}>24H Volume</p>
-              </h2>
-              <h2 style={{ fontSize: '32px' }}>
-                {UniStats.liquidity}
-                <p style={{ fontSize: '14px' }}>Total Liquidity</p>
-              </h2>
-              <h2 style={{ fontSize: '32px' }}>
-                {'> 100'}
-                <p style={{ fontSize: '14px' }}>Defi Integrations</p>
-              </h2>
-            </div>
-          </Numbers>
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
             <p>FINX is a Decentralized Exchange (<span><strong>DEX</strong></span>) that provides a way for all Capital Market Participant to conduct decentralized commerce in crypto.</p>
             <p>Underwriters, Insurers, Ratings Agencies, Collateral Valuators and others can provide services to Corporate Borrowers that act as collateral against Collateralized Pools on the Ethereum Mainnet. The ERC20 contracts stipulate repayment periods, interest models, liquidity provisions, workout and dispute resolution.</p>
@@ -281,6 +261,48 @@ const About = props => {
               </InternalLink>
               <InternalLink to="/faq">FAQ</InternalLink>
             </div>
+          </StyledSectionFlex>
+
+          <StyledSectionFlex id="team" style={{ flexDirection: 'column' }}>
+            <h2 style={{ width: '100%' }}>Team</h2>
+            <p>industry experience + quantitative excellence + technology innovation</p>
+
+            <span>
+              <a href="#">
+                {' '}
+                <h3>Geoff Fite, CEO</h3>
+              </a>
+            </span>
+            <span>
+              <a href="#">
+                {' '}
+                <h3>Sonia Dixon, Head of Customer Experience</h3>
+              </a>
+            </span>
+            <span>
+              <a href="#">
+                {' '}
+                <h3>Richard Mulé, Head of Engineering</h3>
+              </a>
+            </span>
+            <span>
+              <a href="#">
+                {' '}
+                <h3>Maderson Ly, Data Engineer</h3>
+              </a>
+            </span>
+            <span>
+              <a href="#">
+                {' '}
+                <h3>Jake Mathai, Software Engineer</h3>
+              </a>
+            </span>
+            <span>
+              <a href="#">
+                {' '}
+                <h3>Tashah Johnson, Business Analyst</h3>
+              </a>
+            </span>
           </StyledSectionFlex>
 
           <StyledSectionFlex id="jobs" style={{ flexDirection: 'column' }}>
@@ -318,7 +340,7 @@ const About = props => {
               </a>
             </span>
             <p>
-              FINX welcomes all qualified persons to apply regardless of race, religion, gender, gender identity or
+              Fite Analytics welcomes all qualified persons to apply regardless of race, religion, gender, gender identity or
               expression, sexual orientation, national origin, genetics, disability, age, or veteran status.
               Compensation will be competitive and commensurate with experience. This is a full time role which includes
               health insurance and other benefits.
@@ -328,12 +350,7 @@ const About = props => {
           <StyledSectionFlex id="contact" style={{ flexDirection: 'column' }}>
             <h2 style={{ width: '100%' }}>Contact</h2>
             <p>
-              To get in touch, please email <a href="mailto:info@finx.io">info@finx.io</a>
-            </p>
-
-            <p>
-              We encourage anyone facing issues with their wallet, transaction or FINX related question to join our
-              active community discord.
+              To get in touch, please email <a href="mailto:info@fiteanalytics.com">info@fiteanalytics.com</a>
             </p>
 
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
@@ -352,7 +369,7 @@ const About = props => {
           <StyledSectionFlex id="brand" style={{ flexDirection: 'column' }}>
             <h2 style={{ width: '100%' }}>Brand Assets</h2>
             <p>
-              Download the logo and other brand assets samples <a href="/Uniswap_brand_assets.zip">here</a>.
+              Download the logo and other brand assets samples <a href="/fiteanalytics_brand_assets.zip">here</a>.
             </p>
           </StyledSectionFlex>
         </span>
