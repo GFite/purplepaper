@@ -6,6 +6,10 @@ tags: glossary, documentation
 
 # Glossary
 
+## Accrued Interest
+
+Interest accumulated since the last coupon payment date to the monthly cash flow date.
+
 ## Annual Yield
 
 The coupon rate based on an annual compounding frequency.
@@ -17,6 +21,14 @@ The difference between the bond’s yield to maturity and the corresponding LIBO
 ## Average Life
 
 The weighted average life is the average length of time to the last principal payment.
+
+## Call Cash Flows
+
+Represents the explicit call price assuming a unit of 100 on the cash flow date as applicable as information only.
+
+## Cash Flow Date
+
+The yyyy-mm-dd date of the cash flow based on monthly intervals.
 
 ## Discount Margin
 
@@ -44,6 +56,10 @@ Option adjusted Duration is the approximate percentage change in price for a
 +/-100 basis point (bps) change in the underlying par government yield curve.  Effective Duration takes into account both the discounting that occurs at different interest rates as well as changes in cash flows.
 
 For the Par Effective Duration, the theoretical par curve is shifted +/- 100 bps to determine the corresponding spot curves to value the security assuming a constant OAS based on the bond’s specific price.  The Par Effective Duration is the average percentage change in price of the bond versus its input price.  For Spot Effective Duration we assume a zero volatility and hold the bond’s ZVO or Z-spread constant.  
+
+## Interest Cash Flows
+
+The Interest cash flow based on the coupon payment frequency for the coupon paid as of the cash flow date.
 
 ## LIBOR Option Adjusted Spread (OAS)
 
@@ -81,6 +97,18 @@ A nominal yield spread is the difference between the bond’s yield to option an
 
 The Option Adjusted Spread or OAS is the constant spread that can be applied to the risk-free rate of return which is then adjusted to take into account any embedded option(s) to discount the security’s cash flows to match its market price.  OAS is displayed in basis points (bp or 0.01%).
 
+## Other Principal Cash Flows
+
+Includes bonds with sinking fund payments and RMBS principal and prepayments that are separate from redemption principal cash flow payments as of the cash flow date.
+
+## Principal Cash Flows
+
+Includes principal paid at maturity or worst/best date assuming a unit of 100.
+
+## Put Cash Flows
+
+Represents the explicit put price assuming a unit of 100 on the cash flow date as applicable as information only.
+
 ## Spread Duration
 
 The estimate of a bond’s price sensitivity when the spread of that specific bond changes.
@@ -88,6 +116,10 @@ The estimate of a bond’s price sensitivity when the spread of that specific bo
 ## Stated Maturity
 
 The length of time until the principal must be repaid with interest.
+
+## Total Cash Flows
+
+The sum of all Principal and Interest cash flows assuming a unit of 100, as of the monthly cash flow date generated based on a security’s coupon pay date.  For Batch Analytics, bonds with options will generate cash flows to the worst/best date.  The API cash flows are to maturity.
 
 ## Yield to Maturity
 
