@@ -1,40 +1,26 @@
 const menu = [
   {
-    name: 'Ecosystem',
+    name: 'Services',
     sublinks: [
       {
-        name: 'FINX App',
+        name: 'Security Analytics',
         link: 'https://app.finx.io/#/',
         description: 'Corporate Debt Pools'
       },
       {
-        name: 'FINX Analytics',
+        name: 'Security Cash Flows',
         link: 'https://info.finx.io/',
         description: 'FINX analytics and historical data'
       },
       {
-        name: 'Uniswap V2',
+        name: 'Portfolio Analytics',
         link: 'https://uniswap.org/',
         description: 'Uniswap V2 DEX'
       },
       {
-        name: 'Token Lists',
+        name: 'Performance Attribution',
         link: 'https://tokenlists.org/',
         description: 'A new Ethereum token list standard.'
-      },
-      {
-        name: 'Sybil',
-        link: 'https://sybil.org/#/',
-        description: 'Identities for governance'
-      }
-    ]
-  },
-  {
-    name: 'Token Sale',
-    sublinks: [
-      {
-        name: 'Genesis FINX Token Sale',
-        link: '/blog/finx'
       }
     ]
   },
@@ -42,10 +28,10 @@ const menu = [
     name: 'Documents',
     sublinks: [
       {
-        name: 'FINX Documents',
-        link: 'docs/v2/protocol-overview/how-finx-works'
+        name: 'Methodology',
+        link: 'docs/v2/methodology/glossary'
       },
-      { name: 'Whitepaper', link: '/docs/v2/whitepaper' },
+      { name: 'Technology', link: '/docs/v2/technology/intro' },
       { name: 'Uniswap V2 Whitepaper', link: '/whitepaper.pdf' }
     ]
   },
@@ -58,23 +44,11 @@ const menu = [
     ]
   },
   {
-    name: 'Governance',
-    sublinks: [
-      {
-        name: 'FINX Token',
-        link: '/blog/finx'
-      },
-      { name: 'Audit', link: '/audit.html' },
-      { name: 'Voting Portal', link: 'https://app.finx.io/#/vote' },
-      { name: 'Documentation', link: '/docs/v2/governance/overview' }
-    ]
-  },
-  {
     name: 'Community',
     sublinks: [
-      { name: 'FINX Discord', link: 'https://discord.gg/FCfyBSbCU5' },
-      { name: 'FINX Twitter', link: 'https://twitter.com/FinX_io' },
-      { name: 'FINX Reddit', link: 'https://www.reddit.com/r/FINX' }
+      { name: 'Fite Analytics Discord', link: 'https://discord.gg/FCfyBSbCU5' },
+      { name: 'Fite Analytics Twitter', link: 'https://twitter.com/FinX_io' },
+      { name: 'Fite Analytics Reddit', link: 'https://www.reddit.com/r/FINX' }
     ]
   },
   {

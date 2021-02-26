@@ -6,12 +6,12 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `FINX`,
-    description: `Automated Debt Capital Pools on Ethereum`,
-    author: `@FINX`,
+    title: `Fite Analytics`,
+    description: `Capital Markets Analytics in the Cloud`,
+    author: `@fiteanalytics`,
     menulinks: menu,
-    siteUrl: `https://finx.io`,
-    repository: `https://github.com:FinX-IO/finx`,
+    siteUrl: `https://fiteanalytics.com`,
+    repository: `https://github.com:FinX-IO/purplepaper`,
     commit: process.env.NOW_GITHUB_COMMIT_SHA || `dev`
   },
   plugins: [
@@ -20,7 +20,7 @@ module.exports = {
       options: {
         bucketName: process.env.AWS_S3_BUCKET || 'NOT_SPECIFIED',
         protocol: 'https',
-        hostname: 'uniswap.org',
+        hostname: 'fiteanalytics.com',
         acl: null
       }
     },
@@ -192,7 +192,7 @@ module.exports = {
             }
             `,
             output: '/rss.xml',
-            title: 'FINX Blog RSS Feed'
+            title: 'Fite Analytics Blog RSS Feed'
           }
         ]
       }

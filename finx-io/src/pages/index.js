@@ -396,7 +396,7 @@ const ProductsSection = props => {
       <StyledSectionTitle>Configurable Risk and Attribution Models</StyledSectionTitle>
       <StyledBodySubText>
           We build best-of-breed models to calculate yield, duration, spread, and sensitivity. Curves, volatility, forward rates, and
-          other inputs can be calibrated or taken out of the box to match existing street-standards.
+          other inputs can be calibrated or taken out of the box to match street-standards.
       </StyledBodySubText>
       <StyledItemRow>
         <StyledExternalLink href={'https://socks.uniswap.org'} target="_blank">
