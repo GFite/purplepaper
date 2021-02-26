@@ -4,23 +4,23 @@ const menu = [
     sublinks: [
       {
         name: 'Security Analytics',
-        link: 'https://app.finx.io/#/',
-        description: 'Corporate Debt Pools'
+        link: 'docs/v2/methodology/security-analytics',
+        description: 'yield, spread, duration, sensitivity'
       },
       {
         name: 'Security Cash Flows',
-        link: 'https://info.finx.io/',
-        description: 'FINX analytics and historical data'
+        link: 'docs/v2/methodology/security-cash-flows',
+        description: 'accurate cash flows for asset-liability management'
       },
       {
         name: 'Portfolio Analytics',
-        link: 'https://uniswap.org/',
-        description: 'Uniswap V2 DEX'
+        link: '/docs/v2/methodology/portfolio-analytics',
+        description: 'multi-asset portfolio composition and risk analysis'
       },
       {
         name: 'Performance Attribution',
-        link: 'https://tokenlists.org/',
-        description: 'A new Ethereum token list standard.'
+        link: 'docs/v2/methodology/performance-attribution',
+        description: 'shift, twist, allocation and selection'
       }
     ]
   },
@@ -29,18 +29,19 @@ const menu = [
     sublinks: [
       {
         name: 'Methodology',
-        link: 'docs/v2/methodology/glossary'
+        link: 'docs/v2/methodology/glossary',
+        description: 'model documentation'
       },
-      { name: 'Technology', link: '/docs/v2/technology/intro' },
-      { name: 'Uniswap V2 Whitepaper', link: '/whitepaper.pdf' }
-    ]
+      {
+        name: 'Technology', link: '/docs/v2/technology/intro',
+        description: 'APIs and Batch Submit'
+      }]
   },
   {
     name: 'Developers',
     sublinks: [
-      { name: 'GitHub', link: 'https://github.com/FinX-IO' },
-      { name: 'Developer Guide', link: '/docs/v2/sdk'},
-      { name: 'Bug Bounty', link: '/bug-bounty' }
+      { name: 'GitHub', link: 'https://github.com/FiteAnalytics' },
+      { name: 'Developer Guide', link: '/docs/v2/technology/developer-guide'}
     ]
   },
   {
