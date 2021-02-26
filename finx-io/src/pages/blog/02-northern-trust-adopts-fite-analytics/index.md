@@ -2,8 +2,8 @@
 title: 'Northern Trust Uses Fite Analytics'
 date: '2020-07-15'
 author: 'Geoff Fite'
-featuredImage: ./featured.jpg
-previewText: 'News about the upcoming FINX ERC20 Launch'
+featuredImage: ./nt-logo.png
+previewText: 'Northern Trust Adopts Fite Analytics’ Cloud-Native Fixed Income Security Analytics'
 ---
 
 ![](nt-logo.png)

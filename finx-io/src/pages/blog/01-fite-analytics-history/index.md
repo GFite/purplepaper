@@ -2,7 +2,7 @@
 title: 'A short history of Fite Analytics'
 date: '2021-02-25'
 author: 'Geoff Fite'
-featuredImage: ./featured.jpg
+featuredImage: ./boserup.png
 previewText: 'Fite Analytics Origins'
 ---
 
