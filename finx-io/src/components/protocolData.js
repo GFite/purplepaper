@@ -219,7 +219,7 @@ const ProtocolData = () => {
         </BigNumbers>
         <BigNumbers>
           <span>
-            >30M<span style={{ opacity: '0.1' }}>+</span>
+            &gt;30M<span style={{ opacity: '0.1' }}>+</span>
           </span>
           <p style={{ fontSize: '14px' }}>Securities in SecDB</p>
         </BigNumbers>
