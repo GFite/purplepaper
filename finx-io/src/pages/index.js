@@ -21,54 +21,6 @@ const tagManagerArgs = {
 
 TagManager.initialize(tagManagerArgs)
 
-const StyledSectionFlex = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  max-width: 960px;
-  width: 100%;
-  @media (max-width: 1024px) {
-    padding: 1rem;
-    margin-top: 0rem;
-    flex-direction: ${({ wrapSmall }) => (!wrapSmall ? 'row' : 'column')};
-  }
-  @media (max-width: 960px) {
-    padding: 1rem;
-    margin-left: 0;
-    margin-top: 0rem;
-    width: 100%;
-    flex-direction: column;
-  }
-  @media (max-width: 640px) {
-    display: none;
-  }
-  h1,
-  h2 {
-    max-width: 650px;
-  }
-  p {
-    max-width: 650px;
-  }
-`
-
-const Numbers = styled(StyledSectionFlex)`
-  @media (max-width: 960px) {
-    /* display: none; */
-  }
-`
-
-const BigNumbers = styled(StyledSectionFlex)`
-  font-size: 48px;
-  font-weight: 700;
-  flex-direction: column;
-  @media (max-width: 960px) {
-    font-size: 32px;
-  }
-`
-
 const BGCard = styled.span`
   width: 100vw;
   height: 100vh;
