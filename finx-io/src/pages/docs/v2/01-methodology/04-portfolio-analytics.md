@@ -1,6 +1,6 @@
 ---
-title: Oracles
-tags: oracles, documentation
+title: Portfolio Analytics
+tags: analytics, documentation
 ---
 
 # Introduction
