@@ -265,7 +265,7 @@ const Header = props => {
               <Discord />
             </a>
           </StyledButton>
-          <StyledButton fill>Uni
+          <StyledButton fill>
             <a href="https://github.com/FinX-IO/">
               <Github width={20} />
             </a>

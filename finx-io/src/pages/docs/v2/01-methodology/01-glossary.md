@@ -1,44 +1,115 @@
 ---
-title: Swaps
-subtitle: Learn about the core functionality of the uniswap protocol. Token Swaps.
-tags: swaps, documentation
+title: Glossary
+subtitle: Glossary of Models, Calculations and other Terms
+tags: glossary, documentation
 ---
 
-![](/images/trade.jpg)
+# Glossary
 
-# Introduction
+## Annual Yield
 
-Token swaps in Uniswap are a simple way to trade one ERC-20 token for another.
+The coupon rate based on an annual compounding frequency.
 
-For end-users, swapping is intuitive: a user picks an input token and an output token. They specify an input amount, and the protocol calculates how much of the output token they’ll receive. They then execute the swap with one click, receiving the output token in their wallet immediately.
+## Asset Swap Spread
 
-In this guide, we’ll look at what happens during a swap at the protocol level in order to gain a deeper understanding of how Uniswap works.
+The difference between the bond’s yield to maturity and the corresponding LIBOR curve, expressed in basis points.
 
-Swaps in Uniswap are different from trades on traditional platforms. Uniswap does not use an order book to represent liquidity or determine prices. Uniswap uses an automated market maker mechanism to provide instant feedback on rates and slippage.
+## Average Life
 
-As we learned in [Protocol Overview](/docs/v2/protocol-overview), each pair on Uniswap is actually underpinned by a liquidity pool. Liquidity pools are smart contracts that hold balances of two unique tokens and enforces rules around depositing and withdrawing them.
+The weighted average life is the average length of time to the last principal payment.
 
-This rule is the [constant product formula](/docs/v2/protocol-overview/glossary#constant-product-formula). When either token is withdrawn (purchased), a proportional amount of the other must be deposited (sold), in order to maintain the constant.
+## Discount Margin
 
-## Anatomy of a swap
+The yield spread above the reference index that estimates the expected return equating the present value of all expected future cash flows to the current market price for variable rate securities.
 
-At the most basic level, all swaps in Uniswap V2 happen within a single function, aptly named `swap`:
+## Duration to Worst
 
-```solidity
-function swap(uint amount0Out, uint amount1Out, address to, bytes calldata data);
-```
+The weighted average time based on the yield change calculated to the price to worst (best) date including call features as applicable.
 
-# Receiving tokens
+## Duration to Worst (Annualized)
 
-As is probably clear from the function signature, Uniswap requires `swap` callers to _specify how many output tokens they would like to receive_ via the `amount{0,1}Out` parameters, which correspond to the desired amount of `token{0,1}`.
+The Duration to Worst based on an annual compounding frequency.
 
-# Sending Tokens
+## DV01
 
-What’s not as clear is how Uniswap _receives_ tokens as payment for the swap. Typically, smart contracts which need tokens to perform some functionality require callers to first make an approval on the token contract, then call a function that in turn calls transferFrom on the token contract. This is _not_ how V2 pairs accept tokens. Instead, pairs check their token balances at the _end_ of every interaction. Then, at the beginning of the _next_ interaction, current balances are differenced against the stored values to determine the amount of tokens that were sent by the current interactor. See the <a href='/whitepaper.pdf' rel='noopener noreferrer'>whitepaper</a> for a justification of why this is the case.
+The Dollar Duration or DV01 of a bond measures the price change in dollar terms in response to a change in yield by a single basis point.
 
-The takeaway is that **tokens must be transferred to pairs before swap is called** (the one exception to this rule is <Link to='/docs/v2/core-concepts/flash-swaps'>Flash Swaps</Link>). This means that to safely use the `swap` function, it must be called from _another smart contract_. The alternative (transferring tokens to the pair and then calling `swap`) is not safe to do non-atomically because the sent tokens would be vulnerable to arbitrage.
+## Effective Convexity
 
-# Developer resources
+Option adjusted Convexity helps to approximate the change in price that is not explained by Effective Duration.  Effective Convexity assumes that cash flow does change due to a change in interest rates.
 
-- To see how to implement token swaps in a smart contract read [Trading from a smart contract](/docs/v2/smart-contract-integration/trading-from-a-smart-contract/).
-- To see how to execute a swap from an interface read [Trading (SDK)](/docs/v2/javascript-SDK/trading/)
+## Effective Duration
+
+Option adjusted Duration is the approximate percentage change in price for a
++/-100 basis point (bps) change in the underlying par government yield curve.  Effective Duration takes into account both the discounting that occurs at different interest rates as well as changes in cash flows.
+
+For the Par Effective Duration, the theoretical par curve is shifted +/- 100 bps to determine the corresponding spot curves to value the security assuming a constant OAS based on the bond’s specific price.  The Par Effective Duration is the average percentage change in price of the bond versus its input price.  For Spot Effective Duration we assume a zero volatility and hold the bond’s ZVO or Z-spread constant.  
+
+## LIBOR Option Adjusted Spread (OAS)
+
+The Option Adjusted Spread or OAS computed using the applicable LIBOR/Swap curve based on a bond’s currency as available.
+
+## Local Duration
+
+See Modified Duration.
+
+## Macaulay Duration
+
+The weighted average time to receipt of cash flows using the present value of each cash flow as the weight.  Macaulay Duration for Floaters is computed to the next reset date.
+
+## Macaulay Duration to Worst
+
+The Macaulay Duration to the worst cash flow date (ie. provides the lowest yield for callable securities or the highest yield for bonds with put options).
+
+## Maturity Years
+
+The length of time until the principal must be repaid with interest.
+
+## Modified Duration
+
+The Modified duration is a measure of a bond’s price sensitivity to changes in its yield to maturity.  The Macaulay’s duration is divided by a factor of (1+ y / m) where the (y) is the annual YTM and (m) is the total number of coupon payments per period.
+
+## Modified Duration (Annualized)
+
+The Annualized Modified Duration is a measure of a bond’s price sensitivity to changes in its yield to maturity taking into account the effect of compounding interest assuming a full annual holding period.  The Macaulay’s duration is divided by a factor of (1+ y / m) where the (y) is the annual YTM and (m) is the total number of coupon payments per period.
+
+## Nominal Spread
+
+A nominal yield spread is the difference between the bond’s yield to option and a similar maturity government bond’s yield that represents the discount factor that will equate the security’s cash flows to its current market price, expressed in basis points.
+
+## Option Adjusted Spread (OAS)
+
+The Option Adjusted Spread or OAS is the constant spread that can be applied to the risk-free rate of return which is then adjusted to take into account any embedded option(s) to discount the security’s cash flows to match its market price.  OAS is displayed in basis points (bp or 0.01%).
+
+## Spread Duration
+
+The estimate of a bond’s price sensitivity when the spread of that specific bond changes.
+
+## Stated Maturity
+
+The length of time until the principal must be repaid with interest.
+
+## Yield to Maturity
+
+The theoretical internal rate of return that causes the present value, assuming neither options for bonds nor prepayments for mortgage backed securities, to equal the current market price of the bond.  It can be defined as an estimate of the total return of a bond assuming it is held to maturity and that all coupon and principal income is reinvested at a rate equal to the yield to maturity.  The yield to maturity takes into consideration the coupon income, interest-on-interest, and capital gains or losses due to the difference between the price paid when the bond was purchased, and par, the return of principal at maturity.  
+
+## Yield to Maturity (Annualized)
+
+The theoretical annualized internal rate of return based on a compounding period of one year which allows for a single point of comparison for bonds with differing coupon payment frequencies.
+
+## Yield to Option
+
+When a bond is callable, puttable, exchangeable, or has other features, the Yield to Option is the lowest or highest based on its yield to maturity, yield to call, yield to put or sinking fund, etc.
+
+## Yield to Put
+
+For bonds with a put option the bond holder has the option to sell the bond back to the issuer at a fixed price on a specified date (Yield to Best).
+
+## Yield Value of 32nd
+
+Measures the change in yield (in basis points) that would lead to a 1/32nd change (of 3.125 cents) in a bond’s price.  
+
+## Zero Volatility Spread (ZVO)
+
+Zero-volatility spread (ZVO or Z-spread) is the constant spread that equates the price of a security to the present value of its cash flows when added to the yield at each point on the government curve spot rate(s) where cash flow is received.   The ZVO is computed using the entire yield curve to value each individual cash flow for all fixed income securities.
+
