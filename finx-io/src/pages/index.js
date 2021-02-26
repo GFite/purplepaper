@@ -385,30 +385,30 @@ const DeveloperSection = props => {
           curves and other components are included in the subscription. You tell us the security identifiers and position
           values and we handle the rest.
       </StyledBodySubText>
-      <BigNumbers>
+      <ProtocolData.BigNumbers>
         <span>
           corporates<span style={{ opacity: '0.1' }}></span>
         </span>
           <p style={{ fontSize: '14px' }}>Global Coverage</p>
-      </BigNumbers>
-        <BigNumbers>
+      </ProtocolData.BigNumbers>
+        <ProtocolData.BigNumbers>
         <span>
           municipals<span style={{ opacity: '0.1' }}></span>
         </span>
             <p style={{ fontSize: '14px' }}>30M CUSIPs</p>
-        </BigNumbers>
-        <BigNumbers>
+        </ProtocolData.BigNumbers>
+        <ProtocolData.BigNumbers>
         <span>
           government<span style={{ opacity: '0.1' }}></span>
         </span>
             <p style={{ fontSize: '14px' }}>All Currencies</p>
-        </BigNumbers>
-        <BigNumbers>
+        </ProtocolData.BigNumbers>
+        <ProtocolData.BigNumbers>
         <span>
           structured products<span style={{ opacity: '0.1' }}></span>
         </span>
-            <p style={{ fontSize: '14px' }}>RMBS / CMBS / CMO / CLO / CDO</p>
-        </BigNumbers>
+            <p style={{ fontSize: '14px' }}>RMBS  CMBS  CMO  CLO  CDO  ABS</p>
+        </ProtocolData.BigNumbers>
       <StyledBannerImage fadeIn={false} fluid={props.data.banner.childImageSharp.fluid} />
     </>
   )
