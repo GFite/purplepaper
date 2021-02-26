@@ -1,3 +1,3 @@
 # RUN AS SUDO SU
 cd finx-io
-yarn && yarn start
+sudo yarn && sudo yarn start

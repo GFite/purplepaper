@@ -202,7 +202,7 @@ const Docs = props => {
             <SEO
               key={node.fields.slug}
               title={props.pageContext.frontmatter.title}
-              site={'FINX ' + title}
+              site={'Fite Analytics ' + title}
               path={props.location.pathname}
               description={node.excerpt}
             />
@@ -284,7 +284,7 @@ const Docs = props => {
                     {node.fields.slug === '/docs/v2/' && (
                       <StyledLink style={{ alignItems: 'flex-start' }} to={'/docs/v2/protocol-overview/'} rel="next">
                         <small>Next</small>
-                        <span>How FINX works →</span>
+                        <span>How Fite Analytics works →</span>
                       </StyledLink>
                     )}
                   </StyledDocsNav>

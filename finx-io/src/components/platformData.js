@@ -48,11 +48,11 @@ const Numbers = styled(StyledSectionFlex)`
 `
 
 const BigNumbers = styled(StyledSectionFlex)`
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 700;
   flex-direction: column;
   @media (max-width: 960px) {
-    font-size: 32px;
+    font-size: 24px;
   }
 `
 
@@ -212,28 +212,28 @@ const ProtocolData = () => {
           <p style={{ fontSize: '14px' }}>24H LP fees</p>
         </BigNumbers>  */}
         <BigNumbers>
-          <span>
-            $12T<span style={{ opacity: '0.1' }}>+</span>
-          </span>
-          <p style={{ fontSize: '14px' }}>Notional Value Analyzed Daily</p>
+        <span>
+          CORP<span style={{ opacity: '0.1' }}></span>
+        </span>
+          <p style={{ fontSize: '14px' }}>global coverage</p>
         </BigNumbers>
         <BigNumbers>
-          <span>
-            &gt;30M<span style={{ opacity: '0.1' }}>+</span>
-          </span>
-          <p style={{ fontSize: '14px' }}>Securities in SecDB</p>
+        <span>
+          MUNI<span style={{ opacity: '0.1' }}></span>
+        </span>
+          <p style={{ fontSize: '14px' }}>30M CUSIPs</p>
         </BigNumbers>
         <BigNumbers>
-          <span>
-            40 min<span style={{ opacity: '0.1' }}></span>
-          </span>
-          <p style={{ fontSize: '14px' }}>time to analyze 300,000 securities</p>
+        <span>
+          GOV<span style={{ opacity: '0.1' }}></span>
+        </span>
+          <p style={{ fontSize: '14px' }}>All Currencies</p>
         </BigNumbers>
         <BigNumbers>
-          <span>
-            12+<span style={{ opacity: '0.1' }}>+</span>
-          </span>
-          <p style={{ fontSize: '14px' }}>Source Vendor Integrations</p>
+        <span>
+          STRUCTURED<span style={{ opacity: '0.1' }}></span>
+        </span>
+          <p style={{ fontSize: '14px' }}>RMBS  CMBS  CMO  CLO  CDO  ABS</p>
         </BigNumbers>
       </div>
     </Numbers>

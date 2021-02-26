@@ -8,6 +8,7 @@ import BG from '../components/bg'
 import { Button } from '../components/button'
 import Wizard from '../components/wizard'
 import ProtocolData from '../components/protocolData'
+import PlatformData from '../components/platformData'
 
 import { useDarkMode } from '../contexts/Application'
 
@@ -299,9 +300,9 @@ const IndexPage = props => {
       />
       <StyledBody>
         <StyledTitle>
-          <StyledBodyTitle>Corporate Debt Decentralized</StyledBodyTitle>
+          <StyledBodyTitle>Capital Markets Data & Analytics</StyledBodyTitle>
           <StyledBodySubTitle style={{ marginBottom: '3rem' }}>
-            Guaranteed 24/7 liquidity for corporations provided by millions of users.
+            Comprehensive coverage of the global bond markets, in the cloud.
           </StyledBodySubTitle>
           <StyledItemRow>
             <Button
@@ -314,9 +315,9 @@ const IndexPage = props => {
               }}
               target="_blank"
               // href="https://app.uniswap.org/"
-              href="https://app.finx.io/"
+              href="/how_it_works"
             >
-              Use FINX App
+              How It Works
             </Button>
             <Button
               outlined
@@ -379,11 +380,11 @@ const StyledSectionTitle = styled.h1`
 const DeveloperSection = props => {
   return (
     <>
-      <StyledSectionTitle>A decentralized corporate finance ecosystem.</StyledSectionTitle>
+      <StyledSectionTitle>One Subscription for All Sectors of the Global Bond Markets.</StyledSectionTitle>
       <StyledBodySubText>
-        The FINX protocol empowers liquidity providers, corporations, ratings agencies and insurers
-        to participate in a financial marketplace that is open and accessible to all.
+        A single subscription includes all reference data -- terms and conditions, schedules, curves, swap rates and prepayment models.
       </StyledBodySubText>
+        <PlatformData />
       <StyledBannerImage fadeIn={false} fluid={props.data.banner.childImageSharp.fluid} />
     </>
   )
@@ -392,10 +393,10 @@ const DeveloperSection = props => {
 const ProductsSection = props => {
   return (
     <>
-      <StyledSectionTitle>Smart Contracts for Providing Debt Capital to the Crypto Markets</StyledSectionTitle>
+      <StyledSectionTitle>Configurable Risk and Attribution Models</StyledSectionTitle>
       <StyledBodySubText>
-          We facilitate complex, large scale arrangements for Corporations that require Debt Pools.
-          Smart Contract Debt Pools are on Etheryeum 2, as ERC-20 Smart Contracts. This gives anyone access to the world of Decentralized Debt Capital.
+          We build best-of-breed models to calculate yield, duration, spread, and sensitivity. Curves, volatility, forward rates, and
+          other inputs can be calibrated or taken out of the box to match street-standards.
       </StyledBodySubText>
       <StyledItemRow>
         <StyledExternalLink href={'https://socks.uniswap.org'} target="_blank">
@@ -415,20 +416,20 @@ const ProductsSection = props => {
         </StyledExternalLink>
       </StyledItemRow>
 
-      <StyledSectionTitle>Superpowers for Corporate DeFi Teams.</StyledSectionTitle>
+      <StyledSectionTitle>Superpowers for Quantitative Developers.</StyledSectionTitle>
       <StyledBodySubText>
         Check out the <Link to="/docs/v2/">documentation</Link>, the{' '}
-        <Link to="/docs/v2/javascript-SDK/quick-start/">quick start</Link> or a guide below to integrate your Corporate Finance
-        with thousands of tokens and billions in liquidity.
+        <Link to="/docs/v2/javascript-SDK/quick-start/">quick start</Link> or a guide below to integrate your workflows and
+          your portfolio content with APIs and batch processes.
       </StyledBodySubText>
       <StyledSectionFlex style={{ paddingBottom: '0px', paddingTop: '1rem' }}>
         <Wizard />
       </StyledSectionFlex>
 
-      <StyledSectionTitle>A global community.</StyledSectionTitle>
+      <StyledSectionTitle>A global community of Bond Enthusiasts.</StyledSectionTitle>
       <StyledBodySubText>
-        Learn more about FINX, chat with the team, others in the community, and have your say in shaping the future
-        of the Uniswap protocol.
+        Learn more about Fite Analytics, chat with the team, others in the community, and have your say in shaping the future
+        of the platform.
       </StyledBodySubText>
       <StyledItemRow>
         <StyledExternalLink href={'https://discord.gg/FCfyBSbCU5'} target="_blank">

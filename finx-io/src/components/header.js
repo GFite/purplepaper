@@ -258,7 +258,7 @@ const Header = props => {
           }}
         >
           <StyledUni />
-          <HeaderText>FINX</HeaderText>
+          <HeaderText>Fite Analytics</HeaderText>
         </StyledHomeLink>
       </StyledNavTitleWrapper>
       <MenuToggle ref={button} open={isMenuOpen} onClick={() => updateIsMenuOpen(!isMenuOpen)}>
@@ -284,7 +284,7 @@ const Header = props => {
             // href="https://app.uniswap.org/"
             href="https://app.finx.io/"
           >
-            Use FINX
+            FITE App
           </StyledTradeLink>
         )}
       </StyledNav>

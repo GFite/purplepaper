@@ -1,40 +1,26 @@
 const menu = [
   {
-    name: 'Ecosystem',
+    name: 'Services',
     sublinks: [
       {
-        name: 'FINX App',
-        link: 'https://app.finx.io/#/',
-        description: 'Corporate Debt Pools'
+        name: 'Security Analytics',
+        link: 'docs/v2/methodology/security-analytics',
+        description: 'yield, spread, duration, sensitivity'
       },
       {
-        name: 'FINX Analytics',
-        link: 'https://info.finx.io/',
-        description: 'FINX analytics and historical data'
+        name: 'Security Cash Flows',
+        link: 'docs/v2/methodology/security-cash-flows',
+        description: 'high-fidelity cash flows for ALM'
       },
       {
-        name: 'Uniswap V2',
-        link: 'https://uniswap.org/',
-        description: 'Uniswap V2 DEX'
+        name: 'Portfolio Analytics',
+        link: '/docs/v2/methodology/portfolio-analytics',
+        description: 'multi-asset portfolio composition and risk analysis'
       },
       {
-        name: 'Token Lists',
-        link: 'https://tokenlists.org/',
-        description: 'A new Ethereum token list standard.'
-      },
-      {
-        name: 'Sybil',
-        link: 'https://sybil.org/#/',
-        description: 'Identities for governance'
-      }
-    ]
-  },
-  {
-    name: 'Token Sale',
-    sublinks: [
-      {
-        name: 'Genesis FINX Token Sale',
-        link: '/blog/finx'
+        name: 'Performance Attribution',
+        link: 'docs/v2/methodology/performance-attribution',
+        description: 'shift, twist, allocation and selection'
       }
     ]
   },
@@ -42,39 +28,28 @@ const menu = [
     name: 'Documents',
     sublinks: [
       {
-        name: 'FINX Documents',
-        link: 'docs/v2/protocol-overview/how-finx-works'
+        name: 'Methodology',
+        link: 'docs/v2/methodology/glossary',
+        description: 'model documentation'
       },
-      { name: 'Whitepaper', link: '/docs/v2/whitepaper' },
-      { name: 'Uniswap V2 Whitepaper', link: '/whitepaper.pdf' }
-    ]
+      {
+        name: 'Technology', link: '/docs/v2/technology/intro',
+        description: 'APIs and Batch Submit'
+      }]
   },
   {
     name: 'Developers',
     sublinks: [
-      { name: 'GitHub', link: 'https://github.com/FinX-IO' },
-      { name: 'Developer Guide', link: '/docs/v2/sdk'},
-      { name: 'Bug Bounty', link: '/bug-bounty' }
-    ]
-  },
-  {
-    name: 'Governance',
-    sublinks: [
-      {
-        name: 'FINX Token',
-        link: '/blog/finx'
-      },
-      { name: 'Audit', link: '/audit.html' },
-      { name: 'Voting Portal', link: 'https://app.finx.io/#/vote' },
-      { name: 'Documentation', link: '/docs/v2/governance/overview' }
+      { name: 'GitHub', link: 'https://github.com/FiteAnalytics' },
+      { name: 'Developer Guide', link: '/docs/v2/technology/developer-guide'}
     ]
   },
   {
     name: 'Community',
     sublinks: [
-      { name: 'FINX Discord', link: 'https://discord.gg/FCfyBSbCU5' },
-      { name: 'FINX Twitter', link: 'https://twitter.com/FinX_io' },
-      { name: 'FINX Reddit', link: 'https://www.reddit.com/r/FINX' }
+      { name: 'Fite Analytics Discord', link: 'https://discord.gg/FCfyBSbCU5' },
+      { name: 'Fite Analytics Twitter', link: 'https://twitter.com/FinX_io' },
+      { name: 'Fite Analytics Reddit', link: 'https://www.reddit.com/r/FINX' }
     ]
   },
   {

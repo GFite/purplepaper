@@ -225,7 +225,7 @@ const Header = props => {
           {props.path && props.path !== '/' && props.path !== '' && (
             <>
               <StyledNavTitle to={'/' + props.path.split('/')[1]}>
-                {props.path.length > 20 ? 'Docs /' : 'FINX Docs /'}
+                {props.path.length > 20 ? 'Docs /' : 'Fite Analytics Docs /'}
               </StyledNavTitle>
               <StyledNavTitle to={'/docs/' + props.path.split('/')[2]}>
                 {props.path.split('/')[2].replace(/(^|\s)\S/g, function(t) {
@@ -265,7 +265,7 @@ const Header = props => {
               <Discord />
             </a>
           </StyledButton>
-          <StyledButton fill>Uni
+          <StyledButton fill>
             <a href="https://github.com/FinX-IO/">
               <Github width={20} />
             </a>
