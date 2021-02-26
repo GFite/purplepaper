@@ -8,6 +8,7 @@ import BG from '../components/bg'
 import { Button } from '../components/button'
 import Wizard from '../components/wizard'
 import ProtocolData from '../components/protocolData'
+import PlatformData from '../components/platformData'
 
 import { useDarkMode } from '../contexts/Application'
 
@@ -385,30 +386,7 @@ const DeveloperSection = props => {
           curves and other components are included in the subscription. You tell us the security identifiers and position
           values and we handle the rest.
       </StyledBodySubText>
-      <ProtocolData.BigNumbers>
-        <span>
-          corporates<span style={{ opacity: '0.1' }}></span>
-        </span>
-          <p style={{ fontSize: '14px' }}>Global Coverage</p>
-      </ProtocolData.BigNumbers>
-        <ProtocolData.BigNumbers>
-        <span>
-          municipals<span style={{ opacity: '0.1' }}></span>
-        </span>
-            <p style={{ fontSize: '14px' }}>30M CUSIPs</p>
-        </ProtocolData.BigNumbers>
-        <ProtocolData.BigNumbers>
-        <span>
-          government<span style={{ opacity: '0.1' }}></span>
-        </span>
-            <p style={{ fontSize: '14px' }}>All Currencies</p>
-        </ProtocolData.BigNumbers>
-        <ProtocolData.BigNumbers>
-        <span>
-          structured products<span style={{ opacity: '0.1' }}></span>
-        </span>
-            <p style={{ fontSize: '14px' }}>RMBS  CMBS  CMO  CLO  CDO  ABS</p>
-        </ProtocolData.BigNumbers>
+        <PlatformData />
       <StyledBannerImage fadeIn={false} fluid={props.data.banner.childImageSharp.fluid} />
     </>
   )
