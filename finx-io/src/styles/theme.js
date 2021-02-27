@@ -101,8 +101,8 @@ export const theme = darkMode => ({
 
     // link: darkMode ? '#2F80ED' : '#FF007A',
     // invertedLink: darkMode ? '#2F80ED' : '#FF007A'
-    invertedLink: darkMode ? '#7A1C99' : '#D3FF7A',
-    link: darkMode ? '#D3FF7A' : '#7A1C99'
+    invertedLink: darkMode ? '#7A1C99' : '#74992B',
+    link: darkMode ? '#74992B' : '#7A1C99'
   },
 
   shadows: {

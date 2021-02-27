@@ -63,11 +63,11 @@ const StyledSectionFlex = styled.div`
   }
 `
 
-const Numbers = styled(StyledSectionFlex)`
-  @media (max-width: 960px) {
-    display: none;
-  }
-`
+// const Numbers = styled(StyledSectionFlex)`
+//   @media (max-width: 960px) {
+//     display: none;
+//   }
+// `
 
 const Title = styled.h1`
   /* font-size: 3rem; */
