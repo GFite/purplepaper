@@ -201,55 +201,55 @@ const ProtocolData = () => {
       <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between', alignItems: 'center', margin: 0 }}>
         <BigNumbers>
           <span>
-            Corporate <span style={{ opacity: '0.1' }}>Bonds</span>
+            Corporate <span style={{ opacity: '0.1' }}> bonds</span>
           </span>
           <p style={{ fontSize: '14px' }}>Excellent coverage of global bonds in all currencies, and the ability to shock
-          rates and curves in any currency.</p>
+          rates and curves in any currency. Fixed, floating and benchmarked rates maintained several times per day.</p>
         </BigNumbers>
         <BigNumbers>
           <span>
-            Municipal <span style={{ opacity: '0.1' }}>Bonds</span>
+            Municipal <span style={{ opacity: '0.1' }}> bonds</span>
           </span>
           <p style={{ fontSize: '14px' }}>Complete LSEG/Mergent coverage of the North American municipal market including
           full schedules.</p>
         </BigNumbers>
         <BigNumbers>
           <span>
-            Government <span style={{ opacity: '0.1' }}>/Treasury</span>
+            Government <span style={{ opacity: '0.1' }}> treasury</span>
           </span>
           <p style={{ fontSize: '14px' }}>Comprehensive global coverage of government-issued securities.</p>
         </BigNumbers>
         <BigNumbers>
           <span>
-            Supranational <span style={{ opacity: '0.1' }}>Issues</span>
+            Leveraged <span style={{ opacity: '0.1' }}>loans</span>
           </span>
-          <p style={{ fontSize: '14px' }}>Coverage of most USD & EUR denominated supranational funds.</p>
+          <p style={{ fontSize: '14px' }}>IHS Markit LX Universe with terms, conditions and cash flows.</p>
         </BigNumbers>
       </div>
       <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between', alignItems: 'center', margin: 0 }}>
         <BigNumbers>
             <span>
-              Mortgage-Backed <span style={{ opacity: '0.1' }}>Securities</span>
+              Mortgage-Backed <span style={{ opacity: '0.1' }}>securities</span>
             </span>
           <p style={{ fontSize: '14px' }}>Intex terms & conditions and cash flows plus AD&Co prepayment precision, in the cloud.
           </p>
         </BigNumbers>
         <BigNumbers>
             <span>
-              Asset-Backed <span style={{ opacity: '0.1' }}>Securities</span>
+              Asset-Backed <span style={{ opacity: '0.1' }}>securities</span>
             </span>
           <p style={{ fontSize: '14px' }}>Intex terms & conditions and cash flows plus Fite prepayment models on student loans,
           credit cards and other asset-backed sectors.</p>
         </BigNumbers>
         <BigNumbers>
             <span>
-              CMO/CDO/CLO <span style={{ opacity: '0.1' }}></span>
+              CMO CDO CLO<span style={{ opacity: '0.1' }}></span>
             </span>
           <p style={{ fontSize: '14px' }}>Loan-level analysis with complete introspection.</p>
         </BigNumbers>
         <BigNumbers>
             <span>
-              Hedge <span style={{ opacity: '0.1' }}>Templates</span>
+              Hedge <span style={{ opacity: '0.1' }}>templates</span>
             </span>
           <p style={{ fontSize: '14px' }}>We have dense modeling capabilities that allow you to form your own hedge positions, or
           perform pre-trade ex ante simulations of hedges.</p>
