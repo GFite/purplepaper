@@ -13,6 +13,7 @@ import { Link } from 'gatsby'
 import Layout from '../layouts'
 import SEO from '../components/seo'
 import BG from '../components/bg'
+import SecurityCoverage from '../components/securityCoverageData'
 
 const StyledAbout = styled.div`
   display: grid;
@@ -253,7 +254,7 @@ const About = props => {
             <p>Our analytic calculations produce street-standard results across all bond sectors, including hard-to-value
             securities such as structured products, convertibles and hedged positions.</p>
             <h2>Security Sectors Covered</h2>
-
+            <SecurityCoverage />
             <h3>We believe in zero implementation. Get access to security analytics today. <a href={"mailto:info@fiteanalytics.com"}>Email Us</a></h3>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
               <InternalLink to="/docs/v2">
