@@ -315,13 +315,13 @@ const IndexPage = props => {
               }}
               target="_blank"
               // href="https://app.uniswap.org/"
-              href="/how_it_works"
+              href="/how-it-works"
             >
               How It Works
             </Button>
             <Button
               outlined
-              to="/docs"
+              to="/docs/"
               as={Link}
               style={{
                 fontSize: '20px'
