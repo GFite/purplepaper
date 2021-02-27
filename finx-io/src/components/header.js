@@ -7,7 +7,7 @@ import styled from 'styled-components'
 import Menu from './menu'
 
 // import Uni from '../images/finx_logo_white.svg'
-import Uni from '../images/uni.inline.svg'
+import Uni from '../images/bak.uni.inline.svg'
 import MenuIcon from '../images/menu.inline.svg'
 import CloseIcon from '../images/x.inline.svg'
 
