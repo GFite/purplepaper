@@ -10,31 +10,31 @@ const links = [
     name: 'Developers',
     sublinks: [
       {
-        title: 'Token Swaps',
+        title: 'Analytics APIs',
         link: '/docs/v2/smart-contract-integration/trading-from-a-smart-contract/',
-        description: 'Simplify the process of integrating Uniswap into your project.',
-        tag: 'reference',
-        icon: '📦'
-      },
-      {
-        title: 'Programmable Liquidity',
-        link: '/docs/v2/smart-contract-integration/providing-liquidity/',
-        description: 'A step-by-step guide to getting started building interfaces with Uniswap.',
-        tag: 'tutorial',
-        icon: '🧼'
-      },
-
-      {
-        title: 'Flash Swaps',
-        link: '/docs/v2/core-concepts/flash-swaps/',
-        description: 'Withdraw the reserves of any ERC20 token on Uniswap and execute arbitrary logic.',
-        tag: 'guide',
+        description: 'Simplify the process of integrating Fite Analytics into your project.',
+        tag: 'api',
         icon: '⚡'
       },
       {
-        title: 'Oracles',
+        title: 'Cash Flow APIs',
+        link: '/docs/v2/smart-contract-integration/providing-liquidity/',
+        description: 'The most granular and accurate cash flow projections available.',
+        tag: 'cash flow',
+        icon: '$'
+      },
+
+      {
+        title: 'Batch Files',
+        link: '/docs/v2/core-concepts/flash-swaps/',
+        description: 'Withdraw the reserves of any ERC20 token on Uniswap and execute arbitrary logic.',
+        tag: 'guide',
+        icon: '📦'
+      },
+      {
+        title: 'SDK',
         link: '/docs/v2/core-concepts/oracles/',
-        description: 'Highly decentralized, manipulation-resistant, on-chain price feeds.',
+        description: 'How-to Guides and Recipes.',
         icon: '🔮'
       }
     ]

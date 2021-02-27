@@ -213,7 +213,7 @@ const IndexPage = props => {
           }
         }
       }
-      banner: file(relativePath: { eq: "Banner.jpg" }) {
+      banner: file(relativePath: { eq: "fite_partners.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid_noBase64
@@ -227,14 +227,14 @@ const IndexPage = props => {
           }
         }
       }
-      info: file(relativePath: { eq: "info.png" }) {
+      batch: file(relativePath: { eq: "batch.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      socks: file(relativePath: { eq: "socks.png" }) {
+      aoi: file(relativePath: { eq: "api.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -389,26 +389,18 @@ const DeveloperSection = props => {
 const ProductsSection = props => {
   return (
     <>
-      <StyledSectionTitle>Configurable Risk and Attribution Models</StyledSectionTitle>
+      <StyledSectionTitle>Get Results via API or Batch</StyledSectionTitle>
       <StyledBodySubText>
-          We build best-of-breed models to calculate yield, duration, spread, and sensitivity. Curves, volatility, forward rates, and
-          other inputs can be calibrated or taken out of the box to match street-standards.
+          Make individual API requests over HTTP, or send us a large list of securities to analyze and we will send you back the
+          results. All of our calculations are available through either delivery mode, including complex result sets such as
+          cash flow vectors, scenario and stress tests, and key rate durations.
       </StyledBodySubText>
       <StyledItemRow>
-        <StyledExternalLink href={'https://socks.uniswap.org'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.socks.childImageSharp.fluid} />
+        <StyledExternalLink href={'/docs'} target="_blank">
+          <StyledProductImage fadeIn={false} fluid={props.data.api.childImageSharp.fluid} />
         </StyledExternalLink>
-        <StyledExternalLink href={'https://info.uniswap.org'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.info.childImageSharp.fluid} />
-        </StyledExternalLink>
-        <StyledExternalLink href={'https://app.finx.io'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.swap.childImageSharp.fluid} />
-        </StyledExternalLink>
-        <StyledExternalLink href={'https://tokenlists.org'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.tokenlists.childImageSharp.fluid} />
-        </StyledExternalLink>
-        <StyledExternalLink href={'https://sybil.org'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.sybil.childImageSharp.fluid} />
+        <StyledExternalLink href={'/docs'} target="_blank">
+          <StyledProductImage fadeIn={false} fluid={props.data.batch.childImageSharp.fluid} />
         </StyledExternalLink>
       </StyledItemRow>
 
