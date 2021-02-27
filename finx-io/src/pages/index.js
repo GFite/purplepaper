@@ -234,7 +234,7 @@ const IndexPage = props => {
           }
         }
       }
-      aoi: file(relativePath: { eq: "api.png" }) {
+      api: file(relativePath: { eq: "api.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
