@@ -266,37 +266,37 @@ const About = props => {
             <p>industry experience + quantitative excellence + technology innovation</p>
 
             <span>
-              <a target="_blank" href="https://www.linkedin.com/in/geoffreyfite/">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/geoffreyfite/">
                 {' '}
                 <h3>Geoff Fite, CEO</h3>
               </a>
             </span>
             <span>
-              <a target="_blank" href="https://www.linkedin.com/in/sonia-dixon-83275011/">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sonia-dixon-83275011/">
                 {' '}
                 <h3>Sonia Dixon, Head of Customer Experience</h3>
               </a>
             </span>
             <span>
-              <a target="_blank" href="https://www.linkedin.com/in/richardmule/">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/richardmule/">
                 {' '}
                 <h3>Richard Mulé, Head of Engineering</h3>
               </a>
             </span>
             <span>
-              <a target="_blank" href="https://www.linkedin.com/in/maderson-ly-89835541/">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/maderson-ly-89835541/">
                 {' '}
                 <h3>Maderson Ly, Data Engineer</h3>
               </a>
             </span>
             <span>
-              <a target="_blank" href="https://www.linkedin.com/in/jakemathai/">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jakemathai/">
                 {' '}
                 <h3>Jake Mathai, Software Engineer</h3>
               </a>
             </span>
             <span>
-              <a target="_blank" href="https://www.linkedin.com/in/tashahjohnson/">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/tashahjohnson/">
                 {' '}
                 <h3>Tashah Johnson, Business Analyst</h3>
               </a>
