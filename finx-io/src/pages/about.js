@@ -35,7 +35,7 @@ const StyledAbout = styled.div`
 `
 
 const StyledSectionFlex = styled.div`
-  padding: 0 0 4rem 0;
+  padding: 4rem 4rem 4rem 4rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
