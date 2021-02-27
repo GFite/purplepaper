@@ -257,7 +257,7 @@ const About = props => {
             <SecurityCoverage />
             <h3>We believe in zero implementation. Get access to security analytics today. <a href={"mailto:info@fiteanalytics.com"}>Email Us</a></h3>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
-              <InternalLink to="/docs/v2">
+              <InternalLink to="/docs">
                 Documentation <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
               <InternalLink to="/faq">FAQ</InternalLink>
