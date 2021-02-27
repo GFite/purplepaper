@@ -321,7 +321,7 @@ const IndexPage = props => {
             </Button>
             <Button
               outlined
-              to="/docs/v2"
+              to="/docs/v2/methodology/glossary"
               as={Link}
               style={{
                 fontSize: '20px'
