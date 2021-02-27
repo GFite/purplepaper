@@ -42,13 +42,13 @@ const StyledSectionFlex = styled.div`
 `
 
 const Numbers = styled(StyledSectionFlex)`
-  @media (max-width: 960px) {
+  @media (max-width: 940px) {
     /* display: none; */
   }
 `
 
 const BigNumbers = styled(StyledSectionFlex)`
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 700;
   flex-direction: column;
   @media (max-width: 960px) {
