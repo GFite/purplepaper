@@ -249,7 +249,7 @@ const About = props => {
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
             <p>Fite Analytics is a cloud-native analytics company that specializes in the global bond markets.</p>
             <p>Fite Analytics partners with data vendors to bring together the largest cloud-native security database available today. Currently
-            Fite Analytics SecDB has over <span><h4><strong>30 million</strong></h4></span> securities.</p>
+            Fite Analytics SecDB has over <h4 display={"inline"}><strong>30 million</strong></h4> securities.</p>
             <p>Our analytic calculations produce street-standard results across all bond sectors, including hard-to-value
             securities such as structured products, convertibles and hedged positions.</p>
             <h3>We believe in zero implementation. Get access to security analytics today. <a href={"mailto:info@fiteanalytics.com"}>Email Us</a></h3>

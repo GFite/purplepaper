@@ -320,7 +320,7 @@ const SideBar = props => {
             <StyledLink
             isActive={atTopLevel}
             style={{ marginBottom: '1rem', display: 'inline-block', padding: !atTopLevel && '0px', fontSize: '14px' }}
-            to={`/docs`}
+            to={`/docs/`}
             >
         {'← Back'}
             </StyledLink>
