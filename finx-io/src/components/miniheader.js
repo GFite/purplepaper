@@ -115,9 +115,9 @@ const StyledHomeLink = styled(Link)`
 `
 
 const StyledUni = styled(Uni)`
-  path {
-    fill: ${({ theme }) => theme.textColor};
-  }
+  // path {
+  //   fill: ${({ theme }) => theme.textColor};
+  // }
   margin: 0;
   width: 20px;
   height: 20px;
