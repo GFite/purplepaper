@@ -13,7 +13,6 @@ import { Link } from 'gatsby'
 import Layout from '../layouts'
 import SEO from '../components/seo'
 import BG from '../components/bg'
-import SecurityCoverage from '../components/securityCoverageData'
 
 const StyledAbout = styled.div`
   display: grid;
@@ -35,7 +34,7 @@ const StyledAbout = styled.div`
 `
 
 const StyledSectionFlex = styled.div`
-  padding: 4rem 4rem 4rem 4rem;
+  padding: 0 0 4rem 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -115,8 +114,8 @@ export const GET_BLOCK = gql`
 `
 
 export const ETH_PRICE = block => {
-  const queryString = block
-    ? `
+    const queryString = block
+        ? `
     query bundles {
       bundles(where: { id: ${1} } block: {number: ${block}}) {
         id
@@ -124,14 +123,14 @@ export const ETH_PRICE = block => {
       }
     }
   `
-    : ` query bundles {
+        : ` query bundles {
       bundles(where: { id: ${1} }) {
         id
         ethPrice
       }
     }
   `
-  return gql(queryString)
+    return gql(queryString)
 }
 
 const APOLLO_QUERY = gql`
@@ -148,7 +147,7 @@ const APOLLO_QUERY = gql`
 `
 
 export const UNISWAP_GLOBALS_24HOURS_AGO_QUERY = block => {
-  let queryString = `
+    let queryString = `
   query uniswapFactory {
     uniswapFactory(id: "0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f", block: { number: ${block} }) {
       totalVolumeUSD
@@ -158,87 +157,87 @@ export const UNISWAP_GLOBALS_24HOURS_AGO_QUERY = block => {
     }
   }
   `
-  return gql(queryString)
+    return gql(queryString)
 }
 
 const About = props => {
-  dayjs.extend(utc)
-  const utcCurrentTime = dayjs()
-  const utcOneDayBack = utcCurrentTime.subtract(1, 'day').unix()
+    dayjs.extend(utc)
+    const utcCurrentTime = dayjs()
+    const utcOneDayBack = utcCurrentTime.subtract(1, 'day').unix()
 
-  const { data: blockData } = useQuery(GET_BLOCK, {
-    client: blockClient,
-    variables: {
-      timestamp: utcOneDayBack
+    const { data: blockData } = useQuery(GET_BLOCK, {
+        client: blockClient,
+        variables: {
+            timestamp: utcOneDayBack
+        }
+    })
+    const oneDayBackBlock = blockData?.blocks?.[0]?.number
+    const { data } = useQuery(APOLLO_QUERY, { pollInterval: 10000, client: client })
+
+    const [oneDayResult, setOnedayResult] = useState()
+
+    useEffect(() => {
+        async function getData() {
+            let result = await client.query({
+                query: UNISWAP_GLOBALS_24HOURS_AGO_QUERY(oneDayBackBlock),
+
+                fetchPolicy: 'cache-first'
+            })
+            if (result) {
+                setOnedayResult(result?.data?.uniswapFactory)
+            }
+        }
+        if (oneDayBackBlock) {
+            getData()
+        }
+    }, [oneDayBackBlock])
+
+    let UniStats = {
+        key: function(n) {
+            return this[Object.keys(this)[n]]
+        }
     }
-  })
-  const oneDayBackBlock = blockData?.blocks?.[0]?.number
-  const { data } = useQuery(APOLLO_QUERY, { pollInterval: 10000, client: client })
 
-  const [oneDayResult, setOnedayResult] = useState()
+    if (data && oneDayResult) {
+        const volume24Hour = parseFloat(data?.uniswapFactory?.totalVolumeUSD) - parseFloat(oneDayResult?.totalVolumeUSD)
 
-  useEffect(() => {
-    async function getData() {
-      let result = await client.query({
-        query: UNISWAP_GLOBALS_24HOURS_AGO_QUERY(oneDayBackBlock),
+        UniStats.volume = [
+            new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                notation: 'compact',
+                compactDisplay: 'short'
+            }).format(volume24Hour)
+        ]
+        UniStats.liquidity = [
+            new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                notation: 'compact',
+                compactDisplay: 'short'
+                // maximumSignificantDigits: 5
+            }).format(data.uniswapFactory.totalLiquidityUSD)
+        ]
+        UniStats.exchanges = [Number.parseFloat(data?.uniswapFactory?.pairCount)]
 
-        fetchPolicy: 'cache-first'
-      })
-      if (result) {
-        setOnedayResult(result?.data?.uniswapFactory)
-      }
+        UniStats.ETHprice = [
+            new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                notation: 'compact',
+                compactDisplay: 'short',
+                maximumSignificantDigits: 5
+            }).format(parseFloat(data?.bundle?.ethPrice)),
+            '<small> Uni ETH Price </small>'
+        ]
     }
-    if (oneDayBackBlock) {
-      getData()
-    }
-  }, [oneDayBackBlock])
 
-  let UniStats = {
-    key: function(n) {
-      return this[Object.keys(this)[n]]
-    }
-  }
+    return (
+        <Layout path={props.location.pathname}>
+            <BG />
 
-  if (data && oneDayResult) {
-    const volume24Hour = parseFloat(data?.uniswapFactory?.totalVolumeUSD) - parseFloat(oneDayResult?.totalVolumeUSD)
-
-    UniStats.volume = [
-      new Intl.NumberFormat('en-US', {
-        style: 'currency',
-        currency: 'USD',
-        notation: 'compact',
-        compactDisplay: 'short'
-      }).format(volume24Hour)
-    ]
-    UniStats.liquidity = [
-      new Intl.NumberFormat('en-US', {
-        style: 'currency',
-        currency: 'USD',
-        notation: 'compact',
-        compactDisplay: 'short'
-        // maximumSignificantDigits: 5
-      }).format(data.uniswapFactory.totalLiquidityUSD)
-    ]
-    UniStats.exchanges = [Number.parseFloat(data?.uniswapFactory?.pairCount)]
-
-    UniStats.ETHprice = [
-      new Intl.NumberFormat('en-US', {
-        style: 'currency',
-        currency: 'USD',
-        notation: 'compact',
-        compactDisplay: 'short',
-        maximumSignificantDigits: 5
-      }).format(parseFloat(data?.bundle?.ethPrice)),
-      '<small> Uni ETH Price </small>'
-    ]
-  }
-
-  return (
-    <Layout path={props.location.pathname}>
-      <BG />
-
-      <SEO title="About" path={props.location.pathname} />
-      <StyledAbout>
+            <SEO title="About" path={props.location.pathname} />
+            <StyledAbout>
         <span style={{ marginTop: '5rem' }}>
           <Title style={{ paddingBottom: '4rem' }}>
             Fite Analytics is an Analytics and Data Processing company.
@@ -250,14 +249,12 @@ const About = props => {
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
             <p>Fite Analytics is a cloud-native analytics company that specializes in the global bond markets.</p>
             <p>Fite Analytics partners with data vendors to bring together the largest cloud-native security database available today. Currently
-            Fite Analytics SecDB has over <span style={{ display: 'inline' }}><h4><strong>30 million</strong> securities.</h4></span></p>
+            Fite Analytics SecDB has over <span style={{ display: 'inline' }}><h4><strong>30 million</strong></h4> securities.</span></p>
             <p>Our analytic calculations produce street-standard results across all bond sectors, including hard-to-value
             securities such as structured products, convertibles and hedged positions.</p>
-            <h1>Security Sectors Covered</h1>
-            <SecurityCoverage />
             <h3>We believe in zero implementation. Get access to security analytics today. <a href={"mailto:info@fiteanalytics.com"}>Email Us</a></h3>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
-              <InternalLink to="/docs">
+              <InternalLink to="/docs/v2">
                 Documentation <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
               <InternalLink to="/faq">FAQ</InternalLink>
@@ -271,37 +268,37 @@ const About = props => {
             <span>
               <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/geoffreyfite/">
                 {' '}
-                <h3>Geoff Fite, CEO</h3>
+                  <h3>Geoff Fite, CEO</h3>
               </a>
             </span>
             <span>
               <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sonia-dixon-83275011/">
                 {' '}
-                <h3>Sonia Dixon, Head of Customer Experience</h3>
+                  <h3>Sonia Dixon, Head of Customer Experience</h3>
               </a>
             </span>
             <span>
               <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/richardmule/">
                 {' '}
-                <h3>Richard Mulé, Head of Engineering</h3>
+                  <h3>Richard Mulé, Head of Engineering</h3>
               </a>
             </span>
             <span>
               <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/maderson-ly-89835541/">
                 {' '}
-                <h3>Maderson Ly, Data Engineer</h3>
+                  <h3>Maderson Ly, Data Engineer</h3>
               </a>
             </span>
             <span>
               <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jakemathai/">
                 {' '}
-                <h3>Jake Mathai, Software Engineer</h3>
+                  <h3>Jake Mathai, Software Engineer</h3>
               </a>
             </span>
             <span>
               <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/tashahjohnson/">
                 {' '}
-                <h3>Tashah Johnson, Business Analyst</h3>
+                  <h3>Tashah Johnson, Business Analyst</h3>
               </a>
             </span>
           </StyledSectionFlex>
@@ -313,31 +310,31 @@ const About = props => {
             <span>
               <a href="#">
                 {' '}
-                <h3>Senior Frontend Engineer</h3>
+                  <h3>Senior Frontend Engineer</h3>
               </a>
             </span>
             <span>
               <a href="#">
                 {' '}
-                <h3>Smart Contract Engineer</h3>
+                  <h3>Smart Contract Engineer</h3>
               </a>
             </span>
             <span>
               <a href="#">
                 {' '}
-                <h3>Full Stack Engineer</h3>
+                  <h3>Full Stack Engineer</h3>
               </a>
             </span>
             <span>
               <a href="#">
                 {' '}
-                <h3>Software Engineering Intern</h3>
+                  <h3>Software Engineering Intern</h3>
               </a>
             </span>
             <span>
               <a href="#">
                 {' '}
-                <h3>Community Manager</h3>
+                  <h3>Community Manager</h3>
               </a>
             </span>
             <p>
@@ -374,9 +371,9 @@ const About = props => {
             </p>
           </StyledSectionFlex>
         </span>
-      </StyledAbout>
-    </Layout>
-  )
+            </StyledAbout>
+        </Layout>
+    )
 }
 
 export default About

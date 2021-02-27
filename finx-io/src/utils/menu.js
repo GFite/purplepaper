@@ -4,12 +4,12 @@ const menu = [
     sublinks: [
       {
         name: 'Security Analytics',
-        link: 'docs/v2/methodology/security-analytics',
+        link: '/docs/v2/methodology/security-analytics',
         description: 'yield, spread, duration, sensitivity'
       },
       {
         name: 'Security Cash Flows',
-        link: 'docs/v2/methodology/security-cash-flows',
+        link: '/docs/v2/methodology/security-cash-flows',
         description: 'high-fidelity cash flows for ALM'
       },
       {
@@ -19,7 +19,7 @@ const menu = [
       },
       {
         name: 'Performance Attribution',
-        link: 'docs/v2/methodology/performance-attribution',
+        link: '/docs/v2/methodology/performance-attribution',
         description: 'shift, twist, allocation and selection'
       }
     ]
@@ -29,7 +29,7 @@ const menu = [
     sublinks: [
       {
         name: 'Methodology',
-        link: 'docs/v2/methodology/glossary',
+        link: '/docs/v2/methodology/glossary',
         description: 'model documentation'
       },
       {
