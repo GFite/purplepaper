@@ -307,14 +307,10 @@ const IndexPage = props => {
           <StyledItemRow>
             <Button
               style={{
-                // background: `linear-gradient(128.17deg, #BD00FF -14.78%, #FF1F8A 110.05%)`,
-                  // '#7A1C99' : '#D3FF7A'
                 background: `linear-gradient(128.17deg, #7A1C99 -14.78%, #D3FF7A 110.05%)`,
                 color: 'white',
                 fontSize: '20px'
               }}
-              target="_blank"
-              // href="https://app.uniswap.org/"
               href="/how-it-works"
             >
               How It Works
