@@ -28,12 +28,17 @@ const menu = [
     name: 'Documents',
     sublinks: [
       {
-        name: 'Methodology',
-        link: '/docs/v2/methodology/glossary',
+        name: 'Security Coverage',
+        link: '/docs/v2/security-coverage',
         description: 'model documentation'
       },
       {
-        name: 'Technology', link: '/docs/v2/technology/intro',
+        name: 'Methodology',
+        link: '/docs/v2/methodology',
+        description: 'model documentation'
+      },
+      {
+        name: 'Technology', link: '/docs/v2/technology',
         description: 'APIs and Batch Submit'
       }]
   },
