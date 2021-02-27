@@ -396,11 +396,11 @@ const ProductsSection = props => {
           cash flow vectors, scenario and stress tests, and key rate durations.
       </StyledBodySubText>
       <StyledItemRow>
-        <StyledExternalLink href={'/docs'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.api.childImageSharp.fluid} />
+        <StyledExternalLink href={'/docs/v2/technology/apis'} target="_blank">
+          <StyledProductImage fadeIn={false} fluid={props.data.api.childImageSharp.fluid} />API
         </StyledExternalLink>
-        <StyledExternalLink href={'/docs'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.batch.childImageSharp.fluid} />
+        <StyledExternalLink href={'/docs/v2/technology/batch'} target="_blank">
+          <StyledProductImage fadeIn={false} fluid={props.data.batch.childImageSharp.fluid} />BATCH
         </StyledExternalLink>
       </StyledItemRow>
 
