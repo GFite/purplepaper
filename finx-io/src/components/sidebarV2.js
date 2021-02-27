@@ -310,13 +310,20 @@ const SideBar = props => {
             Introduction
           </StyledLink>
         ) : (
-          <StyledLink
+          // <StyledLink
+          //   isActive={atTopLevel}
+          //   style={{ marginBottom: '1rem', display: 'inline-block', padding: !atTopLevel && '0px', fontSize: '14px' }}
+          //   to={`/docs/${v2Toggle ? 'v2' : 'v1'}/`}
+          // >
+          //   {'← Back'}
+          // </StyledLink>
+            <StyledLink
             isActive={atTopLevel}
             style={{ marginBottom: '1rem', display: 'inline-block', padding: !atTopLevel && '0px', fontSize: '14px' }}
-            to={`/docs/${v2Toggle ? 'v2' : 'v1'}/`}
-          >
-            {'← Back'}
-          </StyledLink>
+            to={`/docs/v2`}
+            >
+        {'← Back'}
+            </StyledLink>
         )}
         {navData.edges
           .filter(({ node }) => {
@@ -382,22 +389,16 @@ const SideBar = props => {
           <StyledList style={{ marginTop: '1rem' }}>
             <SectionHeader>Reference</SectionHeader>
             <StyledListItem>
-              <StyledLink to={'/docs/v2/SDK/getting-started'}>SDK</StyledLink>
+              <StyledLink to={'/docs/v2/methodology'}>Methodology</StyledLink>
             </StyledListItem>
             <StyledListItem>
-              <StyledLink to={'/docs/v2/API/overview'}>API</StyledLink>
+              <StyledLink to={'/docs/v2/technology'}>Technology</StyledLink>
             </StyledListItem>
-            <StyledListItem>
-              <StyledLink to={'/docs/v2/smart-contracts/factory'}>Smart Contracts</StyledLink>
-            </StyledListItem>
-            {/*<StyledListItem>*/}
-            {/*  <StyledLink to={'/05-whitepaper.pdf'}>Whitepaper</StyledLink>*/}
-            {/*</StyledListItem>*/}
             <StyledListItem>
               <StyledLink to={'/docs/v2/05-whitepaper'}>Whitepaper</StyledLink>
             </StyledListItem>
             <StyledListItem>
-              <StyledLink to={'/docs/v2/governance/governance-reference'}>Governance</StyledLink>
+              <StyledLink to={'/about'}>Company Info</StyledLink>
             </StyledListItem>
           </StyledList>
         )}
