@@ -252,7 +252,7 @@ const About = props => {
               <InternalLink to="/sample-input">
                 Sample Input File <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
-              <InternalLink to="/sample-results">Sample Results File</InternalLink>
+                <InternalLink to="/sample-results">Sample Results File <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
             </div>
           </StyledSectionFlex>
 
@@ -263,7 +263,7 @@ const About = props => {
               <InternalLink to="/api-risk-sample">
                 Sample API Risk <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
-              <InternalLink to="/api-cash-flow-sample">Sample API Cash Flow</InternalLink>
+                <InternalLink to="/api-cash-flow-sample">Sample API Cash Flow <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
             </div>
           </StyledSectionFlex>
 
