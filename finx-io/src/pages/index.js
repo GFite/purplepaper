@@ -355,7 +355,7 @@ const StyledSectionTitle = styled.h1`
   overflow-wrap: normal;
   max-width: 900px;
   text-align: center;
-  font-family: 'GT Haptik Regular';
+  font-family: 'Lato', 'GT Haptik Regular';
   margin-top: 10rem;
 
   @media (max-width: 960px) {
