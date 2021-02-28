@@ -6,13 +6,13 @@ import gql from 'graphql-tag'
 import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc'
 import { useQuery } from '@apollo/react-hooks'
-import { client, blockClient } from '../apollo/client'
+import { client, blockClient } from '../../apollo/client'
 
 import { Link } from 'gatsby'
 
-import Layout from '../layouts'
-import SEO from '../components/seo'
-import BG from '../components/bg'
+import Layout from '../../layouts'
+import SEO from '../../components/seo'
+import BG from '../../components/bg'
 
 const StyledAbout = styled.div`
   display: grid;
@@ -235,141 +235,38 @@ const About = props => {
     return (
         <Layout path={props.location.pathname}>
             <BG />
-
-            <SEO title="About" path={props.location.pathname} />
+            <SEO title="How It Works" path={props.location.pathname} />
             <StyledAbout>
         <span style={{ marginTop: '5rem' }}>
           <Title style={{ paddingBottom: '4rem' }}>
-            Fite Analytics is an Analytics and Data Processing company.
+            How It Works
           </Title>
           <h2 style={{ paddingBottom: '4rem' }}>
-            <span><strong>Widest coverage and fastest speeds</strong></span> analyzing securities for institutional portfolios.{' '}
+            <span><strong>Batch Analytics and APIs </strong></span> for analyzing individual securities and portfolios.{' '}
           </h2>
 
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
-            <p>Fite Analytics is a cloud-native analytics company that specializes in the global bond markets.</p>
-            <p>Fite Analytics partners with data vendors to bring together the largest cloud-native security database available today. Currently
-            Fite Analytics SecDB has over <span style={{ display: 'inline' }}><h4><strong>30 million</strong></h4> securities.</span></p>
-            <p>Our analytic calculations produce street-standard results across all bond sectors, including hard-to-value
-            securities such as structured products, convertibles and hedged positions.</p>
-            <h3>We believe in zero implementation. Get access to security analytics today. <a href={"mailto:info@fiteanalytics.com"}>Email Us</a></h3>
+              <h3>Batch Analytics</h3>
+            <p>Batch Analytics description here</p>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
-              <InternalLink to="/docs/v2">
-                Documentation <span style={{ fontSize: '11px' }}>↗</span>
+              <InternalLink to="/sample-input">
+                Sample Input File <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
-              <InternalLink to="/faq">FAQ</InternalLink>
+                <InternalLink to="/sample-results">Sample Results File <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
             </div>
           </StyledSectionFlex>
 
-          <StyledSectionFlex id="team" style={{ flexDirection: 'column' }}>
-            <h2 style={{ width: '100%' }}>Team</h2>
-            <p>industry experience + quantitative excellence + technology innovation</p>
-
-            <span>
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/geoffreyfite/">
-                {' '}
-                  <h3>Geoff Fite, CEO</h3>
-              </a>
-            </span>
-            <span>
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sonia-dixon-83275011/">
-                {' '}
-                  <h3>Sonia Dixon, Head of Customer Experience</h3>
-              </a>
-            </span>
-            <span>
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/richardmule/">
-                {' '}
-                  <h3>Richard Mulé, Head of Engineering</h3>
-              </a>
-            </span>
-            <span>
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/maderson-ly-89835541/">
-                {' '}
-                  <h3>Maderson Ly, Data Engineer</h3>
-              </a>
-            </span>
-            <span>
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jakemathai/">
-                {' '}
-                  <h3>Jake Mathai, Software Engineer</h3>
-              </a>
-            </span>
-            <span>
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/tashahjohnson/">
-                {' '}
-                  <h3>Tashah Johnson, Business Analyst</h3>
-              </a>
-            </span>
-          </StyledSectionFlex>
-
-          <StyledSectionFlex id="jobs" style={{ flexDirection: 'column' }}>
-            <h2 style={{ width: '100%' }}>Jobs</h2>
-            <p>We are looking for talented people to join our team!</p>
-
-            <span>
-              <a href="#">
-                {' '}
-                  <h3>Senior Frontend Engineer</h3>
-              </a>
-            </span>
-            <span>
-              <a href="#">
-                {' '}
-                  <h3>Smart Contract Engineer</h3>
-              </a>
-            </span>
-            <span>
-              <a href="#">
-                {' '}
-                  <h3>Full Stack Engineer</h3>
-              </a>
-            </span>
-            <span>
-              <a href="#">
-                {' '}
-                  <h3>Software Engineering Intern</h3>
-              </a>
-            </span>
-            <span>
-              <a href="#">
-                {' '}
-                  <h3>Community Manager</h3>
-              </a>
-            </span>
-            <p>
-              Fite Analytics welcomes all qualified persons to apply regardless of race, religion, gender, gender identity or
-              expression, sexual orientation, national origin, genetics, disability, age, or veteran status.
-              Compensation will be competitive and commensurate with experience. This is a full time role which includes
-              health insurance and other benefits.
-            </p>
-          </StyledSectionFlex>
-
-          <StyledSectionFlex id="contact" style={{ flexDirection: 'column' }}>
-            <h2 style={{ width: '100%' }}>Contact</h2>
-            <p>
-              To get in touch, please email <a href="mailto:info@fiteanalytics.com">info@fiteanalytics.com</a>
-            </p>
-
+          <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
+              <h3>APIs</h3>
+            <p>APIs description here</p>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
-              <InternalLink>
-                Discord <span style={{ fontSize: '11px' }}>↗</span>
+              <InternalLink to="/api-risk-sample">
+                Sample API Risk <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
-              <InternalLink>
-                Twitter <span style={{ fontSize: '11px' }}>↗</span>
-              </InternalLink>
-              <InternalLink>
-                Reddit <span style={{ fontSize: '11px' }}>↗</span>
-              </InternalLink>
+                <InternalLink to="/api-cash-flow-sample">Sample API Cash Flow <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
             </div>
           </StyledSectionFlex>
 
-          <StyledSectionFlex id="brand" style={{ flexDirection: 'column' }}>
-            <h2 style={{ width: '100%' }}>Brand Assets</h2>
-            <p>
-              Download the logo and other brand assets samples <a href="/fiteanalytics_brand_assets.zip">here</a>.
-            </p>
-          </StyledSectionFlex>
         </span>
             </StyledAbout>
         </Layout>

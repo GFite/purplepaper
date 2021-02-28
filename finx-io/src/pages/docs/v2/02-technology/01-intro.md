@@ -4,9 +4,9 @@ subtitle: Technology Architecture
 tags: architecture, documentation
 ---
 
-![](/images/technology-architecture.jpg)
+![](./images/fite_architecture.png)
 
-# Fite Analytics Technology Architecture
+# Technology Architecture
 
 ## Top-Level Design
 
