@@ -20,6 +20,7 @@ import { useMediaQuery } from '@react-hook/media-query'
 import { useDarkMode } from '../contexts/Application'
 
 const StyledHeader = styled.header`
+  font-family: Lato;
   display: flex;
   position: fixed;
   flex-direction: row;
@@ -65,6 +66,7 @@ const StyledButton = styled.button`
 `
 
 const StyledNav = styled.nav`
+  font-family: Lato;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -93,7 +95,7 @@ const StyledNavTitleWrapper = styled.nav`
 `
 
 const StyledNavTitle = styled(Link)`
-  font-family: 'GT Haptik Regular', 'Inter', sans-serif;
+  font-family: 'Lato', 'GT Haptik Regular', 'Inter', sans-serif;
   color: ${({ theme }) => theme.textColor};
   margin-left: 0.35rem;
   margin-bottom: 0.15rem;
