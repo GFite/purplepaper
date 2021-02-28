@@ -1,4 +1,4 @@
-# Fite Analytics
+# Fite Analytics LLC
 
 ## Corporate Whitepaper
 
@@ -13,4 +13,18 @@
 ---
 
 ## Abstract
+
+This paper describes the mission and activities of Fite Analytics. It is intended to be read by team members, partners, 
+customers, and anyone interested in why we're here and what we do.
+
+## Company Background
+
+## Company Mission
+
+## Company Services
+
+## Company Structure
+
+## Where We're Headed
+
 

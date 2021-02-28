@@ -6,7 +6,7 @@ tags: architecture, documentation
 
 ![](./images/fite_architecture.png)
 
-# Fite Analytics Technology Architecture
+# Technology Architecture
 
 ## Top-Level Design
 
