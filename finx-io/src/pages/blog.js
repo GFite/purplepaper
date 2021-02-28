@@ -46,7 +46,7 @@ export const Posts = styled.div`
   position: relative;
   padding: 2rem;
   width: ${({ wide }) => (wide === 0 ? '100%' : '32%')};
-  border-radius: 8px;
+  border-radius: 0px;
   text-decoration: none;
 
   border: 1px solid ${({ theme }) => theme.colors.grey1};
@@ -124,7 +124,7 @@ export const PostMetaData = styled.p`
 
 export const StyledImage = styled(Img)`
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
   height: 250px;
   box-shadow: ${({ theme }) => theme.shadows.huge};
   @media (max-width: 960px) {
@@ -140,7 +140,7 @@ export const NewPill = styled.p`
   position: absolute;
   left: -1rem;
   top: -0.75rem;
-  border-radius: 1rem;
+  border-radius: 0rem;
   text-align: center;
   margin: 0;
   transform: rotateZ(-20deg);
@@ -197,13 +197,13 @@ const Blog = props => {
   return (
     <Layout path={props.location.pathname}>
       <BG />
-      <SEO title="FINX Blog" path={props.location.pathname} />
+      <SEO title="Fite Analytics Blog" path={props.location.pathname} />
 
       <StyledBlog>
         <PageTitleWrapper>
-          <h2 style={{ fontSize: '56px' }}>FINX Blog</h2>
+          <h2 style={{ fontSize: '56px' }}>Fite Analytics Blog</h2>
           <p>
-            News, stories, and announcements from FINX.{' '}
+            News, stories, and announcements from Fite Analytics.{' '}
             <a style={{ paddingBottom: '1rem' }} href="/rss.xml" target="_blank">
               Subscribe
             </a>

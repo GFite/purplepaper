@@ -14,8 +14,8 @@ Fite Analytics is a data processing and analytics company.
 Fite Analytics has contracted with the gold-standard providers of terms and conditions for each sub-sector of 
 the bond markets. A partial list of our sources of data includes:
 
-- Intex
-- IHS Markit
+- ![Intex](https://intex.com)
+- ![IHS Markit](https://ihsmarkit.com)
 - LSEG Mergent
 - Standard & Poors
 - Andrew Davidsion & Co.

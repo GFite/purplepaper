@@ -13,6 +13,7 @@ import { Link } from 'gatsby'
 import Layout from '../layouts'
 import SEO from '../components/seo'
 import BG from '../components/bg'
+import SecurityCoverage from '../components/securityCoverageData'
 
 const StyledAbout = styled.div`
   display: grid;
@@ -34,7 +35,7 @@ const StyledAbout = styled.div`
 `
 
 const StyledSectionFlex = styled.div`
-  padding: 0 0 4rem 0;
+  padding: 4rem 4rem 4rem 4rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -63,11 +64,11 @@ const StyledSectionFlex = styled.div`
   }
 `
 
-const Numbers = styled(StyledSectionFlex)`
-  @media (max-width: 960px) {
-    display: none;
-  }
-`
+// const Numbers = styled(StyledSectionFlex)`
+//   @media (max-width: 960px) {
+//     display: none;
+//   }
+// `
 
 const Title = styled.h1`
   /* font-size: 3rem; */
@@ -240,24 +241,24 @@ const About = props => {
       <StyledAbout>
         <span style={{ marginTop: '5rem' }}>
           <Title style={{ paddingBottom: '4rem' }}>
-            Fite Analytics is a data processinga and analytics company.
+            Fite Analytics is an Analytics and Data Processing company.
           </Title>
           <h2 style={{ paddingBottom: '4rem' }}>
-            <span><strong>Widest coverage and fastest speeds</strong></span> for institutional investors.{' '}
+            <span><strong>Widest coverage and fastest speeds</strong></span> analyzing securities for institutional portfolios.{' '}
           </h2>
 
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
-            <p>FINX is a Decentralized Exchange (<span><strong>DEX</strong></span>) that provides a way for all Capital Market Participant to conduct decentralized commerce in crypto.</p>
-            <p>Underwriters, Insurers, Ratings Agencies, Collateral Valuators and others can provide services to Corporate Borrowers that act as collateral against Collateralized Pools on the Ethereum Mainnet. The ERC20 contracts stipulate repayment periods, interest models, liquidity provisions, workout and dispute resolution.</p>
-            <p>FINX committed to building more efficient counterparty arrangements on the decentralized web.</p>
-            <h3>FINX is currently conducting a <InternalLink to="/blog/uni"><strong>Genesis Token Sale</strong></InternalLink> from February 15 through March 15.</h3>
+            <p>Fite Analytics is a cloud-native analytics company that specializes in the global bond markets.</p>
+            <p>Fite Analytics partners with data vendors to bring together the largest cloud-native security database available today. Currently
+            Fite Analytics SecDB has over <span style={{ display: 'inline' }}><h4><strong>30 million</strong> securities.</h4></span></p>
+            <p>Our analytic calculations produce street-standard results across all bond sectors, including hard-to-value
+            securities such as structured products, convertibles and hedged positions.</p>
+            <h1>Security Sectors Covered</h1>
+            <SecurityCoverage />
+            <h3>We believe in zero implementation. Get access to security analytics today. <a href={"mailto:info@fiteanalytics.com"}>Email Us</a></h3>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
-              <InternalLink to="/blog/uni">FINX token</InternalLink>
-              <InternalLink to="/docs/v2/whitepaper">
-                Whitepaper <span style={{ fontSize: '11px' }}>↗</span>
-              </InternalLink>
-              <InternalLink to="/audit.html">
-                Audit <span style={{ fontSize: '11px' }}>↗</span>
+              <InternalLink to="/docs">
+                Documentation <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
               <InternalLink to="/faq">FAQ</InternalLink>
             </div>
@@ -268,37 +269,37 @@ const About = props => {
             <p>industry experience + quantitative excellence + technology innovation</p>
 
             <span>
-              <a href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/geoffreyfite/">
                 {' '}
                 <h3>Geoff Fite, CEO</h3>
               </a>
             </span>
             <span>
-              <a href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sonia-dixon-83275011/">
                 {' '}
                 <h3>Sonia Dixon, Head of Customer Experience</h3>
               </a>
             </span>
             <span>
-              <a href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/richardmule/">
                 {' '}
                 <h3>Richard Mulé, Head of Engineering</h3>
               </a>
             </span>
             <span>
-              <a href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/maderson-ly-89835541/">
                 {' '}
                 <h3>Maderson Ly, Data Engineer</h3>
               </a>
             </span>
             <span>
-              <a href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jakemathai/">
                 {' '}
                 <h3>Jake Mathai, Software Engineer</h3>
               </a>
             </span>
             <span>
-              <a href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/tashahjohnson/">
                 {' '}
                 <h3>Tashah Johnson, Business Analyst</h3>
               </a>

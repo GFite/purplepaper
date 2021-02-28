@@ -17,7 +17,7 @@ import { CardBGImage, CardFade, CardNoise, StyledExternalLink } from '../compone
 import TagManager from 'react-gtm-module'
 
 const tagManagerArgs = {
-    gtmId: 'GTM-53HFS7D'
+    gtmId: 'GTM-WWQGVVV'
 }
 
 TagManager.initialize(tagManagerArgs)
@@ -42,6 +42,7 @@ const BGCard = styled.span`
 const StyledBody = styled.div`
   position: relative;
   display: flex;
+  font-family: Lato;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -50,6 +51,7 @@ const StyledBody = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.grey2};
   @media (max-width: 960px) {
     margin-bottom: 0;
+    font-family: Lato;
     padding: 2rem;
     padding-bottom: 8rem;
   }
@@ -59,6 +61,7 @@ const StyledTitle = styled.div`
   display: flex;
   text-align: center;
   flex-direction: column;
+  font-family: Lato;
   justify-content: center;
   will-change: transform;
   margin: 3rem 0 4rem 0;
@@ -77,7 +80,7 @@ const StyledBodyTitle = styled.h1`
   overflow-wrap: normal;
   max-width: 900px;
   text-align: center;
-  font-family: 'GT Haptik Regular';
+  font-family: 'Lato', 'GT Haptik Regular';
   @media (max-width: 1024px) {
     margin: 2rem 0 3rem 0;
   }
@@ -97,12 +100,15 @@ const StyledBodyTitle = styled.h1`
   }
 `
 const StyledBodySubTitle = styled.h2`
+  font-family: Lato;
   @media (max-width: 640px) {
     text-align: left;
+    font-family: Lato;
   }
 `
 
 const StyledBodySubText = styled.h3`
+  font-family: Lato;
   max-width: 960px;
   text-align: center;
   line-height: 160%;
@@ -163,9 +169,11 @@ const StyledSectionFlex = styled.div`
 
   h2 {
     margin-bottom: 0.5rem;
+    font-family: Lato;
   }
   p {
     margin-bottom: 0.5rem;
+    font-family: Lato;
   }
 `
 
@@ -213,7 +221,7 @@ const IndexPage = props => {
           }
         }
       }
-      banner: file(relativePath: { eq: "Banner.jpg" }) {
+      banner: file(relativePath: { eq: "fite_partners.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid_noBase64
@@ -227,14 +235,14 @@ const IndexPage = props => {
           }
         }
       }
-      info: file(relativePath: { eq: "info.png" }) {
+      batch: file(relativePath: { eq: "batch.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      socks: file(relativePath: { eq: "socks.png" }) {
+      api: file(relativePath: { eq: "api.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -307,21 +315,17 @@ const IndexPage = props => {
           <StyledItemRow>
             <Button
               style={{
-                // background: `linear-gradient(128.17deg, #BD00FF -14.78%, #FF1F8A 110.05%)`,
-                  // '#7A1C99' : '#D3FF7A'
                 background: `linear-gradient(128.17deg, #7A1C99 -14.78%, #D3FF7A 110.05%)`,
                 color: 'white',
                 fontSize: '20px'
               }}
-              target="_blank"
-              // href="https://app.uniswap.org/"
-              href="/how_it_works"
+              href="/how-it-works"
             >
               How It Works
             </Button>
             <Button
               outlined
-              to="/docs"
+              to="/docs/v2/methodology/glossary"
               as={Link}
               style={{
                 fontSize: '20px'
@@ -359,7 +363,7 @@ const StyledSectionTitle = styled.h1`
   overflow-wrap: normal;
   max-width: 900px;
   text-align: center;
-  font-family: 'GT Haptik Regular';
+  font-family: 'Lato', 'GT Haptik Regular';
   margin-top: 10rem;
 
   @media (max-width: 960px) {
@@ -393,26 +397,18 @@ const DeveloperSection = props => {
 const ProductsSection = props => {
   return (
     <>
-      <StyledSectionTitle>Configurable Risk and Attribution Models</StyledSectionTitle>
+      <StyledSectionTitle>Get Results via API or Batch</StyledSectionTitle>
       <StyledBodySubText>
-          We build best-of-breed models to calculate yield, duration, spread, and sensitivity. Curves, volatility, forward rates, and
-          other inputs can be calibrated or taken out of the box to match street-standards.
+          Make individual API requests over HTTP, or send us a large list of securities to analyze and we will send you back the
+          results. All of our calculations are available through either delivery mode, including complex result sets such as
+          cash flow vectors, scenario and stress tests, and key rate durations.
       </StyledBodySubText>
       <StyledItemRow>
-        <StyledExternalLink href={'https://socks.uniswap.org'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.socks.childImageSharp.fluid} />
+        <StyledExternalLink href={'/docs/v2/technology/apis'} target="_blank">
+          <StyledProductImage fadeIn={false} fluid={props.data.api.childImageSharp.fluid} />API
         </StyledExternalLink>
-        <StyledExternalLink href={'https://info.uniswap.org'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.info.childImageSharp.fluid} />
-        </StyledExternalLink>
-        <StyledExternalLink href={'https://app.finx.io'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.swap.childImageSharp.fluid} />
-        </StyledExternalLink>
-        <StyledExternalLink href={'https://tokenlists.org'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.tokenlists.childImageSharp.fluid} />
-        </StyledExternalLink>
-        <StyledExternalLink href={'https://sybil.org'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.sybil.childImageSharp.fluid} />
+        <StyledExternalLink href={'/docs/v2/technology/batch'} target="_blank">
+          <StyledProductImage fadeIn={false} fluid={props.data.batch.childImageSharp.fluid} />BATCH
         </StyledExternalLink>
       </StyledItemRow>
 

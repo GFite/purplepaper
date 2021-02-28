@@ -80,6 +80,7 @@ const StyledFooterSectionNav = styled.section`
 `
 
 const StyledFooterLinkSection = styled.ul`
+  font-family: Lato;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

@@ -22,7 +22,7 @@ const StyledMenu = styled.button`
   border: none;
   text-align: left;
   list-style: none;
-  font-family: 'GT Haptik Regular';
+  font-family: 'Lato','GT Haptik Regular';
 
   /* padding-right: 2rem; */
   background: none;
@@ -113,7 +113,7 @@ const StyledMenuItem = styled.span`
   text-decoration: none;
   margin: 0px;
   border-radius: 0.5rem;
-  font-family: 'GT Haptik Regular';
+  font-family: 'Lato','GT Haptik Regular';
   width: fit-content;
 
   :hover {
