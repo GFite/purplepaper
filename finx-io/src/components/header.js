@@ -74,6 +74,7 @@ const StyledNavTitleWrapper = styled.nav`
   align-items: center;
 `
 const HeaderText = styled.h2`
+  font-family: "Courier New";
   line-height: auto;
   margin: 0px;
   margin-bottom: 4px;
