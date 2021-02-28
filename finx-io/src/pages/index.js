@@ -42,6 +42,7 @@ const BGCard = styled.span`
 const StyledBody = styled.div`
   position: relative;
   display: flex;
+  font-family: Lato;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -50,6 +51,7 @@ const StyledBody = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.grey2};
   @media (max-width: 960px) {
     margin-bottom: 0;
+    font-family: Lato;
     padding: 2rem;
     padding-bottom: 8rem;
   }
@@ -59,6 +61,7 @@ const StyledTitle = styled.div`
   display: flex;
   text-align: center;
   flex-direction: column;
+  font-family: Lato;
   justify-content: center;
   will-change: transform;
   margin: 3rem 0 4rem 0;
@@ -77,7 +80,7 @@ const StyledBodyTitle = styled.h1`
   overflow-wrap: normal;
   max-width: 900px;
   text-align: center;
-  font-family: 'GT Haptik Regular';
+  font-family: 'Lato', 'GT Haptik Regular';
   @media (max-width: 1024px) {
     margin: 2rem 0 3rem 0;
   }
@@ -97,12 +100,15 @@ const StyledBodyTitle = styled.h1`
   }
 `
 const StyledBodySubTitle = styled.h2`
+  font-family: Lato;
   @media (max-width: 640px) {
     text-align: left;
+    font-family: Lato;
   }
 `
 
 const StyledBodySubText = styled.h3`
+  font-family: Lato;
   max-width: 960px;
   text-align: center;
   line-height: 160%;
@@ -163,9 +169,11 @@ const StyledSectionFlex = styled.div`
 
   h2 {
     margin-bottom: 0.5rem;
+    font-family: Lato;
   }
   p {
     margin-bottom: 0.5rem;
+    font-family: Lato;
   }
 `
 
