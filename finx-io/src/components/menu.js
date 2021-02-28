@@ -22,7 +22,7 @@ const StyledMenu = styled.button`
   border: none;
   text-align: left;
   list-style: none;
-  font-family: 'GT Haptik Regular';
+  font-family: 'Lato','GT Haptik Regular';
 
   /* padding-right: 2rem; */
   background: none;
