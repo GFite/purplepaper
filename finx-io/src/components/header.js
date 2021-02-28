@@ -259,7 +259,7 @@ const Header = props => {
           }}
         >
           <StyledUni />
-          <HeaderText>Fite Analytics</HeaderText>
+          <HeaderText>fite analytics</HeaderText>
         </StyledHomeLink>
       </StyledNavTitleWrapper>
       <MenuToggle ref={button} open={isMenuOpen} onClick={() => updateIsMenuOpen(!isMenuOpen)}>
