@@ -55,11 +55,13 @@ const StyledSectionFlex = styled.div`
   }
   h1,
   h2 {
+    font-family: Lato;
     max-width: 650px;
   }
   p {
     /* margin-bottom: 0.5rem; */
     max-width: 650px;
+    font-family: Lato;
   }
 `
 
@@ -73,13 +75,14 @@ const Title = styled.h1`
   /* font-size: 3rem; */
   margin-bottom: 4rem;
   font-size: 72px;
-
+  font-family: Lato;
   pointer-events: none;
   white-space: wrap;
   overflow-wrap: normal;
   max-width: 1200px;
   /* text-align: center; */
   @media (max-width: 960px) {
+    font-family: Lato;
     font-size: 2rem;
   }
 `
@@ -87,6 +90,7 @@ const Title = styled.h1`
 const InternalLink = styled(Link)`
   border-radius: 8px;
   color: ${({ theme }) => theme.textColor};
+  font-family: Lato;
   font-weight: 600;
 
   &:not(:last-child) {
@@ -94,6 +98,7 @@ const InternalLink = styled(Link)`
   }
 
   h2 {
+    font-family: Lato;
     margin: 0;
   }
 

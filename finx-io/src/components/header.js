@@ -37,6 +37,7 @@ const StyledHeader = styled.header`
 `
 
 const StyledNav = styled.nav`
+  font-family: Lato;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -91,7 +92,7 @@ const StyledTradeLink = styled.a`
   display: inline-block;
   transition: transform 0.25s ease;
   font-weight: 600;
-  font-family: 'GT Haptik Regular';
+  font-family: Lato;
 
   transition: transform 0.45s cubic-bezier(0.19, 1, 0.22, 1);
 
