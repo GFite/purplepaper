@@ -259,13 +259,13 @@ const About = props => {
 
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
               <h3>Batch Security Analytics</h3>
-            <p>Fite Analytics <strong>Batch Analytics Service</strong> is a way to calculate many securities with a single
+            <p>The <strong>Batch Security Analytics Service</strong> is a method to calculate large numbers of securities with a single
             request. Batch runs can contain up to 500,000 securities per batch and there is no limit on the number of
             batches.</p>
             <h4>The batch process is as follows:</h4>
             <ul>
                 <li>Submit a batch request file (&quot;SUBMIT_FILE&quot;)</li>
-                <li>Fite Analytics processes calculations and generates resultslations are processed on the cloud platform and results file generated</li>
+                <li>Fite Analytics processes calculations and generates results on the cloud platform</li>
                 <li>Retrieve batch results file (&quot;RESULTS_FILE&quot;)</li>
             </ul>
             <h4>Files can be submitted and retrieved using a choice of:</h4>
@@ -274,15 +274,20 @@ const About = props => {
                 <li>SFTP site</li>
                 <li>Email</li>
             </ul>
-            <h3>Batch Portfolio Analytics</h3>
-            <p>Portfolios may be submitted for analysis using the Batch Service. Portfolio snapshots (holdings) and/or
-            portfolio transaction history can be submitted in multiple input files, or maintained over time.</p>
-            <p>Contact us for information on the range of portfolio analytics available in batch format.</p>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
               <InternalLink to="/sample-input">
                 Sample Security Analtyics Input File <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
                 <InternalLink to="/sample-results">Sample Security Analytics Results File <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
+            </div>
+            <h3>Batch Portfolio Analytics</h3>
+              <p>Portfolios may be submitted for analysis using the <strong>Batch Portfolio Analytics Service</strong>. Portfolio snapshots (holdings) and/or
+            portfolio transaction history can be submitted in multiple input files, or maintained over time.</p>
+            <p>Contact us for information on the range of portfolio analytics available in batch format.</p>
+            <div style={{ display: 'flex', width: '100%', margin: 0 }}>
+              <InternalLink to="/sample-portfolio-report">
+                Sample Portfolio Report <span style={{ fontSize: '11px' }}>↗</span>
+              </InternalLink>
             </div>
           </StyledSectionFlex>
 
