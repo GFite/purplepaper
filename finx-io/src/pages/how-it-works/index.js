@@ -253,7 +253,7 @@ const About = props => {
           <Title style={{ paddingBottom: '4rem' }}>
             How It Works
           </Title>
-          <h2 style={{ fontFamily: Lato, paddingBottom: '4rem' }}>
+          <h2 style={{ fontFamily: 'Lato', paddingBottom: '4rem' }}>
             <span><strong>Batch Analytics and APIs </strong></span> for analyzing individual securities and portfolios.{' '}
           </h2>
 
