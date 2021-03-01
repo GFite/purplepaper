@@ -45,16 +45,16 @@ const menu = [
   {
     name: 'Developers',
     sublinks: [
-      { name: 'GitHub', link: 'https://github.com/FiteAnalytics' },
+      { name: 'GitHub', link: 'https://github.com/FiteAnalytics', target: '_blank' },
       { name: 'Developer Guide', link: '/docs/v2/technology/developer-guide'}
     ]
   },
   {
     name: 'Community',
     sublinks: [
-      { name: 'Fite Analytics Discord', link: 'https://discord.gg/edAfmhvSev' },
-      { name: 'Fite Analytics Twitter', link: 'https://twitter.com/fiteanalytics' },
-      { name: 'Fite Analytics Reddit', link: 'https://www.reddit.com/r/fiteanalytics' }
+      { name: 'Fite Analytics Discord', link: 'https://discord.gg/edAfmhvSev', target: '_blank' },
+      { name: 'Fite Analytics Twitter', link: 'https://twitter.com/fiteanalytics', target: '_blank' },
+      { name: 'Fite Analytics Reddit', link: 'https://www.reddit.com/r/fiteanalytics', target: '_blank' }
     ]
   },
   {
