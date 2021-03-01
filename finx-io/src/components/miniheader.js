@@ -228,7 +228,7 @@ const Header = props => {
             <>
               <StyledNavTitle to={'/'}> fite analytics </StyledNavTitle>
               <StyledNavTitle to={'/' + props.path.split('/')[1]}>
-                {props.path.length > 20 ? 'Docs /' : 'Fite Analytics Docs /'}
+                {props.path.length > 20 ? 'docs /' : 'Fite Analytics Docs /'}
               </StyledNavTitle>
               <StyledNavTitle to={'/docs/' + props.path.split('/')[2]}>
                 {props.path.split('/')[2].replace(/(^|\s)\S/g, function(t) {
