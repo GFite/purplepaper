@@ -417,14 +417,14 @@ const ProductsSection = props => {
           PRICE</strong> - and receive a full analysis of the security.
       </StyledBodySubText>
         <StyledBodySubText>
-            Analyze any portfolio as of any date, at either market or stress-scenario prices.<br/>Send us your holdings information
+            Analyze any portfolio as of any date, at market or scenario prices.<br/>Submit portfolio holdings information
             and receive calculations on <strong>Portfolio Risk, Return and Performance Attribution.</strong>
         </StyledBodySubText>
       <StyledItemRow>
-        <StyledExternalLink href={'/docs/v2/technology/apis'} target="_blank">
+        <StyledExternalLink href={'/docs/v2/methodology/security-analytics'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.security_analytics.childImageSharp.fluid} />Security Analytics
         </StyledExternalLink>
-        <StyledExternalLink href={'/docs/v2/technology/batch'} target="_blank">
+        <StyledExternalLink href={'/docs/v2/methodology/portfolio-analytics'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.portfolio_analytics.childImageSharp.fluid} />Portfolio Analytics
         </StyledExternalLink>
       </StyledItemRow>
@@ -436,10 +436,10 @@ const ProductsSection = props => {
             cash flow vectors, scenario and stress tests, and key rate durations.
       </StyledBodySubText>
       <StyledItemRow>
-        <StyledExternalLink href={'/docs/v2/technology/apis'} target="_blank">
+        <StyledExternalLink href={'/how-it-works'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.api.childImageSharp.fluid} />API
         </StyledExternalLink>
-        <StyledExternalLink href={'/docs/v2/technology/batch'} target="_blank">
+        <StyledExternalLink href={'/how-it-works'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.batch.childImageSharp.fluid} />BATCH
         </StyledExternalLink>
       </StyledItemRow>
