@@ -14,14 +14,16 @@ const links = [
         link: '/docs/v2/technology/api/',
         description: 'Simplify the process of integrating Fite Analytics into your project.',
         tag: 'api',
-        icon: '⚡'
+        icon: '⚡',
+        target: '_href'
       },
       {
         title: 'Cash Flow APIs',
         link: '/docs/v2/technology/api/',
         description: 'The most granular and accurate cash flow projections available.',
         tag: 'cash flow',
-        icon: '$'
+        icon: '$',
+        target: '_href'
       },
 
       {
@@ -29,13 +31,15 @@ const links = [
         link: '/docs/v2/technology/batch/',
         description: 'Withdraw the reserves of any ERC20 token on Uniswap and execute arbitrary logic.',
         tag: 'guide',
-        icon: '📦'
+        icon: '📦',
+        target: '_href'
       },
       {
         title: 'SDK',
         link: '/docs/v2/technology/developer-guide/',
         description: 'How-to Guides and Recipes.',
-        icon: '🔮'
+        icon: '🔮',
+        target: '_href'
       }
     ]
   },
@@ -144,6 +148,7 @@ const Wizard = () => {
                   to={sublink.link}
                   tag={sublink.tag}
                   icon={sublink.icon}
+                  target={sublink.target}
                 />
               )
             })
