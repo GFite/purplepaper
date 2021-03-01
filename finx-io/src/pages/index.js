@@ -249,6 +249,20 @@ const IndexPage = props => {
           }
         }
       }
+      securityanalytics: file(relativePath: { eq: "securityanalytics.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      portfolioanalytics: file(relativePath: { eq: "portfolioanalytics.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       sybil: file(relativePath: { eq: "sybil.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
@@ -397,11 +411,29 @@ const DeveloperSection = props => {
 const ProductsSection = props => {
   return (
     <>
+      <StyledSectionTitle>We calculate analytics for Securities and Portfolios</StyledSectionTitle>
+      <StyledBodySubText>
+          Analyze any security as of any date, at any price. Send us 3 data points and we'll send you back a full analysis
+          of the security in question.
+      </StyledBodySubText>
+        <StyledBodySubText>
+            Analyze any portfolio as of any date, at either market or stress-scenario prices. Send us your holdings information
+            over any time period and receive analysis of <strong>Portfolio Risk, Return and Performance Attribution.</strong>
+        </StyledBodySubText>
+      <StyledItemRow>
+        <StyledExternalLink href={'/docs/v2/technology/apis'} target="_blank">
+          <StyledProductImage fadeIn={false} fluid={props.data.securityanalytics.childImageSharp.fluid} />Security Analytics
+        </StyledExternalLink>
+        <StyledExternalLink href={'/docs/v2/technology/batch'} target="_blank">
+          <StyledProductImage fadeIn={false} fluid={props.data.portfolioanalytics.childImageSharp.fluid} />Portfolio Analytics
+        </StyledExternalLink>
+      </StyledItemRow>
+
       <StyledSectionTitle>Get Results via API or Batch</StyledSectionTitle>
       <StyledBodySubText>
-          Make individual API requests over HTTP, or send us a large list of securities to analyze and we will send you back the
-          results. All of our calculations are available through either delivery mode, including complex result sets such as
-          cash flow vectors, scenario and stress tests, and key rate durations.
+            Make individual API requests over HTTP, or send us a large list of securities to analyze and we will send you back the
+            results. All of our calculations are available through either delivery mode, including complex result sets such as
+            cash flow vectors, scenario and stress tests, and key rate durations.
       </StyledBodySubText>
       <StyledItemRow>
         <StyledExternalLink href={'/docs/v2/technology/apis'} target="_blank">
