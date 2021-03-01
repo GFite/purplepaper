@@ -264,9 +264,9 @@ const About = props => {
             batches.</p>
             <h4>The batch process is as follows:</h4>
             <ul>
-                <li>Submit a batch request file ("SUBMIT_FILE")</li>
+                <li>Submit a batch request file (&quot;SUBMIT_FILE&quot;)</li>
                 <li>Fite Analytics processes calculations and generates resultslations are processed on the cloud platform and results file generated</li>
-                <li>Retrieve batch results file ("RESULTS_FILE")</li>
+                <li>Retrieve batch results file (&quot;RESULTS_FILE&quot;)</li>
             </ul>
             <h4>Files can be submitted and retrieved using a choice of:</h4>
             <ul>
