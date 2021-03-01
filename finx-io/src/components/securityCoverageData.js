@@ -9,6 +9,7 @@ import { useQuery } from '@apollo/react-hooks'
 import { client, blockClient } from '../apollo/client'
 
 const StyledSectionFlex = styled.div`
+  font-family: Lato;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
