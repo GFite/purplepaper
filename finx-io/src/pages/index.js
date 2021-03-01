@@ -249,14 +249,14 @@ const IndexPage = props => {
           }
         }
       }
-      securityanalytics: file(relativePath: { eq: "securityanalytics.png" }) {
+      security_analytics: file(relativePath: { eq: "securityanalytics.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      portfolioanalytics: file(relativePath: { eq: "portfolioanalytics.png" }) {
+      portfolio_analytics: file(relativePath: { eq: "portfolioanalytics.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -377,7 +377,7 @@ const StyledSectionTitle = styled.h1`
   overflow-wrap: normal;
   max-width: 900px;
   text-align: center;
-  font-family: 'Lato', 'GT Haptik Regular';
+  font-family: 'Lato';
   margin-top: 10rem;
 
   @media (max-width: 960px) {
@@ -422,10 +422,10 @@ const ProductsSection = props => {
         </StyledBodySubText>
       <StyledItemRow>
         <StyledExternalLink href={'/docs/v2/technology/apis'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.securityanalytics.childImageSharp.fluid} />Security Analytics
+          <StyledProductImage fadeIn={false} fluid={props.data.security_analytics.childImageSharp.fluid} />Security Analytics
         </StyledExternalLink>
         <StyledExternalLink href={'/docs/v2/technology/batch'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.portfolioanalytics.childImageSharp.fluid} />Portfolio Analytics
+          <StyledProductImage fadeIn={false} fluid={props.data.portfolio_analytics.childImageSharp.fluid} />Portfolio Analytics
         </StyledExternalLink>
       </StyledItemRow>
 
