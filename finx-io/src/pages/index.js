@@ -249,14 +249,14 @@ const IndexPage = props => {
           }
         }
       }
-      security_analytics: file(relativePath: { eq: "securityanalytics.png" }) {
+      security_analytics: file(relativePath: { eq: "bonds_colorful.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      portfolio_analytics: file(relativePath: { eq: "portfolioanalytics.png" }) {
+      portfolio_analytics: file(relativePath: { eq: "portfolio.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
