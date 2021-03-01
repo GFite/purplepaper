@@ -15,6 +15,7 @@ import SEO from '../../components/seo'
 import BG from '../../components/bg'
 
 const StyledAbout = styled.div`
+  font-family: Lato;
   display: grid;
   grid-template-columns: 1fr 200px;
   justify-content: space-between;
@@ -26,6 +27,7 @@ const StyledAbout = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.grey2};
 
   @media (max-width: 960px) {
+    font-family: Lato;
     flex-direction: column;
     grid-template-columns: 1fr;
     margin-top: 0rem;
@@ -34,6 +36,7 @@ const StyledAbout = styled.div`
 `
 
 const StyledSectionFlex = styled.div`
+  font-family: Lato;
   padding: 0 0 4rem 0;
   display: flex;
   flex-wrap: wrap;
@@ -42,18 +45,22 @@ const StyledSectionFlex = styled.div`
   max-width: 960px;
   margin-left: 5rem;
   @media (max-width: 1024px) {
+    font-family: Lato;
     padding: 1rem;
     margin-top: 0rem;
     flex-direction: ${({ wrapSmall }) => (!wrapSmall ? 'row' : 'column')};
   }
   @media (max-width: 960px) {
+    font-family: Lato;
     padding: 1rem;
     margin-left: 0;
     margin-top: 0rem;
     width: 100%;
     flex-direction: column;
   }
-  h1,
+  h1 {
+    font-family: Lato;
+  }
   h2 {
     font-family: Lato;
     max-width: 650px;
