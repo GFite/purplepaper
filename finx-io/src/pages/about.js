@@ -16,6 +16,7 @@ import BG from '../components/bg'
 import SecurityCoverage from '../components/securityCoverageData'
 
 const StyledAbout = styled.div`
+  font-family: Lato;
   display: grid;
   grid-template-columns: 1fr 200px;
   justify-content: space-between;
