@@ -413,12 +413,12 @@ const ProductsSection = props => {
     <>
       <StyledSectionTitle>Analytics for Securities and Portfolios</StyledSectionTitle>
       <StyledBodySubText>
-          Analyze any security as of any date, at any price.<br/>Send us 3 data points - <strong>SECURITY ID, DATE,
-          PRICE</strong> - and we&apos;ll send you back a full analysis of the security.
+          Analyze any security as of any date, at any price.<br/>Submit 3 data points - <strong>SECURITY ID, DATE,
+          PRICE</strong> - and receive a full analysis of the security.
       </StyledBodySubText>
         <StyledBodySubText>
             Analyze any portfolio as of any date, at either market or stress-scenario prices.<br/>Send us your holdings information
-            over any time period and receive analysis of <strong>Portfolio Risk, Return and Performance Attribution.</strong>
+            and receive calculations on <strong>Portfolio Risk, Return and Performance Attribution.</strong>
         </StyledBodySubText>
       <StyledItemRow>
         <StyledExternalLink href={'/docs/v2/technology/apis'} target="_blank">
