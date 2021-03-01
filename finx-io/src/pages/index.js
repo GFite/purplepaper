@@ -460,16 +460,13 @@ const ProductsSection = props => {
         of the platform.
       </StyledBodySubText>
       <StyledItemRow>
-        <StyledExternalLink href={'https://discord.gg/FCfyBSbCU5'} target="_blank">
+        <StyledExternalLink href={'https://discord.gg/edAfmhvSev'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.discord.childImageSharp.fluid} />
         </StyledExternalLink>
-        <StyledExternalLink href={'https://twitter.com/Uniswap'} target="_blank">
+        <StyledExternalLink href={'https://twitter.com/fiteanalytics'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.twitter.childImageSharp.fluid} />
         </StyledExternalLink>
-        <StyledExternalLink href={'https://gov.uniswap.org/'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.discourse.childImageSharp.fluid} />
-        </StyledExternalLink>
-        <StyledExternalLink href={'https://www.reddit.com/r/Uniswap'} target="_blank">
+        <StyledExternalLink href={'https://www.reddit.com/r/fiteanalytic'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.reddit.childImageSharp.fluid} />
         </StyledExternalLink>
       </StyledItemRow>
