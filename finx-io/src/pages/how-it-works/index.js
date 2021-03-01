@@ -258,19 +258,40 @@ const About = props => {
           </h2>
 
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
-              <h3>Batch Analytics</h3>
-            <p>Batch Analytics description here</p>
+              <h3>Batch Security Analytics</h3>
+            <p>Fite Analytics <strong>Batch Analytics Service</strong> is a way to calculate many securities with a single
+            request. Batch runs can contain up to 500,000 securities per batch and there is no limit on the number of
+            batches.</p>
+            <h4>The batch process is as follows:</h4>
+            <ul>
+                <li>Submit a batch request file ("SUBMIT_FILE")</li>
+                <li>Fite Analytics processes calculations and generates resultslations are processed on the cloud platform and results file generated</li>
+                <li>Retrieve batch results file ("RESULTS_FILE")</li>
+            </ul>
+            <h4>Files can be submitted and retrieved using a choice of:</h4>
+            <ul>
+                <li>Amazon Web Services S3 Buckets</li>
+                <li>SFTP site</li>
+                <li>Email</li>
+            </ul>
+            <h3>Batch Portfolio Analytics</h3>
+            <p>Portfolios may be submitted for analysis using the Batch Service. Portfolio snapshots (holdings) and/or
+            portfolio transaction history can be submitted in multiple input files, or maintained over time.</p>
+            <p>Contact us for information on the range of portfolio analytics available in batch format.</p>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
               <InternalLink to="/sample-input">
-                Sample Input File <span style={{ fontSize: '11px' }}>↗</span>
+                Sample Security Analtyics Input File <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
-                <InternalLink to="/sample-results">Sample Results File <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
+                <InternalLink to="/sample-results">Sample Security Analytics Results File <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
             </div>
           </StyledSectionFlex>
 
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
               <h3>APIs</h3>
-            <p>APIs description here</p>
+            <h4>APIs are currently available via HTTP (REST).</h4>
+            <p>Each data point in the Batch RESULTS_FILE, or in the <a href={"./glossary"}>Glossary</a> can be calculated for any
+            security at any point in time using minimal input parameters.</p>
+            <p>API technical documentation, including the list of functions and data points, is available <a href={"/docs/v2/technology/api"}>here</a>.</p>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
               <InternalLink to="/api-risk-sample">
                 Sample API Risk <span style={{ fontSize: '11px' }}>↗</span>
