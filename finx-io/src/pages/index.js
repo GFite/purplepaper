@@ -447,7 +447,7 @@ const ProductsSection = props => {
       <StyledSectionTitle>Superpowers for Quantitative Developers.</StyledSectionTitle>
       <StyledBodySubText>
         Check out the <Link to="/docs/v2/">documentation</Link>, the{' '}
-        <Link to="/docs/v2/javascript-SDK/quick-start/">quick start</Link> or a guide below to integrate your workflows and
+        <Link to="/docs/v2/technology/developer-guide">quick start</Link> or a guide below to integrate your workflows and
           your portfolio content with APIs and batch processes.
       </StyledBodySubText>
       <StyledSectionFlex style={{ paddingBottom: '0px', paddingTop: '1rem' }}>

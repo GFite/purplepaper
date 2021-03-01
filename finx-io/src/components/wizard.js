@@ -11,14 +11,14 @@ const links = [
     sublinks: [
       {
         title: 'Analytics APIs',
-        link: '/docs/v2/smart-contract-integration/trading-from-a-smart-contract/',
+        link: '/docs/v2/technology/api/',
         description: 'Simplify the process of integrating Fite Analytics into your project.',
         tag: 'api',
         icon: '⚡'
       },
       {
         title: 'Cash Flow APIs',
-        link: '/docs/v2/smart-contract-integration/providing-liquidity/',
+        link: '/docs/v2/technology/api/',
         description: 'The most granular and accurate cash flow projections available.',
         tag: 'cash flow',
         icon: '$'
@@ -26,14 +26,14 @@ const links = [
 
       {
         title: 'Batch Files',
-        link: '/docs/v2/core-concepts/flash-swaps/',
+        link: '/docs/v2/technology/batch/',
         description: 'Withdraw the reserves of any ERC20 token on Uniswap and execute arbitrary logic.',
         tag: 'guide',
         icon: '📦'
       },
       {
         title: 'SDK',
-        link: '/docs/v2/core-concepts/oracles/',
+        link: '/docs/v2/technology/developer-guide/',
         description: 'How-to Guides and Recipes.',
         icon: '🔮'
       }
