@@ -256,7 +256,7 @@ const Header = props => {
           {!isMobile && <Search {...props} />}
           {isMobile &&
             (v2Toggle ? <SidebarV2 parent={'/docs/'} {...props} /> : <SidebarV1 parent={'/docs/'} {...props} />)}
-          <VersionToggle to={v2Toggle ? '/docs/v1/' : '/docs/v2/'}>
+          <VersionToggle to={v2Toggle ? '/docs/v1/' : '/docs/v2/'} hidden={'true'}>
             <VersionLabel toggled={!v2Toggle}>V1</VersionLabel>
             <VersionLabel toggled={v2Toggle}>V2</VersionLabel>
           </VersionToggle>
