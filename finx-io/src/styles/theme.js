@@ -133,6 +133,7 @@ export const GlobalStyle = createGlobalStyle`
   
   
     html {
+    font-family: Lato;  
     font-size: 16px;
     font-variant: none;
     background-color: ${({ theme }) => theme.backgroundColor};
@@ -154,7 +155,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: "Inter Roman", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-feature-settings: 'ss01' on, 'ss02' on, 'cv01' on, 'cv03' on;
 
     line-height: 1.55;
@@ -182,12 +183,12 @@ export const GlobalStyle = createGlobalStyle`
 
   .title{
     letter-spacing: -0.05em;
-    font-family: "GT Haptik Regular";
+    font-family: Lato;
     font-size: 72px;
   }
 
   h1 {
-    font-family: "GT Haptik Regular";
+    font-family: Lato;
     margin-top: 1.75rem ;
     font-size: 1.875rem;
     font-weight: 500;
@@ -196,11 +197,11 @@ export const GlobalStyle = createGlobalStyle`
   h2 {
     font-size: 1.5rem;
     font-weight: 400;
-    font-family: "GT Haptik Regular";  }
+    font-family: Lato;  }
 
   h3 {
     font-weight: 400;
-    font-family: "GT Haptik Regular";  }
+    font-family: Lato;  }
 
 
 
