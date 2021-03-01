@@ -280,6 +280,7 @@ const About = props => {
               </InternalLink>
                 <InternalLink to="/sample-results">Sample Security Analytics Results File <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
             </div>
+            <br/>
             <h3>Batch Portfolio Analytics</h3>
               <p>Portfolios may be submitted for analysis using the <strong>Batch Portfolio Analytics Service</strong>. Portfolio snapshots (holdings) and/or
             portfolio transaction history can be submitted in multiple input files, or maintained over time.</p>
@@ -294,7 +295,7 @@ const About = props => {
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
               <h3>APIs</h3>
             <h4>APIs are currently available via HTTP (REST).</h4>
-            <p>Each data point in the Batch RESULTS_FILE, or in the <a href={"./glossary"}>Glossary</a> can be calculated for any
+            <p>Each data point in the Batch RESULTS_FILE, or in the <a href={"/docs/v2/methodology/glossary"}>Glossary</a> can be calculated for any
             security at any point in time using minimal input parameters.</p>
             <p>API technical documentation, including the list of functions and data points, is available <a href={"/docs/v2/technology/api"}>here</a>.</p>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
