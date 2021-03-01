@@ -411,13 +411,13 @@ const DeveloperSection = props => {
 const ProductsSection = props => {
   return (
     <>
-      <StyledSectionTitle>We calculate analytics for Securities and Portfolios</StyledSectionTitle>
+      <StyledSectionTitle>Analytics for Securities and Portfolios</StyledSectionTitle>
       <StyledBodySubText>
-          Analyze any security as of any date, at any price.<br>Send us 3 data points - <strong>SECURITY ID, DATE,
+          Analyze any security as of any date, at any price.<br/>Send us 3 data points - <strong>SECURITY ID, DATE,
           PRICE</strong> - and we&apos;ll send you back a full analysis of the security.
       </StyledBodySubText>
         <StyledBodySubText>
-            Analyze any portfolio as of any date, at either market or stress-scenario prices.<br>Send us your holdings information
+            Analyze any portfolio as of any date, at either market or stress-scenario prices.<br/>Send us your holdings information
             over any time period and receive analysis of <strong>Portfolio Risk, Return and Performance Attribution.</strong>
         </StyledBodySubText>
       <StyledItemRow>
