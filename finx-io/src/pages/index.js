@@ -466,7 +466,7 @@ const ProductsSection = props => {
         <StyledExternalLink href={'https://twitter.com/fiteanalytics'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.twitter.childImageSharp.fluid} />
         </StyledExternalLink>
-        <StyledExternalLink href={'https://www.reddit.com/r/fiteanalytic'} target="_blank">
+        <StyledExternalLink href={'https://www.reddit.com/r/fiteanalytics'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.reddit.childImageSharp.fluid} />
         </StyledExternalLink>
       </StyledItemRow>

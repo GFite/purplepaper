@@ -52,9 +52,9 @@ const menu = [
   {
     name: 'Community',
     sublinks: [
-      { name: 'Fite Analytics Discord', link: 'https://discord.gg/FCfyBSbCU5' },
-      { name: 'Fite Analytics Twitter', link: 'https://twitter.com/FinX_io' },
-      { name: 'Fite Analytics Reddit', link: 'https://www.reddit.com/r/FINX' }
+      { name: 'Fite Analytics Discord', link: 'https://discord.gg/edAfmhvSev' },
+      { name: 'Fite Analytics Twitter', link: 'https://twitter.com/fiteanalytics' },
+      { name: 'Fite Analytics Reddit', link: 'https://www.reddit.com/r/fiteanalytics' }
     ]
   },
   {
@@ -65,7 +65,7 @@ const menu = [
         link: '/blog'
       },
       {
-        name: 'Info',
+        name: 'Company Info',
         link: '/about'
       },
       {
@@ -73,7 +73,7 @@ const menu = [
         link: '/faq'
       },
       {
-        name: 'Jobs',
+        name: 'Job  s',
         link: '/about#jobs'
       }
     ]
