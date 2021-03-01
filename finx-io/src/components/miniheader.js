@@ -226,6 +226,7 @@ const Header = props => {
           </StyledHomeLink>
           {props.path && props.path !== '/' && props.path !== '' && (
             <>
+              <StyledNavTitle to={'/'}> fite analytics </StyledNavTitle>
               <StyledNavTitle to={'/' + props.path.split('/')[1]}>
                 {props.path.length > 20 ? 'Docs /' : 'Fite Analytics Docs /'}
               </StyledNavTitle>
