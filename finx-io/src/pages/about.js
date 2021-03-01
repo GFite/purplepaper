@@ -37,6 +37,7 @@ const StyledAbout = styled.div`
 `
 
 const StyledSectionFlex = styled.div`
+  font-family: Lato;
   padding: 4rem 4rem 4rem 4rem;
   display: flex;
   flex-wrap: wrap;
@@ -251,10 +252,10 @@ const About = props => {
       <StyledAbout>
         <span style={{ marginTop: '5rem' }}>
           <Title style={{ paddingBottom: '4rem' }}>
-            Fite Analytics is an Analytics and Data Processing company.
+            Fite Analytics is a Data Processing and Analytics company.
           </Title>
-          <h2 style={{ paddingBottom: '4rem' }}>
-            <span><strong>Widest coverage and fastest speeds</strong></span> analyzing securities for institutional portfolios.{' '}
+          <h2 style={{ fontFamily: 'Lato', paddingBottom: '4rem' }}>
+            <span><strong>Widest coverage of individual securities and fastest calculation speeds</strong></span> for institutional portfolios.{' '}
           </h2>
 
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
@@ -265,19 +266,18 @@ const About = props => {
             securities such as structured products, convertibles and hedged positions.</p>
             <h1>Security Sectors Covered</h1>
             <SecurityCoverage />
-            <h3>We believe in zero implementation. Get access to security analytics today. <a href={"mailto:info@fiteanalytics.com"}>Email Us</a></h3>
+            <h3 style={{ fontFamily: 'Lato'}}>We believe in zero implementation. Get access to security analytics today. <a href={"mailto:info@fiteanalytics.com"}>Email Us</a></h3>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
               <InternalLink to="/docs">
                 Documentation <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
-              <InternalLink to="/faq">FAQ</InternalLink>
+              <InternalLink to="/faq">FAQ <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
             </div>
           </StyledSectionFlex>
 
-          <StyledSectionFlex id="team" style={{ flexDirection: 'column' }}>
+          <StyledSectionFlex id="team" style={{ fontFamily: 'Lato', flexDirection: 'column' }}>
             <h2 style={{ width: '100%' }}>Team</h2>
-            <p>industry experience + quantitative excellence + technology innovation</p>
-
+            <p><strong>industry experience + quantitative excellence + technology leadership</strong></p>
             <span>
               <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/geoffreyfite/">
                 {' '}
