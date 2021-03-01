@@ -413,7 +413,7 @@ const ProductsSection = props => {
     <>
       <StyledSectionTitle>We calculate analytics for Securities and Portfolios</StyledSectionTitle>
       <StyledBodySubText>
-          Analyze any security as of any date, at any price. Send us 3 data points and we'll send you back a full analysis
+          Analyze any security as of any date, at any price. Send us 3 data points and we&apos;ll send you back a full analysis
           of the security in question.
       </StyledBodySubText>
         <StyledBodySubText>
