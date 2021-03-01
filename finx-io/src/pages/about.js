@@ -28,6 +28,7 @@ const StyledAbout = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.grey2};
 
   @media (max-width: 960px) {
+    font-family: Lato;
     flex-direction: column;
     grid-template-columns: 1fr;
     margin-top: 0rem;
@@ -44,11 +45,13 @@ const StyledSectionFlex = styled.div`
   max-width: 960px;
   margin-left: 5rem;
   @media (max-width: 1024px) {
+    font-family: Lato;
     padding: 1rem;
     margin-top: 0rem;
     flex-direction: ${({ wrapSmall }) => (!wrapSmall ? 'row' : 'column')};
   }
   @media (max-width: 960px) {
+    font-family: Lato;
     padding: 1rem;
     margin-left: 0;
     margin-top: 0rem;
@@ -79,7 +82,7 @@ const Title = styled.h1`
   /* font-size: 3rem; */
   margin-bottom: 4rem;
   font-size: 72px;
-
+  font-family: Lato;
   pointer-events: none;
   white-space: wrap;
   overflow-wrap: normal;
