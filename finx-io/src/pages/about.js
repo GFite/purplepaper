@@ -55,11 +55,15 @@ const StyledSectionFlex = styled.div`
     width: 100%;
     flex-direction: column;
   }
-  h1,
+  h1 {
+    font-family: Lato;
+  }
   h2 {
+    font-family: Lato;
     max-width: 650px;
   }
   p {
+    font-family: Lato;
     /* margin-bottom: 0.5rem; */
     max-width: 650px;
   }
@@ -90,12 +94,14 @@ const InternalLink = styled(Link)`
   border-radius: 8px;
   color: ${({ theme }) => theme.textColor};
   font-weight: 600;
+  font-family: Lato;
 
   &:not(:last-child) {
     margin-right: 1rem;
   }
 
   h2 {
+    font-family: Lato;
     margin: 0;
   }
 
