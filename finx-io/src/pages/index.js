@@ -277,21 +277,21 @@ const IndexPage = props => {
           }
         }
       }
-      discord: file(relativePath: { eq: "discord.png" }) {
+      discord: file(relativePath: { eq: "discord_logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      twitter: file(relativePath: { eq: "twitter.png" }) {
+      twitter: file(relativePath: { eq: "twitter_logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      reddit: file(relativePath: { eq: "reddit.png" }) {
+      reddit: file(relativePath: { eq: "reddit_logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
