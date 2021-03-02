@@ -22,6 +22,14 @@ the bond markets. A partial list of our sources of data includes:
 - Exchange Data Int'l
 - MSRB
 
+# Do we need subscriptions with source data providers to use your services?
+
+Generally, no. Our subscription is all-inclusive of data, calculations and cloud space. Data from nearly all of our 
+source providers is included under our distribution arrangements.
+
+If you use CUSIP security identifiers then an S&P Global CUSIP license may be required. Please contact 
+S&P CUSIP for more information on CUSIP licensing.
+
 # How does Fite Analytics work?
 
 Fite Analytics provides analysis of single securities and portfolios. Our cloud platform contains the reference
@@ -31,3 +39,10 @@ data, models and computational power to provide on-demand calculations of any si
 
 Yes.
 
+# What Branded Indices are on the platform?
+
+The platform currently has the entire family of Standard & Poor's Indices for fixed income securities.
+
+On request, we can arrange for Bloomberg Indices which include the former Barclay's family.
+
+Addtiionally, we can procure Refinitiv indices on request.
