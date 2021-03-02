@@ -14,13 +14,13 @@ Fite Analytics is a data processing and analytics company.
 Fite Analytics has contracted with the gold-standard providers of terms and conditions for each sub-sector of 
 the bond markets. A partial list of our sources of data includes:
 
-- ![Intex](https://intex.com)
-- ![IHS Markit](https://ihsmarkit.com)
-- LSEG Mergent
-- Standard & Poors
-- Andrew Davidsion & Co.
-- Exchange Data Int'l
-- MSRB
+- [Intex](https://intex.com)
+- [IHS Markit](https://ihsmarkit.com)
+- [LSEG Mergent](https://lseg)
+- [Standard & Poors](https://standardandpoors)
+- [Andrew Davidsion & Co.](https://adco.com)
+- [Exchange Data Int'l](https://exchange-data.com)
+- [MSRB](https://msrb.org)
 
 # Do we need subscriptions with source data providers to use your services?
 
@@ -45,4 +45,4 @@ The platform currently has the entire family of Standard & Poor's Indices for fi
 
 On request, we can arrange for Bloomberg Indices which include the former Barclay's family.
 
-Addtiionally, we can procure Refinitiv indices on request.
+Additionally, we can procure Refinitiv indices on request.
