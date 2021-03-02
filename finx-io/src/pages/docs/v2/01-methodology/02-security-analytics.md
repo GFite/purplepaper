@@ -5,10 +5,30 @@ author: Geoff Fite
 date: 2021-02-25
 ---
 
-# Risk Analytics
+# Security Analytics
+
+Fite Analytics follows industry-standard approaches to analyzing individual securities. At a high level, the following 
+analytical approaches and components are used in our services:
+
+- cashflow-based valuation
+- rate calculation and variable rate modeling
+- optionality and other event-based handling
+- convertibility
+- prepayment modeling
+- default modeling
+- sensitivity analysis
+- ultra-low and negative rate environment calibration
+- benchmark comparisons
+
+# Security Risk Analytics
 
 Security-level analytics are designed to provide a snapshot view of a security's risk characteristics. Generally 
-speaking, risk measures in the bond sectors are expressed as **Yield, Duration, Spread and Sensitivity**.
+speaking, security analytics are based on a cash-flow valuation approach with models making various input assumptions 
+as forward values are calculated step-wise before discounting back to present value.
+
+The outputs of this analysis allows us to generate a battery of analytics that represent various views of risk 
+used across an array of use-cases. Risk measures in the bond sectors are expressed in groups of derived calculations 
+covering **Yield, Duration, Spread and Sensitivity**.
 
 ## Yield
 

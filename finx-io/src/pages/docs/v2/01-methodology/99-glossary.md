@@ -30,6 +30,10 @@ Represents the explicit call price assuming a unit of 100 on the cash flow date 
 
 The yyyy-mm-dd date of the cash flow based on monthly intervals.
 
+## Clean Price
+
+Clean Price is the price (calculated or book) without accrued interest.
+
 ## Discount Margin
 
 The yield spread above the reference index that estimates the expected return equating the present value of all expected future cash flows to the current market price for variable rate securities.
