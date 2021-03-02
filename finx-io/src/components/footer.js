@@ -29,7 +29,7 @@ const StyledFooter = styled.footer`
   color: ${({ theme }) => theme.textColor};
   position: relative;
   padding: 0 4rem 4rem 4rem;
-  font-family: 'GT Haptik Regular';
+  font-family: Lato;
   
   @media (max-width: 1155px) {
     display: block;
@@ -88,6 +88,7 @@ const StyledFooterLinkSection = styled.ul`
 `
 
 const StyledFooterLink = styled.li`
+  font-family: Lato;
   display: flex;
   flex-direction: row;
   align-items: flex-start;

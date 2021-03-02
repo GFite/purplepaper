@@ -45,16 +45,16 @@ const menu = [
   {
     name: 'Developers',
     sublinks: [
-      { name: 'GitHub', link: 'https://github.com/FiteAnalytics' },
+      { name: 'GitHub', link: 'https://github.com/FiteAnalytics', target: '_blank' },
       { name: 'Developer Guide', link: '/docs/v2/technology/developer-guide'}
     ]
   },
   {
     name: 'Community',
     sublinks: [
-      { name: 'Fite Analytics Discord', link: 'https://discord.gg/FCfyBSbCU5' },
-      { name: 'Fite Analytics Twitter', link: 'https://twitter.com/FinX_io' },
-      { name: 'Fite Analytics Reddit', link: 'https://www.reddit.com/r/FINX' }
+      { name: 'Fite Analytics Discord', link: 'https://discord.gg/edAfmhvSev', target: '_blank' },
+      { name: 'Fite Analytics Twitter', link: 'https://twitter.com/fiteanalytics', target: '_blank' },
+      { name: 'Fite Analytics Reddit', link: 'https://www.reddit.com/r/fiteanalytics', target: '_blank' }
     ]
   },
   {
@@ -65,7 +65,7 @@ const menu = [
         link: '/blog'
       },
       {
-        name: 'Info',
+        name: 'Company Info',
         link: '/about'
       },
       {
@@ -73,7 +73,7 @@ const menu = [
         link: '/faq'
       },
       {
-        name: 'Jobs',
+        name: 'Job  s',
         link: '/about#jobs'
       }
     ]

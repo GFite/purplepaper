@@ -10,6 +10,7 @@ import BG from '../components/bg'
 import '../styles/prism-github.css'
 
 const StyledBlog = styled.div`
+  font-family: Lato;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -22,6 +23,7 @@ const StyledBlog = styled.div`
 `
 
 const StyledMDX = styled.div`
+  font-family: Lato;
   min-width: 550px;
   max-width: 650px;
   padding: 0;

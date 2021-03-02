@@ -12,6 +12,7 @@ import '../styles/prism-github.css'
 import { useMediaQuery } from '@react-hook/media-query'
 
 const StyledDocs = styled.div`
+  font-family: Lato;
   display: grid;
   grid-template-columns: 280px 1fr 180px;
   justify-content: space-between;
@@ -29,6 +30,7 @@ const StyledDocs = styled.div`
 `
 
 const StyledMDX = styled.div`
+  font-family: Lato;
   min-width: 550px;
   max-width: 768px;
   padding: 0;

@@ -11,12 +11,14 @@ import '../styles/prism-github.css'
 
 const GlobalStyle = createGlobalStyle`
   html {
+    font-family: Lato;
     background-image: none;
     background-color: ${({ theme }) => theme.backgroundColor};
 }
 `
 
 const StyledDocs = styled.div`
+  font-family: Lato;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -37,6 +39,7 @@ const StyledDocs = styled.div`
 `
 
 const StyledMDX = styled.div`
+  font-family: Lato;
   min-width: 550px;
   max-width: 650px;
   padding: 0;
@@ -46,6 +49,7 @@ const StyledMDX = styled.div`
   }
 
   figcaption {
+    font-family: Lato;
     padding: 0.25rem;
     font-style: italic;
     color: ${({ theme }) => theme.colors.grey6};
@@ -57,18 +61,22 @@ const StyledMDX = styled.div`
   }
 
   h1 {
+    font-family: Lato;
     margin-top: 4rem;
   }
   h2 {
+    font-family: Lato;
     margin-top: 2rem;
   }
   blockquote h1 {
+    font-family: Lato;
     margin-top: unset;
     font-style: italic;
   }
 `
 
 const StyledPageTitle = styled.div`
+  font-family: Lato;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -76,11 +84,13 @@ const StyledPageTitle = styled.div`
   /* align-items: center; */
 
   h1 {
+    font-family: Lato;
     font-size: 2.5rem !important;
     margin-top: 0px !important;
   }
 
   a {
+    font-family: Lato;
     color: ${({ theme }) => theme.colors.grey6};
     display: inherit;
     font-size: 0.825rem;
