@@ -1,0 +1,90 @@
+
+import Button from '../components/button'
+import BG from '../components/bg'
+import styled from 'styled-components'
+
+<BG />
+
+<div style={{maxWidth: '650px', margin: '0px auto'}}>
+<Title>Security Analytics Batch Submit File</Title>
+## Example and Tutorial
+
+This document specifies the input file for running security analytics as a batch process. It also includes a tutorial
+on how to submit a Batch.
+
+# Batch Security Analytics Input File Specification
+
+## File Format
+
+plain text file, comma separated values (CSV)
+
+## File Naming Convention
+
+Please name your input file per the following convention:
+
+[client_id]_[as_of_date]_SUBMIT.csv
+
+Where:
+- [client_id] is your Client Id which can be found in the FITE DApp (distributed application)
+- [as_of_date] is the Effective Date formated &apos;yyyymmdd&apos; for which you want to run analytics; this date will be used for any of the input
+records where as_of_date is not populated
+
+Example Input File name:
+
+3ba864a1-83b7-41bc-a27f-0d247b34ebeb_20211202_SUBMIT.csv
+
+Any record in the above file that DOES NOT have an as_of_date will be populated with the date &apos;20211202&apos; or 02 DECEMBER 2021
+
+## File Structure
+
+### File Fields
+
+Each row in the file must have the following fields:
+- security_id (if blank then row skipped)
+- as_of_date (if blank then date from input file name)
+- price (if blank then 100)
+
+### File Separator
+
+Each row must have comma (&apos;,&apos;) separators.
+
+### String / Text Field Treamtment and use of Quotes
+
+Each row in the file is treated as string data (text), so quotes are not used to identify strings. No single or
+double quotes are required in the file.
+
+### File Headers
+
+The file may have column (field) headers but headers are not required.
+
+If the header row has the fields labeled exactly as follows:
+- security_id
+- as_of_date
+- price
+Then the file will be read according to the order of the columns and any other columns will be disregarded.
+
+If the header row exists but does not contain one of the above fields, the header will be disregarded and the file
+will be processed in the Default File Parsing Order.
+
+### Default File Parsing Order
+
+The following field order will be processed for each row in the input file:
+- security_id
+- as_of_date
+- price
+
+### Example File
+
+```
+security_id,as_of_date,price
+912796G29,20210302,99.983958
+```
+
+The above file saved as [client_id]_[as_of_date]_SUBMIT.csv will generate a results file with one security result,
+for 912796G29.
+
+<br/>
+<br/>
+<br/>
+
+</div>
