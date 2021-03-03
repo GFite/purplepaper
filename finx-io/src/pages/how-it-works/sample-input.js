@@ -283,7 +283,7 @@ Example Input File name:
 
 3ba864a1-83b7-41bc-a27f-0d247b34ebeb_20211202_SUBMIT.csv
 
-Any record in the above file that DOES NOT have an as_of_date will be populated with the date '20211202' or 02 DECEMBER 2021
+Any record in the above file that DOES NOT have an as_of_date will be populated with the date &apos;20211202&apos; or 02 DECEMBER 2021
 
 ## File Structure
 
@@ -296,7 +296,7 @@ Each row in the file must have the following fields:
 
 ### File Separator
 
-Each row must have comma (',') separators.
+Each row must have comma (&apos;,&apos;) separators.
 
 ### String / Text Field Treamtment and use of Quotes
 
