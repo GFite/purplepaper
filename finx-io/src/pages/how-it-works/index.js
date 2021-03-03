@@ -276,9 +276,8 @@ const About = props => {
             </ul>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
               <InternalLink to="/how-it-works/sample-input">
-                Sample Security Analtyics Input File <span style={{ fontSize: '11px' }}>↗</span>
+                Security Analytics Input File Example and Tutorial<span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
-                <InternalLink to="/how-it-works/sample-results">Sample Security Analytics Results File <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
             </div>
             <br/>
             <h3>Batch Portfolio Analytics</h3>
@@ -302,7 +301,6 @@ const About = props => {
               <InternalLink to="/how-it-works/api-risk-sample">
                 Sample API Risk <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
-                <InternalLink to="/how-it-works/api-cash-flow-sample">Sample API Cash Flow <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
             </div>
           </StyledSectionFlex>
 
