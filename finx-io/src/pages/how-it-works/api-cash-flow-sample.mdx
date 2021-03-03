@@ -4,167 +4,74 @@ import Button from '../../components/button'
 <BG />
 
 <div style={{maxWidth: '650px', margin: '0px auto'}}>
-    <Title>Security Analytics Batch - How it Works</Title>
+<Title>Security Cash Flow API - How it Works</Title>
 
-    # Batch Security Analytics Input File Specification
+# API Type
 
-    **This document specifies the input file for running security analytics as a batch process. It also includes a tutorial
-    on how to submit a Batch.**
+Fite Analytics APIs are called over HTTP REST.
 
-    ## File Format
+## HTTP METHOD
 
-    > plain text file, comma separated values (CSV)
+API calls are made over HTPPS using request method POST
 
-    ## File Naming Convention
+## HTTP URI Format
 
-    Please name your input file per the following convention:
+URI for Security Cash Flows are formatted as follows:
 
-    ```
-    [client_id]_[as_of_date]_SUBMIT.csv
-    ```
+```
+    https://api.finx.io?method=security_cash_flows&security_id=[security_identifier]&as_of_date=[as_of_date]&price=[price]&shock=[None]
+```
 
-    > Where:
-    > - [client_id] is your Client Id which can be found in the FITE DApp (distributed application)
-    > - [as_of_date] is the Effective Date formated &apos;yyyymmdd&apos; for which you want to run analytics; this date will be used for any of the input
-    records where as_of_date is not populated
+with the following header data:
 
-    Example SUBMIT File name:
+```
+    {
+        API_KEY: 'API_KEY'
+    }
+```
 
-    ```
-    3ba864a1-83b7-41bc-a27f-0d247b34ebeb_20211202_SUBMIT.csv
-    ```
+___
 
-    Any record in the above file that DOES NOT have an as_of_date will be populated with the date &apos;20211202&apos; or 02 DECEMBER 2021
+## HTTP Response
 
-    ___
+The API will respond with server code 200 ('ok') and JSON data response will be in the request data.
 
-    ## File Fields
+The response JSON for cash flows is formatted as follows.
 
-    > Each row in the file must have the following fields:
-    > - security_id (if blank then row skipped)
-    > - as_of_date (if blank then date from input file name)
-    > - price (if blank then 100)
+```
+    {
+        security_id: [security_identifier],
+        as_of_date: [as_of_date],
+        cash_flows: [
+    {
+        total_cash_flows: [total_cash_flows],
+        interest_cash_flows: [interest_cash_flows],
+        other_principal_cash_flows: [other_principal_cash_flows],
+        call_cash_flows: [call_cash_flows],
+        put_cash_flows: [put_cash_flows],
+        accrued_interest: [accrued_interest],
+        cash_flow_date: [cash_flow_date (of this payment)]
+    },
+    {
+        ,...
+    }
+        ]
+    }
+```
 
-    Each value on each row in the file is treated as string data (text), so quotes are not used to identify strings. No
-    single or double quotes are required for any field in the file.
+Where each date is calculated and passed back between the effective date (start date) of the cash flow run until the end of the security's effective payments.
 
-    ## File Separator
+# How to Submit an API Request:
 
-    > Each row must have comma (&apos;,&apos;) separators.
-
-    ## File Headers
-
-    **The file may have column (field) headers but headers are not required.**
-
-    > If the header row has the fields labeled exactly as follows the file will be read according to the order of the columns
-    and any other columns will be disregarded.
-    > - security_id
-    > - as_of_date
-    > - price
-
-    If the header row exists but does not contain one of the above fields, the header will be disregarded and the file
-    will be processed in the Default File Parsing Order.
-
-    ## Default File Parsing Order
-
-    > The following field order will be processed for each row in the input file:
-    > - security_id
-    > - as_of_date
-    > - price
-
-    ## Example File
-
-    ```
-    security_id,as_of_date,price
-    912796G29,20210302,99.983958
-    ```
-
-    The above file saved as [client_id]_[as_of_date]_SUBMIT.csv will generate a results file with one security result,
-    for 912796G29.
-
-    # How to Submit the Batch
-
-    We accept Batch submissions using several methods:
-    - SFTP site (yours or ours)
-    - Amazon Web Services S3 Bucket (secured between us as data counterparties)
-    - Email (easy!)
-
-    If you would like to submit a Batch as a coverage check to see results for your securities, please [email us](mailto:info@fiteanalytics.com).
-
-    # Security Analtyics Batch Results File
-
-    When the Batch run is complete, the RESULTS file will be placed in or sent to the arranged place (SFTP, S3, email).
-
-    ## File Format
-
-    > plain text file, comma separated values (CSV)
-
-    ## File Naming Convention
-
-    ```
-    [client_id]_[as_of_date]_RESULTS.csv
-    ```
-
-    > Where:
-    > - [client_id] is your Client Id which matches the SUBMIT file
-    > - [as_of_date] is the Effective Date formated &apos;yyyymmdd&apos; which matches the SUBMIT file
-
-    Example RESULTS File name:
-
-    ```
-    3ba864a1-83b7-41bc-a27f-0d247b34ebeb_20211202_RESULTS.csv
-    ```
-
-    ## File Fields
-
-    > Each row in the file may have the following fields. Batch output is configurable to your specifications.
-    > - security_id (if blank then row skipped)
-    > - as_of_date (if blank then date from input file name)
-    > - price (if blank then 100)
-    > - accrued_interest
-    > - asset_swap_spread
-    > - average_life
-    > - convexity_par
-    > - convexity_spot
-    > - current_yield
-    > - discount_margin
-    > - duration_to_worst
-    > - ann_duration_to_worst
-    > - dv01
-    > - eff_duration
-    > - option_adjusted_duration
-    > - local_duration
-    > - macaulay_duration
-    > - macaulay_duration_to_worst
-    > - maturity_years
-    > - modified_duration
-    > - ann_modified_duration
-    > - nominal_spread
-    > - libor_oas
-    > - oas
-    > - stated_maturity_years
-    > - yield_to_maturity
-    > - ann_yield_to_maturity
-    > - yield_to_put
-    > - yield_to_option
-    > - annual_yield
-    > - yield_value_of_32nd
-    > - zvo
-    > - spread_duration
-
-    Key Rate Durations are available on a separate batch process or may be added as an extended calculation to an Analytics Batch run.
-
-    Each value on each row in the file is treated as string data (text), so quotes are not used to identify strings. No
-    single or double quotes are used for any field in the file, so when parsing the results file treat fields as text and
-    then you may cast them into other datatypes as required.
-
-    ## File Separator
-
-    > Each row has comma (&apos;,&apos;) separators.
-
-    ## File Headers
-
-    **The file will have column (field) headers unless you specify otherwise.**
+```
+    curl --location --request POST 'https://sandbox.finx.io/api/' \
+    --form 'finx_api_key={{finx_api_key}}' \
+    --form 'api_method=security_cash_flows' \
+    --form 'security_id=423074AS2' \
+    --form 'price=100.0' \
+    --form 'as_of_date=20200628' \
+    --form 'shock_in_bp=0.0'
+```
 
     <div>
         <Button  href="/how-it-works">
@@ -177,3 +84,4 @@ import Button from '../../components/button'
     <br/>
 
 </div>
+

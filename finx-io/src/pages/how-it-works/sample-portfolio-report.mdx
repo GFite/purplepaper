@@ -6,103 +6,17 @@ import Button from '../../components/button'
 <div style={{maxWidth: '650px', margin: '0px auto'}}>
     <Title>Security Cash Flow API - How it Works</Title>
 
-    # API Type
+# Portfolio Report Examples
 
-    Fite Analytics APIs are called over HTTP REST.
+<div>
+    <Button  href="/how-it-works">
+        back
+    </Button>
+</div>
+<br/>
+<br/>
 
-    ## HTTP METHOD
-
-    API calls are made over HTPPS using request method POST
-
-    ## HTTP URI Format
-
-    URI for Security Analytics Cash Flows are formatted as follows:
-
-    ```
-    https://api.finx.io?method=[method_name]&security_id=[security_identifier]&as_of_date=[as_of_date]&price=[price]&shock=[None]
-    ```
-
-    with the following header data:
-
-    ```
-    {
-        API_KEY: 'API_KEY'
-    }
-    ```
-
-    ## File Naming Convention
-
-    Please name your input file per the following convention:
-
-    ```
-    [client_id]_[as_of_date]_SUBMIT.csv
-    ```
-
-    > Where:
-    > - [client_id] is your Client Id which can be found in the FITE DApp (distributed application)
-    > - [as_of_date] is the Effective Date formated &apos;yyyymmdd&apos; for which you want to run analytics; this date will be used for any of the input
-    records where as_of_date is not populated
-
-    Example SUBMIT File name:
-
-    ```
-    3ba864a1-83b7-41bc-a27f-0d247b34ebeb_20211202_SUBMIT.csv
-    ```
-
-    Any record in the above file that DOES NOT have an as_of_date will be populated with the date &apos;20211202&apos; or 02 DECEMBER 2021
-
-    ___
-
-    ## HTTP Response
-
-    The API will respond with server code 200 ('ok') and JSON data response will be in the request data.
-
-    The response JSON for cash flows is formatted as follows.
-
-    ```
-    {
-        security_id: [security_identifier],
-        as_of_date: [as_of_date],
-        cash_flows: [
-            {
-                total_cash_flows: [total_cash_flows],
-                interest_cash_flows: [interest_cash_flows],
-                other_principal_cash_flows: [other_principal_cash_flows],
-                call_cash_flows: [call_cash_flows],
-                put_cash_flows: [put_cash_flows],
-                accrued_interest: [accrued_interest],
-                cash_flow_date: [cash_flow_date (of this payment)]
-            },
-            {
-                ,...
-            }
-        ]
-    }
-    ```
-
-    Where each date is calculated and passed back between the effective date (start date) of the cash flow run until the end of the security's effective payments.
-
-    # How to Submit an API Request:
-
-    ```
-    curl --location --request POST 'https://sandbox.finx.io/api/' \
-    --form 'finx_api_key={{finx_api_key}}' \
-    --form 'api_method=security_cash_flows' \
-    --form 'security_id=423074AS2' \
-    --form 'price=100.0' \
-    --form 'as_of_date=20200628' \
-    --form 'shock_in_bp=0.0'
-    ```
-
-    <div>
-        <Button  href="/how-it-works">
-            back
-        </Button>
-    </div>
-    <br/>
-    <br/>
-
-    <br/>
+<br/>
 
 </div>
 

@@ -303,6 +303,9 @@ const About = props => {
               <InternalLink to="/how-it-works/api-risk-sample">
                   <strong>Sample API Risk</strong> <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
+              <InternalLink to="/how-it-works/api-cash-flow-sample">
+                  <strong>Sample API Cash Flow</strong> <span style={{ fontSize: '11px' }}>↗</span>
+              </InternalLink>
             </div>
           </StyledSectionFlex>
 <div>
