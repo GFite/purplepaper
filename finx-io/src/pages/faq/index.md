@@ -14,13 +14,13 @@ Fite Analytics is a data processing and analytics company.
 Fite Analytics has contracted with the gold-standard providers of terms and conditions for each sub-sector of 
 the bond markets. A partial list of our sources of data includes:
 
-- [Intex](https://intex.com){target="_blank"}
-- [IHS Markit](https://ihsmarkit.com){target="_blank"}
-- [LSEG Mergent](https://lseg){target="_blank"}
-- [Standard & Poors](https://standardandpoors){target="_blank"}
-- [Andrew Davidsion & Co.](https://adco.com){target="_blank"}
-- [Exchange Data Int'l](https://exchange-data.com){target="_blank"}
-- [MSRB](https://msrb.org){target="_blank"}
+- <h3><a href="https://intex.com" target="_blank">Intex</a></h3>
+- <h3><a href="https://ihsmarkit" target="_blank">IHS Markit</a></h3>
+- <h3><a href="https://standardandpoors.com" target="_blank">Standard & Poors</a></h3>
+- <h3><a href="https://lseg.com" target="_blank">LSEG</a></h3>
+- <h3><a href="https://adco.com" target="_blank">AD&Co</a></h3>
+- <h3><a href="https://exchange-data.com" target="_blank">EDI</a></h3>
+- <h3><a href="https://msrb.org" target="_blank">MSRB</a></h3>
 
 # Do we need subscriptions with source data providers to use your services?
 
