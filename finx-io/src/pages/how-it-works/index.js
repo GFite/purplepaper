@@ -303,6 +303,11 @@ const About = props => {
               </InternalLink>
             </div>
           </StyledSectionFlex>
+<div>
+    <Button  href="/">
+        home
+    </Button>
+</div>
 
         </span>
             </StyledAbout>
