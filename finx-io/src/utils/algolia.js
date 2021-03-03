@@ -56,7 +56,7 @@ const queries = [
         tags: node.frontmatter.tags,
         excerpt: handleRawBody(node.excerpt)
       })),
-    indexName: `V2Docs`
+    indexName: `fiteanalytics`
     // settings
   }
 ]

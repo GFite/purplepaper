@@ -87,7 +87,7 @@ export default function Search(props) {
       try {
         window.docsearch({
           apiKey: '6a3ab376256d9c3b6dd7a6f5f8d2c909',
-          indexName: 'finx',
+          indexName: 'fiteanalytics',
           appId: 'T24GMD3OKF',
           inputSelector: '.docsearch', // the selector of my search input
           transformData: handleResults
