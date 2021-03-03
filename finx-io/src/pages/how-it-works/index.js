@@ -279,7 +279,9 @@ const About = props => {
                   <strong>Security Analytics Input File Example and Tutorial</strong> <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
             </div>
-            <br/>
+          </StyledSectionFlex>
+
+          <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
             <h3>Batch Portfolio Analytics</h3>
               <p>Portfolios may be submitted for analysis using the <strong>Batch Portfolio Analytics Service</strong>. Portfolio snapshots (holdings) and/or
             portfolio transaction history is submitted via batch submit files, or maintained over time. We accommodate multiple formats and input styles.</p>
