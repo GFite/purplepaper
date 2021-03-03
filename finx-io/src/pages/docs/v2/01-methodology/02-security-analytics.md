@@ -1,7 +1,7 @@
 ---
 title: Security Analytics
 tags: analytics, documentation
-author: Geoff Fite
+authors: Geoff Fite, Dick Mule
 date: 2021-02-25
 ---
 
