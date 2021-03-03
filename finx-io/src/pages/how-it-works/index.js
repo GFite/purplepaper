@@ -14,7 +14,7 @@ import Layout from '../../layouts'
 import SEO from '../../components/seo'
 import BG from '../../components/bg'
 import Button from '../../components/button'
-import Box from '@material-ui/core/styles'
+import Box from '@material-ui/core/Box'
 
 const StyledAbout = styled.div`
   font-family: Lato;
