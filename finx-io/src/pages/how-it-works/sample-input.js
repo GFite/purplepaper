@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 
 import gql from 'graphql-tag'
@@ -170,7 +171,7 @@ pairCount
 return gql(queryString)
 }
 
-const CashFlowSample = props => {
+const SampleInput = props => {
 dayjs.extend(utc)
 const utcCurrentTime = dayjs()
 const utcOneDayBack = utcCurrentTime.subtract(1, 'day').unix()
@@ -275,7 +276,7 @@ Please name your input file per the following convention:
 
 Where:
 - [client_id] is your Client Id which can be found in the FITE DApp (distributed application)
-- [as_of_date] is the Effective Date formated 'yyyymmdd' for which you want to run analytics; this date will be used for any of the input
+- [as_of_date] is the Effective Date formated &apos;yyyymmdd&apos; for which you want to run analytics; this date will be used for any of the input
 records where as_of_date is not populated
 
 Example Input File name:
