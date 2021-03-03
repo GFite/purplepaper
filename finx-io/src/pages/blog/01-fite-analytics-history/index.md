@@ -19,10 +19,10 @@ Having experienced start-up life twice before, I was not naive about the chances
 idea wasn't that we'd just build a better product and expect them to sign up, that "our math will be superior", or that 
 "we can build something that people didn't know they needed" because **gosh** we have so much experience. Rather, our idea 
 was simple: in the Capital Markets Analytics space, there are a good amount of disappointed customers out there, and a Customer-First orientation 
-is a great beach-head for a new company attempting to land on a crowded island. In fact, we saw the industry-standard contempt 
-for customers as a gift that our future competition had laid at our feet.
+is a great beach-head for a new company attempting to land on a crowded island. In fact, we saw the all-too-common contempt 
+for customers amongst the big players as a gift that our future competition had laid at our feet.
 
-It takes audacity and a strong dose of delusional thinking to pull of a startup, and I believe the trick is to
+It takes audacity and a strong dose of delusional thinking to pull off a startup, and I believe the trick is to
 put yourself out there, **stay out there**, and wait for some sort of magic to happen. We were treading into waters that were 
 well-mapped and fully dominated by a few monopoly players. As my former boss at IDC said to me when I approached him with the 
 idea, 'sounds great, but all startups are risky, and this one looks too tough.'
@@ -53,4 +53,4 @@ if we crash and burn it will have been a massive success in my mind to have had 
 
 Ester was right, demand drives innovation.
 
--- Geoff Fite, Feb 25 2025
+-- Geoff Fite, 2025 March 02
