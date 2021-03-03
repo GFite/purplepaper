@@ -8,7 +8,7 @@ tags: glossary, documentation
 
 ## Accrued Interest
 
-Interest accumulated since the last coupon payment date to the monthly cash flow date.
+Interest accumulated in the time window from any given date and the immediately preceding coupon date.
 
 ## Annual Yield
 
@@ -16,23 +16,24 @@ The coupon rate based on an annual compounding frequency.
 
 ## Asset Swap Spread
 
-The difference between the bond’s yield to maturity and the corresponding LIBOR curve, expressed in basis points.
+The difference between the bond’s yield to maturity and a maturity matched point on the LIBOR curve, expressed in basis points.
 
 ## Average Life
 
-The weighted average life is the average length of time to the last principal payment.
+The weighted average length of time to the last principal payment.  For IO-tranches, this is the weighted average length of time
+to the final interest interest payment.
 
 ## Call Cash Flows
 
-Represents the explicit call price assuming a unit of 100 on the cash flow date as applicable as information only.
+Represents the explicit call price given a par amount (default=100) on a given date.
 
 ## Cash Flow Date
 
-The yyyy-mm-dd date of the cash flow based on monthly intervals.
+The yyyy-mm-dd date of the cash flow.
 
 ## Clean Price
 
-Clean Price is the price (calculated or book) without accrued interest.
+Clean Price is the price (market, calculated, or book) without accrued interest.
 
 ## Discount Margin
 
@@ -40,7 +41,7 @@ The yield spread above the reference index that estimates the expected return eq
 
 ## Duration to Worst
 
-The weighted average time based on the yield change calculated to the price to worst (best) date including call features as applicable.
+The weighted average time based on the yield change calculated to the price to worst (best) date.
 
 ## Duration to Worst (Annualized)
 
@@ -52,18 +53,17 @@ The Dollar Duration or DV01 of a bond measures the price change in dollar terms 
 
 ## Effective Convexity
 
-Option adjusted Convexity helps to approximate the change in price that is not explained by Effective Duration.  Effective Convexity assumes that cash flow does change due to a change in interest rates.
+Option adjusted Convexity helps to approximate the change in price that is not explained by Effective Duration.  Effective Convexity accounts for variable cash flows resulting from changes in interest rates.
 
 ## Effective Duration
 
-Option adjusted Duration is the approximate percentage change in price for a
-+/-100 basis point (bps) change in the underlying par government yield curve.  Effective Duration takes into account both the discounting that occurs at different interest rates as well as changes in cash flows.
+Option adjusted Duration is the approximate percentage change in price for a +/-100 basis point (bps) change in the underlying par government yield curve.  Effective Duration takes into account both the discounting that occurs at different interest rates as well as changes in cash flows.
 
-For the Par Effective Duration, the theoretical par curve is shifted +/- 100 bps to determine the corresponding spot curves to value the security assuming a constant OAS based on the bond’s specific price.  The Par Effective Duration is the average percentage change in price of the bond versus its input price.  For Spot Effective Duration we assume a zero volatility and hold the bond’s ZVO or Z-spread constant.  
+In Batch Analytics Effective Duration Par is Option Adjusted Duration.  For Spot Effective Duration we calculate Option Adjusted Duration with a zero volatility.  
 
 ## Interest Cash Flows
 
-The Interest cash flow based on the coupon payment frequency for the coupon paid as of the cash flow date.
+The calculated Interest cash flow on any future date.
 
 ## LIBOR Option Adjusted Spread (OAS)
 
@@ -75,7 +75,7 @@ See Modified Duration.
 
 ## Macaulay Duration
 
-The weighted average time to receipt of cash flows using the present value of each cash flow as the weight.  Macaulay Duration for Floaters is computed to the next reset date.
+The weighted average time to receipt of cash flows using the present value of each cash flow as the weight. 
 
 ## Macaulay Duration to Worst
 
@@ -87,7 +87,7 @@ The length of time until the principal must be repaid with interest.
 
 ## Modified Duration
 
-The Modified duration is a measure of a bond’s price sensitivity to changes in its yield to maturity.  The Macaulay’s duration is divided by a factor of (1+ y / m) where the (y) is the annual YTM and (m) is the total number of coupon payments per period.
+The Modified duration is a measure of a bond’s price sensitivity to changes in its yield to maturity.  The Macaulay’s duration is divided by a factor of (1+ y / m) where the (y) is the annual YTM and (m) is the total number of coupon payments per period.  For variable rate securities, the modified duration tends toward the next reset date as the security's cash flows will change along with the yield.
 
 ## Modified Duration (Annualized)
 
@@ -107,15 +107,15 @@ Includes bonds with sinking fund payments and RMBS principal and prepayments tha
 
 ## Principal Cash Flows
 
-Includes principal paid at maturity or worst/best date assuming a unit of 100.
+Includes principal paid at maturity or worst/best date given a par amount (default=100).
 
 ## Put Cash Flows
 
-Represents the explicit put price assuming a unit of 100 on the cash flow date as applicable as information only.
+Represents the explicit put price given a par amount (default=100) on a given date.
 
 ## Spread Duration
 
-The estimate of a bond’s price sensitivity when the spread of that specific bond changes.
+The estimate of a bond’s price sensitivity to a +/- 1 basis point shift in spread (default=Option Adjusted Spread).
 
 ## Stated Maturity
 
@@ -123,11 +123,11 @@ The length of time until the principal must be repaid with interest.
 
 ## Total Cash Flows
 
-The sum of all Principal and Interest cash flows assuming a unit of 100, as of the monthly cash flow date generated based on a security’s coupon pay date.  For Batch Analytics, bonds with options will generate cash flows to the worst/best date.  The API cash flows are to maturity.
+The sum of all Principal and Interest cash flows given a par amount (default=100) on a given date. For Batch Analytics, bonds with options will generate cash flows to the worst/best date.  The API cash flows are to maturity.
 
 ## Yield to Maturity
 
-The theoretical internal rate of return that causes the present value, assuming neither options for bonds nor prepayments for mortgage backed securities, to equal the current market price of the bond.  It can be defined as an estimate of the total return of a bond assuming it is held to maturity and that all coupon and principal income is reinvested at a rate equal to the yield to maturity.  The yield to maturity takes into consideration the coupon income, interest-on-interest, and capital gains or losses due to the difference between the price paid when the bond was purchased, and par, the return of principal at maturity.  
+The theoretical internal rate of return that causes the present value to equal the current market price of the bond.  It is an estimate of the total return of a bond assuming it is held to maturity and that all coupon and principal income is reinvested at a rate equal to the yield to maturity.  The yield to maturity takes into consideration the coupon income, interest-on-interest, and capital gains or losses due to the difference between the price paid when the bond was purchased, and par, the return of principal at maturity.  
 
 ## Yield to Maturity (Annualized)
 
@@ -148,4 +148,3 @@ Measures the change in yield (in basis points) that would lead to a 1/32nd chang
 ## Zero Volatility Spread (ZVO)
 
 Zero-volatility spread (ZVO or Z-spread) is the constant spread that equates the price of a security to the present value of its cash flows when added to the yield at each point on the government curve spot rate(s) where cash flow is received.   The ZVO is computed using the entire yield curve to value each individual cash flow for all fixed income securities.
-
