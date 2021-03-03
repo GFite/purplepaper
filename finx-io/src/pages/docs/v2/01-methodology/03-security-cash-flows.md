@@ -9,7 +9,7 @@ The platform has the  ability to determine date and event specific cash flow pay
 
 In order to achieve this precision, we dynamically parse all security information and event schedules from our cloud database or with specifc routines 
 that interface with our partners' libraries (i.e. Intex Subroutines). This allows us to determine static and dynamic projections of future cash flows and,
-at the same time, ensure data consistency and analytic precision accross our horizontally scaled calculation grid.
+at the same time, ensure data consistency and analytic precision across our horizontally-scaled calculation grid.
 
 ## Total Cash Flows
 
