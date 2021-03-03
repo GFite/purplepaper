@@ -38,16 +38,16 @@ Definitions of specific yield measures produced can be found in the [Glossary](.
 
 Book Yield is the yield calculated as of acquisition and is used to measure the cost basis as the security 
 amortizes/appreciates over its remaining life.  Our default is to use Yield-To-Maturity but this can be toggled 
-to specify any Yield-To-<Method>.
+to specify any Yield-To-<Method\>.
 
 Book Yield is used in the context of portfolio analytics to determine Book Price and the corresponding Book OAS,
 a required input to conduct sensitivity analysis on a portfolio's cost basis.
 
 ### Market Yield
 
-Yield-To-**<Method>** are a range of analytic measures that estimate future return against various scenarios of a 
+Yield-To-<Method\> are a range of analytic measures that estimate future return against various scenarios of a 
 position-ending event. Many reports use Yield-To-Worst as a default but this can be toggled to specify 
-any Yield-To-<Method>.
+any Yield-To-<Method\>.
 
 ## Sensitivity
 
@@ -70,11 +70,11 @@ as the weighted average life of all remaining interest payments.
 ### Macaulay Duration
 
 The weighted average time an investor must hold a bond until the present value of the bond’s cash flows is equal to the market 
-value of the bond.  All cash flows are determined according to the parameters of any Yield-To-<Method>.
+value of the bond.  All cash flows are determined according to the parameters of any Yield-To-<Method\>.
 
 ### Modified Duration
 
-An adjusted version of the Macaulay Duration, which accounts for changes to any Yield-To-<Method>.  For non-floating rate
+An adjusted version of the Macaulay Duration, which accounts for changes to any Yield-To-<Method\>.  For non-floating rate
 securities, the cash flows do not depend on the level of rates and the modified will be slightly shorter than the Macaulay Duration.
 Floating rate securities will have much shorter modified durations as they are sensitive to changes in the yield and will tend toward
 their reset date.
@@ -120,7 +120,7 @@ Spread is a measure of added risk in regards to a benchmark, often a specific di
 
 ### Asset Swap Spread
 
-The difference between the Yield-To-<Method> of a security and a duration matched rate on the Libor Swap Curve.
+The difference between the Yield-To-<Method\> of a security and a duration matched rate on the Libor Swap Curve.
 
 ### Option Adjusted Spread
 
