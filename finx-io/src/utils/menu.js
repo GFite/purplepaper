@@ -30,7 +30,7 @@ const menu = [
       {
         name: 'Security Coverage',
         link: '/docs/v2/security-coverage',
-        description: 'model documentation'
+        description: 'security data on platform'
       },
       {
         name: 'Methodology',
