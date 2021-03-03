@@ -30,7 +30,7 @@ const menu = [
       {
         name: 'How It Works',
         link: '/how-it-works',
-        description: 'security data on platform'
+        description: 'using our services'
       },
       {
         name: 'Methodology',
@@ -45,6 +45,11 @@ const menu = [
         name: 'Security Coverage',
         link: '/docs/v2/security-coverage',
         description: 'financial instrument data'
+      },
+      {
+        name: 'Corporate Litepaper',
+        link: '/docs/v2/litepaper',
+        description: 'mission and approach'
       }
     ]
   },
