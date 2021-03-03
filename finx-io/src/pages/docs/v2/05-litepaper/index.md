@@ -1,6 +1,6 @@
 # Fite Analytics LLC
 
-## Corporate Whitepaper
+## Corporate Litepaper
 
 ***Version 1.0***
 
