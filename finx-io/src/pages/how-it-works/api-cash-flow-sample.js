@@ -94,27 +94,6 @@ font-size: 2rem;
 }
 `
 
-const InternalLink = styled(Link)`
-border-radius: 8px;
-color: ${({ theme }) => theme.textColor};
-font-family: Lato;
-font-weight: 600;
-
-&:not(:last-child) {
-margin-right: 1rem;
-}
-
-h2 {
-font-family: Lato;
-margin: 0;
-}
-
-transition: transform 0.45s cubic-bezier(0.19, 1, 0.22, 1);
-:hover {
-transform: translate3d(2px, 2px, 10px);
-}
-`
-
 export const GET_BLOCK = gql`
 query blocks($timestamp: Int!) {
 blocks(first: 1, orderBy: timestamp, orderDirection: asc, where: { timestamp_gt: $timestamp }) {
