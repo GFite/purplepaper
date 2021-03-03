@@ -13,6 +13,7 @@ import { Link } from 'gatsby'
 import Layout from '../../layouts'
 import SEO from '../../components/seo'
 import BG from '../../components/bg'
+import Button from '../../components/button'
 
 const StyledAbout = styled.div`
   font-family: Lato;
@@ -276,7 +277,7 @@ const About = props => {
             </ul>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
               <InternalLink to="/how-it-works/sample-input">
-                Security Analytics Input File Example and Tutorial<span style={{ fontSize: '11px' }}>↗</span>
+                Security Analytics Input File Example and Tutorial <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
             </div>
             <br/>
