@@ -19,8 +19,12 @@ customers, or anyone interested in why we're here and what we do.
 
 ## Background
 
-Fite Analytics was formed in March 2016 by Geoff Fite. Dick Mule joined in May 2017 and Sonia Dixon in February 2018. In August 
-2018 we signed our first customer, [Moreton Capital Management LLC](https://moretoncm.com) and they remain a happy customer of 
+Fite Analytics was formed in March 2016 by Geoff Fite who built the initial technology design. Dick Mule joined in May 
+2017 to contribute to the engineering platform. Sonia Dixon in February 2018 as industry veteran and subject-matter expert. 
+In Summer of 2019 we were joined by Maderson Ly as Data Engineer and Jake Mathai as software engineer, and then in 
+February 2020 Tashah Johnson joined as Business Analyst. 
+
+In August 2018 we signed our first customer, [Moreton Capital Management LLC](https://moretoncm.com) and they remain a happy customer of 
 portfolio-level analytics and reports.
 
 In 2019 we began to work with Northern Trust as we obtained global coverage of the bond markets. In 2020 we became the primary 
@@ -34,16 +38,19 @@ a desire to make customers happy.
 
 Our mission is to give Capital Markets Participants more choice in Security and Portfolio Analytics.
 
-Up until now, the industry has been overwhelmingly dominated by a few monopoly providers who extract high fees for the services they 
-provide. While the value of these services is undeniable, the cost of implementation and managing multiple vendors creates 
-wasted expense and unnecessary work.
+For most of the history of capital markets, the industry has been overwhelmingly dominated by a few extremely large data and 
+solution vendors who extract high fees for the services they provide. While the value of these services is undeniable, 
+the cost is made higher by aging technologies, implemenation projects, ongoing maintenance and IT burdens such as security and
+redundancy. The lack of heated competition in many sectors of the space has left customers wanting for easier, cheaper solutions 
+but few companies have been able to surmount the high barriers to entry that exist.
 
-Additionally, many of the high quality inputs to generating analytics must be source separately and then assembled by technical staff. Finding 
+Additionally, many of these high quality inputs to generating analytics must be sourced separately and from multiple vendors.
+Then the local teams must assembled these many systems into something resembling cogent analysis. Finding 
 quantitative analysts who can both understand the complex methodologies involved **and** write the code to utilize the inputs 
 has created a significant barrier to analyzing complex securities such as mortgage-backed instruments.
 
-We fulfill our mission to provide choice by covering the entire global bond market to produce street-standard results, available 
-without implementation on the cloud.
+We plan to provide more choice by covering the entire global bond market to produce superior street-standard results, available 
+without implementation on the cloud, at faster speeds and lower costs than the competition.
 
 ## Services
 
@@ -112,22 +119,26 @@ not represent the cost of goods in the service. Rather, most large vendors in Fi
 organizations that sustain very high cost of sales which include executive salaries, HQ buildings, golf tournaments and 
 the like.
 
-Our approach is to dramatically undercut the current pricing in the industry, by simply keeping our cost of sales 
-as low as possible and by adding a small markup on the cost of goods that we pay our suppliers and Amazon AWS. This has 
-the effect of making a profitable business for everyone - data vendors, our customers, and us - by eliminating wasted expense.
+Our approach is to provide extremely competitive pricing in the industry, by keeping our cost of sales 
+as low as possible and by adding a small markup on the cost of goods that we pay our suppliers and Amazon AWS. By staying lean,
+we will be able to procure the expensive inputs and run them on high-cost, high-performance machinery, and still save our 
+customers money. This has the effect of making a profitable business for everyone - data vendors, our customers, and us - by eliminating wasted expense.
 
 You don't always get what you pay for in this industry, and we'd like to change that.
 
-## Structure
-
-Fite Analytics is closely-held and has less than 10 employees. We expect it to stay that way until it makes sense 
-to hire more people, but we will always attempt to remain the highest-quality lowest-priced competitor in the marketplace.
-
-We charge for our services as a subscription with payment terms that suit our customers.
-
 ## Where We're Headed
 
+Capital Markets are a big, expanding space and the pace of change is accelerating. We are currently focused on providing 
+the world's leading analytics on the Bond Markets. In the near future, we will be working on asset across the spectrum to 
+pursue cross-asset valuation and cash flow sensitivity testing of complex portfolios.
+
+Beyond traditional capital markets, we have incorporated Distributed Ledger and blockchain technology into our work since 2017.
+We are a participant in several components of the Web3 and we are positioning ourselves to become the analytics firm-of-choice for 
+the Crypto and ERC20 markets.
+
 ## How to Reach Us
+
+Please contact us at [info@fiteanalytics.com](mailto:info@fiteanalytics.com) with any questions or comments you may have.
 
 
 
