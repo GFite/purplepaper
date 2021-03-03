@@ -13,6 +13,7 @@ import { Link } from 'gatsby'
 import Layout from '../../layouts'
 import SEO from '../../components/seo'
 import BG from '../../components/bg'
+import Button from '../../components/button'
 
 const StyledAbout = styled.div`
   font-family: Lato;
@@ -260,14 +261,13 @@ const About = props => {
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
               <h3>Batch Security Analytics</h3>
             <p>The <strong>Batch Security Analytics Service</strong> is a method to calculate large numbers of securities with a single
-            request. Batch runs can contain up to 500,000 securities per batch and there is no limit on the number of
-            batches.</p>
+            request. Batch runs can contain up to 1,000,000 securities per batch.</p>
             <h4>The batch process is as follows:</h4>
-            <ul>
+            <ol type="1">
                 <li>Submit a batch request file (&quot;SUBMIT_FILE&quot;)</li>
                 <li>Fite Analytics processes calculations and generates results on the cloud platform</li>
                 <li>Retrieve batch results file (&quot;RESULTS_FILE&quot;)</li>
-            </ul>
+            </ol>
             <h4>Files can be submitted and retrieved using a choice of:</h4>
             <ul>
                 <li>Amazon Web Services S3 Buckets</li>
@@ -276,18 +276,17 @@ const About = props => {
             </ul>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
               <InternalLink to="/how-it-works/sample-input">
-                Sample Security Analtyics Input File <span style={{ fontSize: '11px' }}>↗</span>
+                  <strong>Security Analytics Input File Example and Tutorial</strong> <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
-                <InternalLink to="/how-it-works/sample-results">Sample Security Analytics Results File <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
             </div>
             <br/>
             <h3>Batch Portfolio Analytics</h3>
               <p>Portfolios may be submitted for analysis using the <strong>Batch Portfolio Analytics Service</strong>. Portfolio snapshots (holdings) and/or
-            portfolio transaction history can be submitted in multiple input files, or maintained over time.</p>
+            portfolio transaction history is submitted via batch submit files, or maintained over time. We accommodate multiple formats and input styles.</p>
             <p>Contact us for information on the range of portfolio analytics available in batch format.</p>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
               <InternalLink to="/how-it-works/sample-portfolio-report">
-                Sample Portfolio Report <span style={{ fontSize: '11px' }}>↗</span>
+                  <strong>Sample Portfolio Report</strong> <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
             </div>
           </StyledSectionFlex>
@@ -300,11 +299,15 @@ const About = props => {
             <p>API technical documentation, including the list of functions and data points, is available <a href={"/docs/v2/technology/api"}>here</a>.</p>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
               <InternalLink to="/how-it-works/api-risk-sample">
-                Sample API Risk <span style={{ fontSize: '11px' }}>↗</span>
+                  <strong>Sample API Risk</strong> <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
-                <InternalLink to="/how-it-works/api-cash-flow-sample">Sample API Cash Flow <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
             </div>
           </StyledSectionFlex>
+<div>
+    <Button  href="/">
+        home
+    </Button>
+</div>
 
         </span>
             </StyledAbout>
