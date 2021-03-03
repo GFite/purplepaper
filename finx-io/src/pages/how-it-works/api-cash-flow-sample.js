@@ -8,8 +8,6 @@ import utc from 'dayjs/plugin/utc'
 import { useQuery } from '@apollo/react-hooks'
 import { client, blockClient } from '../../apollo/client'
 
-import { Link } from 'gatsby'
-
 import Layout from '../../layouts'
 import SEO from '../../components/seo'
 import BG from '../../components/bg'
