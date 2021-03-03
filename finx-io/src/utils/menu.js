@@ -28,9 +28,9 @@ const menu = [
     name: 'Documents',
     sublinks: [
       {
-        name: 'Security Coverage',
-        link: '/docs/v2/security-coverage',
-        description: 'security data on platform'
+        name: 'How It Works',
+        link: '/how-it-works',
+        description: 'using our services'
       },
       {
         name: 'Methodology',
@@ -39,8 +39,19 @@ const menu = [
       },
       {
         name: 'Technology', link: '/docs/v2/technology',
-        description: 'APIs and Batch Submit'
-      }]
+        description: 'architecture'
+      },
+      {
+        name: 'Security Coverage',
+        link: '/docs/v2/security-coverage',
+        description: 'financial instrument data'
+      },
+      {
+        name: 'Corporate Litepaper',
+        link: '/docs/v2/litepaper',
+        description: 'mission and approach'
+      }
+    ]
   },
   {
     name: 'Developers',
