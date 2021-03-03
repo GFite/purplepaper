@@ -15,7 +15,7 @@ Fite Analytics has contracted with the gold-standard providers of terms and cond
 the bond markets. A partial list of our sources of data includes:
 
 - <h3><a href="https://intex.com" target="_blank">Intex</a></h3>
-- <h3><a href="https://ihsmarkit" target="_blank">IHS Markit</a></h3>
+- <h3><a href="https://ihsmarkit.com/index.html" target="_blank">IHS Markit</a></h3>
 - <h3><a href="https://standardandpoors.com" target="_blank">Standard & Poors</a></h3>
 - <h3><a href="https://lseg.com" target="_blank">LSEG</a></h3>
 - <h3><a href="https://adco.com" target="_blank">AD&Co</a></h3>
