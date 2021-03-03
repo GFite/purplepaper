@@ -13,8 +13,10 @@ import { Link } from 'gatsby'
 import Layout from '../../layouts'
 import SEO from '../../components/seo'
 import BG from '../../components/bg'
+import Button from '../../components/button'
 
 const StyledAbout = styled.div`
+  font-family: Lato;
   display: grid;
   grid-template-columns: 1fr 200px;
   justify-content: space-between;
@@ -26,6 +28,7 @@ const StyledAbout = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.grey2};
 
   @media (max-width: 960px) {
+    font-family: Lato;
     flex-direction: column;
     grid-template-columns: 1fr;
     margin-top: 0rem;
@@ -34,6 +37,7 @@ const StyledAbout = styled.div`
 `
 
 const StyledSectionFlex = styled.div`
+  font-family: Lato;
   padding: 0 0 4rem 0;
   display: flex;
   flex-wrap: wrap;
@@ -42,24 +46,30 @@ const StyledSectionFlex = styled.div`
   max-width: 960px;
   margin-left: 5rem;
   @media (max-width: 1024px) {
+    font-family: Lato;
     padding: 1rem;
     margin-top: 0rem;
     flex-direction: ${({ wrapSmall }) => (!wrapSmall ? 'row' : 'column')};
   }
   @media (max-width: 960px) {
+    font-family: Lato;
     padding: 1rem;
     margin-left: 0;
     margin-top: 0rem;
     width: 100%;
     flex-direction: column;
   }
-  h1,
+  h1 {
+    font-family: Lato;
+  }
   h2 {
+    font-family: Lato;
     max-width: 650px;
   }
   p {
     /* margin-bottom: 0.5rem; */
     max-width: 650px;
+    font-family: Lato;
   }
 `
 
@@ -73,13 +83,14 @@ const Title = styled.h1`
   /* font-size: 3rem; */
   margin-bottom: 4rem;
   font-size: 72px;
-
+  font-family: Lato;
   pointer-events: none;
   white-space: wrap;
   overflow-wrap: normal;
   max-width: 1200px;
   /* text-align: center; */
   @media (max-width: 960px) {
+    font-family: Lato;
     font-size: 2rem;
   }
 `
@@ -87,6 +98,7 @@ const Title = styled.h1`
 const InternalLink = styled(Link)`
   border-radius: 8px;
   color: ${({ theme }) => theme.textColor};
+  font-family: Lato;
   font-weight: 600;
 
   &:not(:last-child) {
@@ -94,6 +106,7 @@ const InternalLink = styled(Link)`
   }
 
   h2 {
+    font-family: Lato;
     margin: 0;
   }
 
@@ -241,31 +254,60 @@ const About = props => {
           <Title style={{ paddingBottom: '4rem' }}>
             How It Works
           </Title>
-          <h2 style={{ paddingBottom: '4rem' }}>
+          <h2 style={{ fontFamily: 'Lato', paddingBottom: '4rem' }}>
             <span><strong>Batch Analytics and APIs </strong></span> for analyzing individual securities and portfolios.{' '}
           </h2>
 
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
-              <h3>Batch Analytics</h3>
-            <p>Batch Analytics description here</p>
+              <h3>Batch Security Analytics</h3>
+            <p>The <strong>Batch Security Analytics Service</strong> is a method to calculate large numbers of securities with a single
+            request. Batch runs can contain up to 1,000,000 securities per batch.</p>
+            <h4>The batch process is as follows:</h4>
+            <ol type="1">
+                <li>Submit a batch request file (&quot;SUBMIT_FILE&quot;)</li>
+                <li>Fite Analytics processes calculations and generates results on the cloud platform</li>
+                <li>Retrieve batch results file (&quot;RESULTS_FILE&quot;)</li>
+            </ol>
+            <h4>Files can be submitted and retrieved using a choice of:</h4>
+            <ul>
+                <li>Amazon Web Services S3 Buckets</li>
+                <li>SFTP site</li>
+                <li>Email</li>
+            </ul>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
-              <InternalLink to="/sample-input">
-                Sample Input File <span style={{ fontSize: '11px' }}>↗</span>
+              <InternalLink to="/how-it-works/sample-input">
+                  <strong>Security Analytics Input File Example and Tutorial</strong> <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
-                <InternalLink to="/sample-results">Sample Results File <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
+            </div>
+            <br/>
+            <h3>Batch Portfolio Analytics</h3>
+              <p>Portfolios may be submitted for analysis using the <strong>Batch Portfolio Analytics Service</strong>. Portfolio snapshots (holdings) and/or
+            portfolio transaction history is submitted via batch submit files, or maintained over time. We accommodate multiple formats and input styles.</p>
+            <p>Contact us for information on the range of portfolio analytics available in batch format.</p>
+            <div style={{ display: 'flex', width: '100%', margin: 0 }}>
+              <InternalLink to="/how-it-works/sample-portfolio-report">
+                  <strong>Sample Portfolio Report</strong> <span style={{ fontSize: '11px' }}>↗</span>
+              </InternalLink>
             </div>
           </StyledSectionFlex>
 
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
               <h3>APIs</h3>
-            <p>APIs description here</p>
+            <h4>APIs are currently available via HTTP (REST).</h4>
+            <p>Each data point in the Batch RESULTS_FILE, or in the <a href={"/docs/v2/methodology/glossary"}>Glossary</a> can be calculated for any
+            security at any point in time using minimal input parameters.</p>
+            <p>API technical documentation, including the list of functions and data points, is available <a href={"/docs/v2/technology/api"}>here</a>.</p>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
-              <InternalLink to="/api-risk-sample">
-                Sample API Risk <span style={{ fontSize: '11px' }}>↗</span>
+              <InternalLink to="/how-it-works/api-risk-sample">
+                  <strong>Sample API Risk</strong> <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
-                <InternalLink to="/api-cash-flow-sample">Sample API Cash Flow <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
             </div>
           </StyledSectionFlex>
+<div>
+    <Button  href="/">
+        home
+    </Button>
+</div>
 
         </span>
             </StyledAbout>

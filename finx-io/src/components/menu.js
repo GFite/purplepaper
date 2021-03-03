@@ -90,7 +90,7 @@ const StyledMenuTitle = styled.span`
   margin: 0px;
   border-radius: 0.5rem;
   font-weight: 400;
-  font-family: 'GT Haptik Regular';
+  font-family: Lato;
   width: fit-content;
   font-size: 16px;
 

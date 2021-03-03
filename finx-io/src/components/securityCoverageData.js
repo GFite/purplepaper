@@ -9,6 +9,7 @@ import { useQuery } from '@apollo/react-hooks'
 import { client, blockClient } from '../apollo/client'
 
 const StyledSectionFlex = styled.div`
+  font-family: Lato;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -18,11 +19,13 @@ const StyledSectionFlex = styled.div`
   max-width: 960px;
   width: 100%;
   @media (max-width: 1024px) {
+    font-family: Lato;
     padding: 1rem;
     margin-top: 0rem;
     flex-direction: ${({ wrapSmall }) => (!wrapSmall ? 'row' : 'column')};
   }
   @media (max-width: 960px) {
+    font-family: Lato;
     padding: 1rem;
     margin-left: 0;
     margin-top: 0rem;
@@ -30,19 +33,25 @@ const StyledSectionFlex = styled.div`
     flex-direction: column;
   }
   @media (max-width: 640px) {
+    font-family: Lato;
     display: none;
   }
-  h1,
+  h1 {
+    font-family: Lato;
+  }
   h2 {
     max-width: 650px;
+    font-family: Lato;
   }
   p {
     max-width: 650px;
+    font-family: Lato;
   }
 `
 
 const Numbers = styled(StyledSectionFlex)`
   @media (max-width: 940px) {
+    font-family: Lato;
     /* display: none; */
   }
 `
@@ -51,6 +60,7 @@ const BigNumbers = styled(StyledSectionFlex)`
   font-size: 30px;
   font-weight: 700;
   flex-direction: column;
+  font-family: Lato;
   @media (max-width: 960px) {
     font-size: 28px;
   }

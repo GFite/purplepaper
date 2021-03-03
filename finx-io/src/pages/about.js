@@ -16,6 +16,7 @@ import BG from '../components/bg'
 import SecurityCoverage from '../components/securityCoverageData'
 
 const StyledAbout = styled.div`
+  font-family: Lato;
   display: grid;
   grid-template-columns: 1fr 200px;
   justify-content: space-between;
@@ -27,6 +28,7 @@ const StyledAbout = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.grey2};
 
   @media (max-width: 960px) {
+    font-family: Lato;
     flex-direction: column;
     grid-template-columns: 1fr;
     margin-top: 0rem;
@@ -35,6 +37,7 @@ const StyledAbout = styled.div`
 `
 
 const StyledSectionFlex = styled.div`
+  font-family: Lato;
   padding: 4rem 4rem 4rem 4rem;
   display: flex;
   flex-wrap: wrap;
@@ -43,22 +46,28 @@ const StyledSectionFlex = styled.div`
   max-width: 960px;
   margin-left: 5rem;
   @media (max-width: 1024px) {
+    font-family: Lato;
     padding: 1rem;
     margin-top: 0rem;
     flex-direction: ${({ wrapSmall }) => (!wrapSmall ? 'row' : 'column')};
   }
   @media (max-width: 960px) {
+    font-family: Lato;
     padding: 1rem;
     margin-left: 0;
     margin-top: 0rem;
     width: 100%;
     flex-direction: column;
   }
-  h1,
+  h1 {
+    font-family: Lato;
+  }
   h2 {
+    font-family: Lato;
     max-width: 650px;
   }
   p {
+    font-family: Lato;
     /* margin-bottom: 0.5rem; */
     max-width: 650px;
   }
@@ -74,7 +83,7 @@ const Title = styled.h1`
   /* font-size: 3rem; */
   margin-bottom: 4rem;
   font-size: 72px;
-
+  font-family: Lato;
   pointer-events: none;
   white-space: wrap;
   overflow-wrap: normal;
@@ -89,12 +98,14 @@ const InternalLink = styled(Link)`
   border-radius: 8px;
   color: ${({ theme }) => theme.textColor};
   font-weight: 600;
+  font-family: Lato;
 
   &:not(:last-child) {
     margin-right: 1rem;
   }
 
   h2 {
+    font-family: Lato;
     margin: 0;
   }
 
@@ -241,10 +252,10 @@ const About = props => {
       <StyledAbout>
         <span style={{ marginTop: '5rem' }}>
           <Title style={{ paddingBottom: '4rem' }}>
-            Fite Analytics is an Analytics and Data Processing company.
+            Fite Analytics is a Data Processing and Analytics company.
           </Title>
-          <h2 style={{ paddingBottom: '4rem' }}>
-            <span><strong>Widest coverage and fastest speeds</strong></span> analyzing securities for institutional portfolios.{' '}
+          <h2 style={{ fontFamily: 'Lato', paddingBottom: '4rem' }}>
+            <span><strong>Widest coverage of individual securities and fastest calculation speeds</strong></span> for institutional portfolios.{' '}
           </h2>
 
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
@@ -255,19 +266,18 @@ const About = props => {
             securities such as structured products, convertibles and hedged positions.</p>
             <h1>Security Sectors Covered</h1>
             <SecurityCoverage />
-            <h3>We believe in zero implementation. Get access to security analytics today. <a href={"mailto:info@fiteanalytics.com"}>Email Us</a></h3>
+            <h3 style={{ fontFamily: 'Lato'}}>We believe in zero implementation. Get access to security analytics today. <a href={"mailto:info@fiteanalytics.com"}>Email Us</a></h3>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
               <InternalLink to="/docs">
                 Documentation <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
-              <InternalLink to="/faq">FAQ</InternalLink>
+              <InternalLink to="/faq">FAQ <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
             </div>
           </StyledSectionFlex>
 
-          <StyledSectionFlex id="team" style={{ flexDirection: 'column' }}>
+          <StyledSectionFlex id="team" style={{ fontFamily: 'Lato', flexDirection: 'column' }}>
             <h2 style={{ width: '100%' }}>Team</h2>
-            <p>industry experience + quantitative excellence + technology innovation</p>
-
+            <p><strong>industry experience + quantitative excellence + technology leadership</strong></p>
             <span>
               <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/geoffreyfite/">
                 {' '}

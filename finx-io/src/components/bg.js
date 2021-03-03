@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledBG = styled.div`
+  font-family: Lato;
   position: fixed;
   z-index: -1;
   top: 0;

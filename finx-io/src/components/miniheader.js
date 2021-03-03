@@ -226,8 +226,9 @@ const Header = props => {
           </StyledHomeLink>
           {props.path && props.path !== '/' && props.path !== '' && (
             <>
+              <StyledNavTitle to={'/'}> fite analytics </StyledNavTitle>
               <StyledNavTitle to={'/' + props.path.split('/')[1]}>
-                {props.path.length > 20 ? 'Docs /' : 'Fite Analytics Docs /'}
+                {props.path.length > 20 ? 'docs /' : 'Fite Analytics Docs /'}
               </StyledNavTitle>
               <StyledNavTitle to={'/docs/' + props.path.split('/')[2]}>
                 {props.path.split('/')[2].replace(/(^|\s)\S/g, function(t) {
@@ -255,7 +256,7 @@ const Header = props => {
           {!isMobile && <Search {...props} />}
           {isMobile &&
             (v2Toggle ? <SidebarV2 parent={'/docs/'} {...props} /> : <SidebarV1 parent={'/docs/'} {...props} />)}
-          <VersionToggle to={v2Toggle ? '/docs/v1/' : '/docs/v2/'}>
+          <VersionToggle to={v2Toggle ? '/docs/v1/' : '/docs/v2/'} hidden={'true'}>
             <VersionLabel toggled={!v2Toggle}>V1</VersionLabel>
             <VersionLabel toggled={v2Toggle}>V2</VersionLabel>
           </VersionToggle>
@@ -263,12 +264,12 @@ const Header = props => {
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </StyledButton>
           <StyledButton fill>
-            <a href="https://discord.gg/FCfyBSbCU5">
+            <a href="https://discord.gg/edAfmhvSev">
               <Discord />
             </a>
           </StyledButton>
           <StyledButton fill>
-            <a href="https://github.com/FinX-IO/">
+            <a href="https://github.com/FiteAnalytics/purplepaper">
               <Github width={20} />
             </a>
           </StyledButton>

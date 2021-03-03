@@ -249,6 +249,20 @@ const IndexPage = props => {
           }
         }
       }
+      security_analytics: file(relativePath: { eq: "bonds_colorful.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      portfolio_analytics: file(relativePath: { eq: "portfolio.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       sybil: file(relativePath: { eq: "sybil.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
@@ -263,21 +277,21 @@ const IndexPage = props => {
           }
         }
       }
-      discord: file(relativePath: { eq: "discord.png" }) {
+      discord: file(relativePath: { eq: "discord_logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      twitter: file(relativePath: { eq: "twitter.png" }) {
+      twitter: file(relativePath: { eq: "twitter_logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      reddit: file(relativePath: { eq: "reddit.png" }) {
+      reddit: file(relativePath: { eq: "reddit_logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -325,7 +339,7 @@ const IndexPage = props => {
             </Button>
             <Button
               outlined
-              to="/docs/v2/methodology/glossary"
+              to="/docs/v2/methodology"
               as={Link}
               style={{
                 fontSize: '20px'
@@ -363,7 +377,7 @@ const StyledSectionTitle = styled.h1`
   overflow-wrap: normal;
   max-width: 900px;
   text-align: center;
-  font-family: 'Lato', 'GT Haptik Regular';
+  font-family: 'Lato';
   margin-top: 10rem;
 
   @media (max-width: 960px) {
@@ -397,17 +411,35 @@ const DeveloperSection = props => {
 const ProductsSection = props => {
   return (
     <>
+      <StyledSectionTitle>Analytics for Securities and Portfolios</StyledSectionTitle>
+      <StyledBodySubText>
+          Analyze any security as of any date, at any price.<br/>Submit 3 data points - <strong>SECURITY ID, DATE,
+          PRICE</strong> - and receive a full analysis of the security.
+      </StyledBodySubText>
+        <StyledBodySubText>
+            Analyze any portfolio as of any date, at market or scenario prices.<br/>Submit portfolio holdings information
+            and receive calculations on <strong>Portfolio Risk, Return and Performance Attribution.</strong>
+        </StyledBodySubText>
+      <StyledItemRow>
+        <StyledExternalLink href={'/docs/v2/methodology/security-analytics'} target="_blank">
+          <StyledProductImage fadeIn={false} fluid={props.data.security_analytics.childImageSharp.fluid} />Security Analytics
+        </StyledExternalLink>
+        <StyledExternalLink href={'/docs/v2/methodology/portfolio-analytics'} target="_blank">
+          <StyledProductImage fadeIn={false} fluid={props.data.portfolio_analytics.childImageSharp.fluid} />Portfolio Analytics
+        </StyledExternalLink>
+      </StyledItemRow>
+
       <StyledSectionTitle>Get Results via API or Batch</StyledSectionTitle>
       <StyledBodySubText>
-          Make individual API requests over HTTP, or send us a large list of securities to analyze and we will send you back the
-          results. All of our calculations are available through either delivery mode, including complex result sets such as
-          cash flow vectors, scenario and stress tests, and key rate durations.
+            Make individual API requests over HTTP, or send us a large list of securities to analyze and we will send you back the
+            results. All of our calculations are available through either delivery mode, including complex result sets such as
+            cash flow vectors, scenario and stress tests, and key rate durations.
       </StyledBodySubText>
       <StyledItemRow>
-        <StyledExternalLink href={'/docs/v2/technology/apis'} target="_blank">
+        <StyledExternalLink href={'/how-it-works'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.api.childImageSharp.fluid} />API
         </StyledExternalLink>
-        <StyledExternalLink href={'/docs/v2/technology/batch'} target="_blank">
+        <StyledExternalLink href={'/how-it-works'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.batch.childImageSharp.fluid} />BATCH
         </StyledExternalLink>
       </StyledItemRow>
@@ -415,7 +447,7 @@ const ProductsSection = props => {
       <StyledSectionTitle>Superpowers for Quantitative Developers.</StyledSectionTitle>
       <StyledBodySubText>
         Check out the <Link to="/docs/v2/">documentation</Link>, the{' '}
-        <Link to="/docs/v2/javascript-SDK/quick-start/">quick start</Link> or a guide below to integrate your workflows and
+        <Link to="/docs/v2/technology/developer-guide">quick start</Link> or a guide below to integrate your workflows and
           your portfolio content with APIs and batch processes.
       </StyledBodySubText>
       <StyledSectionFlex style={{ paddingBottom: '0px', paddingTop: '1rem' }}>
@@ -428,16 +460,13 @@ const ProductsSection = props => {
         of the platform.
       </StyledBodySubText>
       <StyledItemRow>
-        <StyledExternalLink href={'https://discord.gg/FCfyBSbCU5'} target="_blank">
+        <StyledExternalLink href={'https://discord.gg/edAfmhvSev'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.discord.childImageSharp.fluid} />
         </StyledExternalLink>
-        <StyledExternalLink href={'https://twitter.com/Uniswap'} target="_blank">
+        <StyledExternalLink href={'https://twitter.com/fiteanalytics'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.twitter.childImageSharp.fluid} />
         </StyledExternalLink>
-        <StyledExternalLink href={'https://gov.uniswap.org/'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.discourse.childImageSharp.fluid} />
-        </StyledExternalLink>
-        <StyledExternalLink href={'https://www.reddit.com/r/Uniswap'} target="_blank">
+        <StyledExternalLink href={'https://www.reddit.com/r/fiteanalytics'} target="_blank">
           <StyledProductImage fadeIn={false} fluid={props.data.reddit.childImageSharp.fluid} />
         </StyledExternalLink>
       </StyledItemRow>
