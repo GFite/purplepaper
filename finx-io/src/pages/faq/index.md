@@ -2,8 +2,7 @@
 title: FAQ
 ---
 
-<Info>Didn't find an answer? Join the <a href="https://discord.gg/dc7ZKnUe"> Fite Analytics community Discord</a> 
-to get support</Info>
+<Info>Didn't find an answer? Join the <a href="https://discord.gg/dc7ZKnUe">Fite Analytics Community Discord</a> to get support</Info>
 
 # What is Fite Analytics?
 
