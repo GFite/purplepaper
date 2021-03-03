@@ -7,7 +7,7 @@ previewText: 'Fite Analytics Origins'
 ---
 
 ![](boserup.png)
-> Ester Boserup
+> **Ester Boserup**
 > 
 > -- <cite>Wood, J. (2020). Malthus and Boserup. In The Biography of Subsistence Farming: Population, Food and Family (Cambridge Studies in Biological and Evolutionary Anthropology, pp. 163-203). Cambridge: Cambridge University Press. doi:10.1017/9781139519700.006</cite>
 
