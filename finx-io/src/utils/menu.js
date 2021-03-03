@@ -84,7 +84,7 @@ const menu = [
         link: '/faq'
       },
       {
-        name: 'Job  s',
+        name: 'Jobs',
         link: '/about#jobs'
       }
     ]
