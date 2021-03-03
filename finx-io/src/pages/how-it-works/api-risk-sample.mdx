@@ -1,0 +1,124 @@
+import BG from '../../components/bg'
+import Button from '../../components/button'
+
+<BG />
+
+<div style={{maxWidth: '650px', margin: '0px auto'}}>
+    <Title>Security Cash Flow API - How it Works</Title>
+
+    # API Type
+
+    Fite Analytics APIs are called over HTTP REST.
+
+    ## HTTP METHOD
+
+    API calls are made over HTPPS using request method POST
+
+    ## HTTP URI Format
+
+    URI for Security Analytics Cash Flows are formatted as follows:
+
+    ```
+    https://api.finx.io?method=[method_name]&security_id=[security_identifier]&as_of_date=[as_of_date]&price=[price]&shock=[None]
+    ```
+
+    with the following header data:
+
+    ```
+    {
+        API_KEY: 'API_KEY'
+    }
+    ```
+
+    ## File Naming Convention
+
+    Please name your input file per the following convention:
+
+    ```
+    [client_id]_[as_of_date]_SUBMIT.csv
+    ```
+
+    > Where:
+    > - [client_id] is your Client Id which can be found in the FITE DApp (distributed application)
+    > - [as_of_date] is the Effective Date formated &apos;yyyymmdd&apos; for which you want to run analytics; this date will be used for any of the input
+    records where as_of_date is not populated
+
+    Example SUBMIT File name:
+
+    ```
+    3ba864a1-83b7-41bc-a27f-0d247b34ebeb_20211202_SUBMIT.csv
+    ```
+
+    Any record in the above file that DOES NOT have an as_of_date will be populated with the date &apos;20211202&apos; or 02 DECEMBER 2021
+
+    ___
+
+    ## HTTP Response
+
+    The API will respond with server code 200 ('ok') and JSON data response will be in the request data.
+
+    An example response JSON for cash flows is formatted as follows.
+
+    ```
+    {
+        "security_id": "423074AS2",
+        "as_of_date": "2020-06-28T00:00:00Z",
+        "price": 100,
+        "convexity_par": -33.8139,
+        "dur_to_worst": 2.3422,
+        "dur_to_worst_ann": 3.9337,
+        "eff_dur_par": 1.3718,
+        "eff_dur_spot": 3.1379,
+        "local_dur": 3.9337,
+        "macaulay_dur": 4.1278,
+        "macaulay_dur_to_worst": 4.0296,
+        "modified_dur_ann": 3.9337,
+        "libor_oas": 0.0192,
+        "oas": 0.0208,
+        "yield_to_maturity_ann": 0.0493,
+        "yield_to_option": 0.0487,
+        "yield_value_32": 0.0001,
+        "spread_dur": 1.1932,
+        "accrued_interest": 1.801,
+        "asset_swap_spread": 0.0453,
+        "average_life": 2.6305555555555555,
+        "coupon_rate": 4.875,
+        "current_yield": 0.0488,
+        "discount_margin": -9999,
+        "convexity_spot": -89.8596,
+        "dv01": 0.041,
+        "maturity_years": 4.6306,
+        "nominal_spread": 0.0459,
+        "stated_maturity_years": 4.6306,
+        "yield_to_maturity": 0.0487,
+        "yield_to_put": 0.0487,
+        "annual_yield": 0.0493,
+        "zvo": 0.0454
+    }
+    ```
+
+    Where each data value is calculated and passed back for the effective date.
+
+    # How to Submit an API Request:
+
+    ```
+    curl --location --request POST 'https://sandbox.finx.io/api/' \
+    --form 'finx_api_key={{finx_api_key}}' \
+    --form 'api_method=security_analytics' \
+    --form 'security_id=423074AS2' \
+    --form 'price=100.0' \
+    --form 'as_of_date=20200628'
+    ```
+
+    <div>
+        <Button  href="/how-it-works">
+            back
+        </Button>
+    </div>
+    <br/>
+    <br/>
+
+    <br/>
+
+</div>
+
