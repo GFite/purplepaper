@@ -24,7 +24,7 @@ be introducing some slight modelling differences:
   amortization schedules as well as the optionality features over the lifetime ofthe security, differing from standard 
   yield formulas for zero coupon bonds that assume a bullet repayment of principal.
   
-- Asset Backed Municipal Securities – Fite Analytics enhanced its modelling of asset backed securities by 
+- Asset Backed Municipal Securities – Fite Analytics enhanced its modelling of asset backed securities by switching 
   utilizing the Intex subroutines to model the full deals rather than treating them as often vanilla securities. 
   
 We are excited to deliver these coverage and model updates as we work to provide comprehensive coverage of the fixed 
