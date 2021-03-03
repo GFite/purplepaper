@@ -13,7 +13,7 @@ previewText: 'Fite Analytics Origins'
 
 # Necessity is the Mother of Invention
 
-Fite Analytics will be 5 years old tomorrow! This post is a short history of how we got here and why we did it. 
+Fite Analytics will be 5 years old tomorrow! This post is a short history of why we did it. 
 
 Having experienced start-up life twice before, I was not naive about the chances of success when I began in 2016. The basic 
 idea wasn't that we'd just build a better product and expect them to sign up, that "our math will be superior", or that 
@@ -22,7 +22,7 @@ was simple: in the Capital Markets Analytics space, there are a good amount of d
 is a great beach-head for a new company attempting to land on a crowded island. In fact, we saw the all-too-common contempt 
 for customers amongst the big players as a gift that our future competition had laid at our feet.
 
-It takes audacity and a strong dose of delusional thinking to pull off a startup, and I believe the trick is to
+It takes foolish audacity and a strong dose of delusional thinking to see opportunity in a startup, and I believe the trick is to
 put yourself out there, **stay out there**, and wait for some sort of magic to happen. We were treading into waters that were 
 well-mapped and fully dominated by a few monopoly players. As my former boss at IDC said to me when I approached him with the 
 idea, 'sounds great, but all startups are risky, and this one looks too tough.'
@@ -53,4 +53,4 @@ if we crash and burn it will have been a massive success in my mind to have had 
 
 Ester was right, demand drives innovation.
 
--- Geoff Fite, 2025 March 02
+-- Geoff Fite, 2021 March 02
