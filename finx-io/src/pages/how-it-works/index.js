@@ -275,10 +275,10 @@ const About = props => {
                 <li>Email</li>
             </ul>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
-              <InternalLink to="/sample-input">
+              <InternalLink to="./sample-input">
                 Sample Security Analtyics Input File <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
-                <InternalLink to="/sample-results">Sample Security Analytics Results File <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
+                <InternalLink to="./sample-results">Sample Security Analytics Results File <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
             </div>
             <br/>
             <h3>Batch Portfolio Analytics</h3>
@@ -286,7 +286,7 @@ const About = props => {
             portfolio transaction history can be submitted in multiple input files, or maintained over time.</p>
             <p>Contact us for information on the range of portfolio analytics available in batch format.</p>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
-              <InternalLink to="/sample-portfolio-report">
+              <InternalLink to="./sample-portfolio-report">
                 Sample Portfolio Report <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
             </div>
@@ -299,10 +299,10 @@ const About = props => {
             security at any point in time using minimal input parameters.</p>
             <p>API technical documentation, including the list of functions and data points, is available <a href={"/docs/v2/technology/api"}>here</a>.</p>
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
-              <InternalLink to="/api-risk-sample">
+              <InternalLink to="./api-risk-sample">
                 Sample API Risk <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
-                <InternalLink to="/api-cash-flow-sample">Sample API Cash Flow <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
+                <InternalLink to="./api-cash-flow-sample">Sample API Cash Flow <span style={{ fontSize: '11px' }}>↗</span></InternalLink>
             </div>
           </StyledSectionFlex>
 
