@@ -58,7 +58,7 @@ const menu = [
     name: 'Developers',
     sublinks: [
       { name: 'GitHub', link: 'https://github.com/FiteAnalytics', target: '_blank' },
-      { name: 'Developer Guide', link: '/docs/v2/technology/developer-guide'}
+      { name: 'Developer Guide', link: '/docs/v2/technology/developer-guide'},
     ]
   },
   {
