@@ -11,7 +11,6 @@ import { GlobalStyle } from '../styles/theme'
 import '../styles/prism-github.css'
 import { useMediaQuery } from '@react-hook/media-query'
 
-
 const StyledDocs = styled.div`
   font-family: Lato;
   display: grid;
