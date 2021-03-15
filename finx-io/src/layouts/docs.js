@@ -185,6 +185,23 @@ const Docs = props => {
 
   const isMobile = useMediaQuery('(max-width: 960px)')
 
+    try {
+      document.getElementById('get_api_key').onclick = function() {
+        const email_address = prompt('Please enter your email address');
+        if (email_address !== '' && email_address != null) {
+          alert(`Requesting API key for ${email_address}...`);
+          fetch('https://sandbox.finx.io/api/generate-key/',
+              {method: 'POST', body: JSON.stringify({email_address: email_address})})
+              .then(response => response.json())
+              .then(data => alert(data['api_key'] !== '' ? `Your new API key: ${data['api_key']}. Keep this safe!`
+                  : `Could not generate API key for ${email_address}: ${data['message']}`));
+        }
+        else alert('Please enter a valid email address');
+      };
+    }
+    catch(e) {
+      console.log(e);
+    }
   return (
     <Layout path={props.location.pathname} isDocs={true}>
       <SEO title={props.pageContext.frontmatter.title} path={props.location.pathname} />
