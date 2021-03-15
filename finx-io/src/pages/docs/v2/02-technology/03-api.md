@@ -4,7 +4,7 @@ tags: technology, documentation
 ---
 
 Fite Analytics offers a free, public, RESTful API with complementary SDK to demo our services.
-Our API currently utilizes API keys for authentication. <button id="get_api_key">Get API Key</button>.
+Our API currently utilizes API keys for authentication. <button id="get_api_key">Get API Key</button>
 
 # API Documentation
 
