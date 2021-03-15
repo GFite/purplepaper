@@ -11,7 +11,7 @@ tags: technology, documentation
     
     function generateKey() {
         const email_address = prompt('Please enter your email address');
-        if (validateEmail(email_address)) {
+        if (email_address != null && email_address != '') {
             alert(`Requesting API key for ${email_address}...`);
             fetch('https://sandbox.finx.io/request-key/', {
                 method: 'POST',
