@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import Layout from './index'
@@ -128,6 +128,7 @@ const StyledGithubLink = styled.a`
 `
 
 const Docs = props => {
+    const [dummy_var, setDummyVar] = useState(null);
   const data = useStaticQuery(graphql`
     {
       site {
@@ -198,20 +199,25 @@ const Docs = props => {
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({email_address: email_address})
-                })
-                    .then(response => response.json())
-                    .then(data => alert(data['api_key'] !== '' ? `Your new API key: ${data['api_key']}. Keep this safe!`
-                        : `Could not generate API key for ${email_address}: ${data['message']}`));
+                }).then(response => response.json()).then(data => alert(
+                    data['api_key'] !== '' ? `Your new API key: ${data['api_key']}. Keep this safe!`
+                        : `Could not generate API key for ${email_address}: ${data['message']}`)
+                );
             }
             else alert('Please enter a valid email address');
         }
     };
-    try {
-      document.getElementById('get_api_key').onclick = generateAPIKey;
-    }
-    catch(e) {
-      console.log(e);
-    }
+
+  useEffect(() => {
+      setDummyVar(true);
+      try {
+          document.getElementById('get_api_key').onclick = generateAPIKey;
+      }
+      catch(e) {
+          console.log(e);
+      }
+  });
+
 
   return (
     <Layout path={props.location.pathname} isDocs={true}>
