@@ -4,7 +4,7 @@ tags: technology, documentation
 ---
 
 Fite Analytics offers a free, public, RESTful API with complementary SDK to demo our services.
-Our API currently utilizes API keys for authentication. To obtain your key, please <a id="get_api_key1">click here</a>.
+Our API currently utilizes API keys for authentication. <button id="get_api_key">Get API Key</button>.
 
 # API Documentation
 
@@ -29,8 +29,8 @@ for a variety of programming languages to wrap access to the API methods. Unless
 client implementation consist solely of one implementation file containing all the necessary code to expose the API
 functions.
 
-The FinX API requires an API key for usage. You may also be provided with a specific URL for accessing services. Please <a id="get_api_key2">click here</a> 
-to obtain your key. We require three fields to validate your credentials: `VERSION`, `FINX_API_KEY` and `FINX_API_ENDPOINT`. 
+The FinX API requires an API key for usage. You may also be provided with a specific URL for accessing services. We 
+require three fields to validate your credentials: `VERSION`, `FINX_API_KEY` and `FINX_API_ENDPOINT`. 
 Note that these keys are case sensitive. The SDK facilitates two distinct methods for securely passing credentials to 
 the API clients.
 

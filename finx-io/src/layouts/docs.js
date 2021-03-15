@@ -200,8 +200,7 @@ const Docs = props => {
         }
     };
     try {
-      document.getElementById('get_api_key1').onclick = generateAPIKey;
-      document.getElementById('get_api_key2').onclick = generateAPIKey;
+      document.getElementById('get_api_key').onclick = generateAPIKey;
     }
     catch(e) {
       console.log(e);
