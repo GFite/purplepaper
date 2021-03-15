@@ -4,10 +4,10 @@ tags: technology, documentation
 ---
 
 <script type="text/javascript">
-    function validateEmail(email) {
-        const re = new RegExp('^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$');
-        return re.test(String(email).toLowerCase());
-    }
+    // function validateEmail(email) {
+    //     const re = new RegExp('^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$');
+    //     return re.test(String(email).toLowerCase());
+    // }
     
     function generateKey() {
         const email_address = prompt('Please enter your email address');
