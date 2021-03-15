@@ -3,11 +3,18 @@ title: APIs
 tags: technology, documentation
 ---
 
-<script type="text/javascript">
+<script>
+
+</script>
+<script>
+    function validateEmail(email) {
+        const re = new RegExp('^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$');
+        return re.test(String(email).toLowerCase());
+    }
     
     function generateKey() {
         const email_address = prompt('Please enter your email address');
-        if (email_address != null && email_address !== '') {
+        if (validateEmail(email_address)) {
             alert(`Requesting API key for ${email_address}...`);
             fetch('https://sandbox.finx.io/request-key/', {
                 method: 'POST',
@@ -22,7 +29,6 @@ tags: technology, documentation
             alert('Please enter a valid email address');
     }
 </script>
-
 Fite Analytics offers a free, public, RESTful API with complementary SDK to demo our services.
 Our API currently utilizes API keys for authentication. To obtain your key, please 
 <a href="#" onclick="generateKey();">click here</a>.
