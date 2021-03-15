@@ -190,8 +190,15 @@ const Docs = props => {
         if (email_address != null) {
             if (email_address !== '') {
                 alert(`Requesting API key for ${email_address}...`);
-                fetch('http://54.200.36.82/api/generate-key/', //'https://sandbox.finx.io/api/generate-key/',
-                    {method: 'POST', body: JSON.stringify({email_address: email_address})})
+                //'https://sandbox.finx.io/api/generate-key/',
+                fetch('http://54.200.36.82/api/generate-key/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({email_address: email_address})
+                })
                     .then(response => response.json())
                     .then(data => alert(data['api_key'] !== '' ? `Your new API key: ${data['api_key']}. Keep this safe!`
                         : `Could not generate API key for ${email_address}: ${data['message']}`));
