@@ -185,8 +185,7 @@ const Docs = props => {
 
   const isMobile = useMediaQuery('(max-width: 960px)')
 
-    try {
-      document.getElementById('get_api_key').onclick = function() {
+    function generateAPIKey() {
         const email_address = prompt('Please enter your email address');
         if (email_address !== '' && email_address != null) {
           alert(`Requesting API key for ${email_address}...`);
@@ -197,7 +196,9 @@ const Docs = props => {
                   : `Could not generate API key for ${email_address}: ${data['message']}`));
         }
         else alert('Please enter a valid email address');
-      };
+    }
+    try {
+      document.getElementById('get_api_key').onclick = generateAPIKey;
     }
     catch(e) {
       console.log(e);
