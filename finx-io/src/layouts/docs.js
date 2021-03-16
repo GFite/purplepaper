@@ -216,6 +216,7 @@ const Docs = props => {
                       };
                   notice.update(update_params);
                   if (update_params.title !== 'Oops!') {
+                      //'https://sandbox.finx.io/api/generate-key/'
                       fetch('http://54.200.36.82/api/generate-key/', {
                           method: 'POST',
                           headers: {
