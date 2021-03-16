@@ -192,47 +192,31 @@ const Docs = props => {
       forceUpdate(true);
       try {
           document.getElementById('get_api_key_button').onclick = () => {
-              const notice = PNotify.noticeNotification('Get API Key', 'Enter an email address to associate to your API key.', true);
-              notice.on('pnotify:confirm', e => {
-                  notice.cancelClose();
-                  let update_params = null;
-                  const email_address = e.detail.value;
-                  if (email_address === "") {
-                      update_params = {
-                          title: 'Oops!',
-                          text: 'Please a valid email address.'
-                      };
-                  }
-                  else
-                      update_params = {
-                          title: `Requesting API key for ${email_address}`,
-                          text: 'Your API key request status will be emailed to you shortly.',
-                          icon: true,
-                          sticker: true,
-                          type: 'info',
-                          hide: true,
-                          modules: new Map(defaultModules),
-                          delay: Infinity
-                      };
-                  notice.update(update_params);
-                  if (update_params.title !== 'Oops!') {
-                      //'https://sandbox.finx.io/api/generate-key/'
-                      fetch('http://54.200.36.82/api/generate-key/', {
-                          method: 'POST',
-                          headers: {
-                              'Content-Type': 'application/json',
-                              'Accept': 'application/json'
-                          },
-                          body: JSON.stringify({email_address: email_address})
-                      }).then(response => response.json());
-                  }
-              });
-
-              // const email_address = prompt('Please enter your email address');
-              // if (email_address != null) {
-              //     if (email_address !== '') {
-              //         alert(`Requesting API key for ${email_address}. Your API key request status will be emailed to you shortly.`);
-              //         //'https://sandbox.finx.io/api/generate-key/',
+              // const notice = PNotify.noticeNotification('Get API Key', 'Enter an email address to associate to your API key.', true);
+              // notice.on('pnotify:confirm', e => {
+              //     notice.cancelClose();
+              //     let update_params = null;
+              //     const email_address = e.detail.value;
+              //     if (email_address === "") {
+              //         update_params = {
+              //             title: 'Oops!',
+              //             text: 'Please a valid email address.'
+              //         };
+              //     }
+              //     else
+              //         update_params = {
+              //             title: `Requesting API key for ${email_address}`,
+              //             text: 'Your API key request status will be emailed to you shortly.',
+              //             icon: true,
+              //             sticker: true,
+              //             type: 'info',
+              //             hide: true,
+              //             modules: new Map(defaultModules),
+              //             delay: Infinity
+              //         };
+              //     notice.update(update_params);
+              //     if (update_params.title !== 'Oops!') {
+              //         //'https://sandbox.finx.io/api/generate-key/'
               //         fetch('http://54.200.36.82/api/generate-key/', {
               //             method: 'POST',
               //             headers: {
@@ -240,11 +224,27 @@ const Docs = props => {
               //                 'Accept': 'application/json'
               //             },
               //             body: JSON.stringify({email_address: email_address})
-              //         }).then(response => response.json())
+              //         }).then(response => response.json());
               //     }
-              //     else
-              //         alert('Please enter a valid email address');
-              // }
+              // });
+
+              const email_address = prompt('Please enter your email address');
+              if (email_address != null) {
+                  if (email_address !== '') {
+                      alert(`Requesting API key for ${email_address}. Your API key request status will be emailed to you shortly.`);
+                      //'https://sandbox.finx.io/api/generate-key/',
+                      fetch('http://54.200.36.82/api/generate-key/', {
+                          method: 'POST',
+                          headers: {
+                              'Content-Type': 'application/json',
+                              'Accept': 'application/json'
+                          },
+                          body: JSON.stringify({email_address: email_address})
+                      }).then(response => response.json())
+                  }
+                  else
+                      alert('Please enter a valid email address');
+              }
           };
       }
       catch(e) {
