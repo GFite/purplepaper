@@ -9,9 +9,8 @@ import TableofContents from '../components/toc'
 import Github from '../images/githubicon.inline.svg'
 import { GlobalStyle } from '../styles/theme'
 import '../styles/prism-github.css'
-import { defaultModules } from "@pnotify/core";
-
-import { PNotify } from "../components/PNotify";
+// import { defaultModules } from "@pnotify/core";
+// import { PNotify } from "../components/PNotify";
 import { useMediaQuery } from '@react-hook/media-query'
 
 const StyledDocs = styled.div`
