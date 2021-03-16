@@ -182,29 +182,29 @@ const Docs = props => {
       }
     }
   `)
-  const isV1 = props.path.slice(0, 8) === '/docs/v1'
+  const isV1 = props.path.slice(0, 8) === '/docs/v1';
 
-  const isMobile = useMediaQuery('(max-width: 960px)')
 
-    const generateAPIKey = () => {
-        const email_address = prompt('Please enter your email address');
-        if (email_address != null) {
-            if (email_address !== '') {
-                alert(`Requesting API key for ${email_address}. Your API key request status will be emailed to you shortly.`);
-                //'https://sandbox.finx.io/api/generate-key/',
-                fetch('http://54.200.36.82/api/generate-key/', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                    },
-                    body: JSON.stringify({email_address: email_address})
-                }).then(response => response.json())
-            }
-            else
-                alert('Please enter a valid email address');
-        }
-    };
+  const isMobile = useMediaQuery('(max-width: 960px)');
+
+  const generateAPIKey = () => {
+      const email_address = prompt('Please enter your email address');
+      if (email_address != null) {
+          if (email_address !== '') {
+              alert(`Requesting API key for ${email_address}. Your API key request status will be emailed to you shortly.`);
+              fetch('https://sandbox.finx.io/api/generate-key/', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json',
+                      'Accept': 'application/json'
+                  },
+                  body: JSON.stringify({email_address: email_address})
+              }).then(response => response.json())
+          }
+          else
+              alert('Please enter a valid email address');
+      }
+  };
 
   useEffect(() => {
       setDummyVar(true);
