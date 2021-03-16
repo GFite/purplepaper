@@ -28,7 +28,7 @@ var PNotify = (() => {
     };
 
     function successNotification(title, text, kwargs=null) {
-        stack_params['context'] = document.getElementsByClassName('fixed-plugin')[0];
+        // stack_params['context'] = document.getElementsByClassName('fixed-plugin')[0];
         let params = {
             title: title,
             text: text,
@@ -36,7 +36,7 @@ var PNotify = (() => {
             stack: new Stack(stack_params),
             hide: false,
             closer: true,
-            addClass: 'custom-pnotify-success pnotify-title pnotify-text',
+            // addClass: 'custom-pnotify-success pnotify-title pnotify-text',
             animateSpeed: 'slow',
             delay: Infinity,
             sticker: true,
@@ -53,7 +53,7 @@ var PNotify = (() => {
     }
 
     function errorNotification(title, text, kwargs) {
-        stack_params['context'] = document.getElementsByClassName('fixed-plugin')[0];
+        // stack_params['context'] = document.getElementsByClassName('fixed-plugin')[0];
         let params = {
             title: title,
             text: text,
@@ -61,7 +61,7 @@ var PNotify = (() => {
             stack: new Stack(stack_params),
             hide: false,
             closer: true,
-            addClass: 'custom-pnotify-error pnotify-title pnotify-text',
+            // addClass: 'custom-pnotify-error pnotify-title pnotify-text',
             animateSpeed: 'slow',
             delay: Infinity,
             sticker: true,
@@ -78,7 +78,7 @@ var PNotify = (() => {
     }
 
     function noticeNotification(title, text, prompt=false, kwargs=null) {
-        stack_params['context'] = document.getElementsByClassName('fixed-plugin')[0];
+        // stack_params['context'] = document.getElementsByClassName('fixed-plugin')[0];
         let params = {
             title: title,
             text: text,
@@ -87,7 +87,7 @@ var PNotify = (() => {
             hide: false,
             shadow: false,
             closer: true,
-            addClass: 'custom-pnotify-notice pnotify-title pnotify-text',
+            // addClass: 'custom-pnotify-notice pnotify-title pnotify-text',
             textTrusted: false,
             animateSpeed: 'slow',
             delay: Infinity,

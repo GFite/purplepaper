@@ -9,6 +9,9 @@ import TableofContents from '../components/toc'
 import Github from '../images/githubicon.inline.svg'
 import { GlobalStyle } from '../styles/theme'
 import '../styles/prism-github.css'
+import { defaultModules } from "@pnotify/core";
+
+import { PNotify } from "../components/PNotify";
 import { useMediaQuery } from '@react-hook/media-query'
 
 const StyledDocs = styled.div`
@@ -27,7 +30,7 @@ const StyledDocs = styled.div`
     margin-top: 0rem;
     padding-top: 80px;
   }
-`
+`;
 
 const StyledMDX = styled.div`
   font-family: Lato;
@@ -49,7 +52,7 @@ const StyledMDX = styled.div`
     min-width: 100%;
     max-width: 100%;
   }
-`
+`;
 
 const StyledDocsNavWrapper = styled.ul`
   display: flex;
@@ -60,7 +63,7 @@ const StyledDocsNavWrapper = styled.ul`
   margin: 0;
   margin-top: 2rem;
   padding-top: 3rem;
-`
+`;
 const StyledDocsNav = styled.li`
   @media (max-width: 960px) {
     width: 100%;
@@ -68,7 +71,7 @@ const StyledDocsNav = styled.li`
   a {
     color: ${({ theme }) => theme.textColor};
   }
-`
+`;
 
 const StyledLink = styled(Link)`
   font-size: 1.25rem;
@@ -82,7 +85,7 @@ const StyledLink = styled(Link)`
     font-size: 0.75rem;
     opacity: 0.6;
   }
-`
+`;
 
 const StyledPageTitle = styled.div`
   display: flex;
@@ -101,7 +104,7 @@ const StyledPageTitle = styled.div`
     display: inherit;
     font-size: 0.825rem;
   }
-`
+`;
 
 const StyledGithubIcon = styled(Github)`
   width: 16px;
@@ -121,14 +124,14 @@ const StyledGithubIcon = styled(Github)`
     background-color: ${({ theme }) => theme.colors.grey9};
     opacity: 0.2;
   }
-`
+`;
 
 const StyledGithubLink = styled.a`
   padding-bottom: 1.5rem;
-`
+`;
 
 const Docs = props => {
-    const [dummy_var, setDummyVar] = useState(null);
+    const [, forceUpdate] = useState(null);
     const data = useStaticQuery(graphql`
         {
           site {
@@ -185,30 +188,58 @@ const Docs = props => {
   const isV1 = props.path.slice(0, 8) === '/docs/v1';
   const isMobile = useMediaQuery('(max-width: 960px)');
 
-  const generateAPIKey = () => {
-      const email_address = prompt('Please enter your email address');
-      if (email_address != null) {
-          if (email_address !== '') {
-              alert(`Requesting API key for ${email_address}. Your API key request status will be emailed to you shortly.`);
-              //'https://sandbox.finx.io/api/generate-key/',
-              fetch('http://54.200.36.82/api/generate-key/', {
-                  method: 'POST',
-                  headers: {
-                      'Content-Type': 'application/json',
-                      'Accept': 'application/json'
-                  },
-                  body: JSON.stringify({email_address: email_address})
-              }).then(response => response.json())
-          }
-          else
-              alert('Please enter a valid email address');
-      }
-  };
-
   useEffect(() => {
-      setDummyVar(true);
+      forceUpdate(true);
       try {
-          document.getElementById('get_api_key').onclick = generateAPIKey;
+          document.getElementById('get_api_key_button').onclick = () => {
+              const notice = PNotify.noticeNotification('Get API Key', 'Enter an email address to associate to your API key.', true);
+              notice.on('pnotify:confirm', e => {
+                  notice.cancelClose();
+                  let update_params = null;
+                  const email_address = e.detail.value;
+                  if (email_address === "")
+                      update_params = {title: 'Oops!', text: 'Please a valid email address.'};
+                  else
+                      update_params = {
+                          title: `Requesting API key for ${email_address}`,
+                          text: 'Your API key request status will be emailed to you shortly.',
+                          icon: true,
+                          sticker: true,
+                          type: 'info',
+                          hide: true,
+                          modules: new Map(defaultModules),
+                          delay: Infinity
+                      };
+                  notice.update(update_params);
+                  if (update_params.title !== 'Oops!')
+                      fetch('http://54.200.36.82/api/generate-key/', {
+                          method: 'POST',
+                          headers: {
+                              'Content-Type': 'application/json',
+                              'Accept': 'application/json'
+                          },
+                          body: JSON.stringify({email_address: email_address})
+                      }).then(response => response.json());
+              });
+
+              // const email_address = prompt('Please enter your email address');
+              // if (email_address != null) {
+              //     if (email_address !== '') {
+              //         alert(`Requesting API key for ${email_address}. Your API key request status will be emailed to you shortly.`);
+              //         //'https://sandbox.finx.io/api/generate-key/',
+              //         fetch('http://54.200.36.82/api/generate-key/', {
+              //             method: 'POST',
+              //             headers: {
+              //                 'Content-Type': 'application/json',
+              //                 'Accept': 'application/json'
+              //             },
+              //             body: JSON.stringify({email_address: email_address})
+              //         }).then(response => response.json())
+              //     }
+              //     else
+              //         alert('Please enter a valid email address');
+              // }
+          };
       }
       catch(e) {
           console.log(e);
