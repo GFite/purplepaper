@@ -190,7 +190,7 @@ const Docs = props => {
         const email_address = prompt('Please enter your email address');
         if (email_address != null) {
             if (email_address !== '') {
-                alert(`Requesting API key for ${email_address}...`);
+                alert(`Requesting API key for ${email_address}. Your API key will be emailed to you if your request is approved.`);
                 //'https://sandbox.finx.io/api/generate-key/',
                 fetch('http://54.200.36.82/api/generate-key/', {
                     method: 'POST',
@@ -199,12 +199,14 @@ const Docs = props => {
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({email_address: email_address})
-                }).then(response => response.json()).then(data => alert(
-                    data['api_key'] !== '' ? `Your new API key: ${data['api_key']}. Keep this safe!`
-                        : `Could not generate API key for ${email_address}: ${data['message']}`)
-                );
+                }).then(response => response.json())
+                // .then(data => alert(
+                //     data['api_key'] !== '' ? `Your new API key: ${data['api_key']}. Keep this safe!`
+                //         : `Could not generate API key for ${email_address}: ${data['message']}`)
+                // );
             }
-            else alert('Please enter a valid email address');
+            else
+                alert('Please enter a valid email address');
         }
     };
 
