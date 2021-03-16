@@ -129,62 +129,60 @@ const StyledGithubLink = styled.a`
 
 const Docs = props => {
     const [dummy_var, setDummyVar] = useState(null);
-  const data = useStaticQuery(graphql`
-    {
-      site {
-        siteMetadata {
-          commit
-          repository
+    const data = useStaticQuery(graphql`
+        {
+          site {
+            siteMetadata {
+              commit
+              repository
+            }
+          }
+          allMdx(filter: { fileAbsolutePath: { regex: "/docs/" } }, sort: { order: ASC, fields: fileAbsolutePath }) {
+            edges {
+              node {
+                id
+                excerpt(pruneLength: 40)
+                headings {
+                  value
+                  depth
+                }
+                frontmatter {
+                  title
+                }
+                fields {
+                  slug
+                  subDir
+                  rawSlug
+                  parentDir
+                }
+              }
+              next {
+                frontmatter {
+                  title
+                }
+                fields {
+                  slug
+                  subDir
+                  parentDir
+                  topLevelDir
+                }
+              }
+              previous {
+                frontmatter {
+                  title
+                }
+                fields {
+                  slug
+                  parentDir
+                  subDir
+                  topLevelDir
+                }
+              }
+            }
+          }
         }
-      }
-      allMdx(filter: { fileAbsolutePath: { regex: "/docs/" } }, sort: { order: ASC, fields: fileAbsolutePath }) {
-        edges {
-          node {
-            id
-            excerpt(pruneLength: 40)
-            headings {
-              value
-              depth
-            }
-            frontmatter {
-              title
-            }
-            fields {
-              slug
-              subDir
-              rawSlug
-              parentDir
-            }
-          }
-          next {
-            frontmatter {
-              title
-            }
-            fields {
-              slug
-              subDir
-              parentDir
-              topLevelDir
-            }
-          }
-          previous {
-            frontmatter {
-              title
-            }
-            fields {
-              slug
-              parentDir
-              subDir
-              topLevelDir
-            }
-          }
-        }
-      }
-    }
-  `)
+      `);
   const isV1 = props.path.slice(0, 8) === '/docs/v1';
-
-
   const isMobile = useMediaQuery('(max-width: 960px)');
 
   const generateAPIKey = () => {

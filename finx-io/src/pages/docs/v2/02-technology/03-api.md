@@ -16,11 +16,10 @@ Our SDK source code and documentation can also be found [here](https://github.co
 
 ## Introduction
 
-This document details how to use the SDK to interact with Fite Analytics' services. Please refer to this document as the 
-definitive source of information.
+This document details how to use the SDK to interact with Fite Analytics' services. Please refer to this document as the definitive
+source of information.
 
-For questions or comments please contact us [via email](mailto:info@fiteanalytics.com) or on 
-[reddit](https://www.reddit.com/r/fiteanalytics/).
+For questions or comments please contact us [via email](mailto:info@fiteanalytics.com) or on [reddit](https://www.reddit.com/r/fiteanalytics/).
 
 ## FinX API SDK
 The FinX API is a RESTful API endpoint offering rich fixed income analytics calculations, including security reference 
@@ -41,7 +40,7 @@ initializing the client:
 ```yaml
 VERSION: 1
 FINX_API_KEY: my_finx_key
-FINX_API_ENDPOINT: https://sandbox.finx.io
+FINX_API_ENDPOINT: https://sandbox.finx.io/api
 ```
 The second method looks for the required credentials in environment variables. If a .env file is specified in the client 
 initialization, the .env file will be loaded before checking the variables.
@@ -49,7 +48,7 @@ initialization, the .env file will be loaded before checking the variables.
 ```
 VERSION=1
 FINX_API_KEY=my_finx_key
-FINX_API_ENDPOINT=https://sandbox.finx.io
+FINX_API_ENDPOINT=https://sandbox.finx.io/api
 ```
 
 ### SDK Installation
@@ -102,7 +101,7 @@ import json
 from finx_api.finx import FinX
 
 # YAML configuration file
-finx = FinX(yaml_path='path/to/file.yml')
+finx = FinX(yaml_path='path/to/finx_config.yml')
 
 # .env file
 finx = FinX(env_path='path/to/.env')
@@ -436,13 +435,13 @@ Returns a class object with member functions for invoking the various API method
 import FinX from "finx_api/finx.js";
 
 // YAML configuration
-let finx = FinX({yaml_path: 'finx_api/finx_config.yml'});
+let finx = FinX({yaml_path: 'path/to/finx_config.yml'});
 
 // .env file
 finx = FinX({env_path: 'path/to/.env'});
 
 // No file (will check environment variables);
-finx = FinX()
+finx = FinX();
 ```
 
 #### Get API Methods
@@ -505,8 +504,8 @@ An object containing various descriptive fields for the specified security
 ```js
 finx.get_security_reference_data(
     'USQ98418AH10', 
-    '2020-09-14').then(
-        data => console.log(data));
+    '2020-09-14'
+).then(data => console.log(data));
 ```
 ###### Output
 ```json5
@@ -557,8 +556,11 @@ An object containing various fixed income risk analytics measures for the specif
 ```js
 finx.get_security_analytics(
     'USQ98418AH10', 
-    {as_of_date: '2020-09-14', price: 100}).then(
-        data => console.log(data));
+    {
+        as_of_date: '2020-09-14', 
+        price: 100
+    }
+).then(data => console.log(data));
 ```
 ###### Output
 ```json5
@@ -619,8 +621,11 @@ An object containing a vector time series of cash flow dates and corresponding a
 ```js
 finx.get_security_cash_flows(
     'USQ98418AH10', 
-    {as_of_date: '2020-09-14', price: 100}).then(
-        data => console.log(data));
+    {
+        as_of_date: '2020-09-14', 
+        price: 100
+    }
+).then(data => console.log(data));
 ```
 ###### Output
 ```json5
@@ -641,4 +646,3 @@ finx.get_security_cash_flows(
   ]
 }
 ```
-
