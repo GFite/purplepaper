@@ -192,7 +192,8 @@ const Docs = props => {
       if (email_address != null) {
           if (email_address !== '') {
               alert(`Requesting API key for ${email_address}. Your API key request status will be emailed to you shortly.`);
-              fetch('https://sandbox.finx.io/api/generate-key/', {
+              //'https://sandbox.finx.io/api/generate-key/',
+              fetch('http://54.200.36.82/api/generate-key/', {
                   method: 'POST',
                   headers: {
                       'Content-Type': 'application/json',
