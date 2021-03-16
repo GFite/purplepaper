@@ -197,8 +197,12 @@ const Docs = props => {
                   notice.cancelClose();
                   let update_params = null;
                   const email_address = e.detail.value;
-                  if (email_address === "")
-                      update_params = {title: 'Oops!', text: 'Please a valid email address.'};
+                  if (email_address === "") {
+                      update_params = {
+                          title: 'Oops!',
+                          text: 'Please a valid email address.'
+                      };
+                  }
                   else
                       update_params = {
                           title: `Requesting API key for ${email_address}`,
@@ -211,7 +215,7 @@ const Docs = props => {
                           delay: Infinity
                       };
                   notice.update(update_params);
-                  if (update_params.title !== 'Oops!')
+                  if (update_params.title !== 'Oops!') {
                       fetch('http://54.200.36.82/api/generate-key/', {
                           method: 'POST',
                           headers: {
@@ -220,6 +224,7 @@ const Docs = props => {
                           },
                           body: JSON.stringify({email_address: email_address})
                       }).then(response => response.json());
+                  }
               });
 
               // const email_address = prompt('Please enter your email address');
