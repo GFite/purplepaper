@@ -123,7 +123,7 @@
     "start": "export PORT=80 && gatsby develop -H 0.0.0.0",
     "build": "gatsby build && yarn post-build",
     "post-build": "cp ./node_modules/@uniswap/token-lists/src/tokenlist.schema.json public/",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve -H 0.0.0.0 -p 8000",
     "clean": "gatsby clean",
     "format": "prettier --write \\\"src/**/*.{js,jsx,md,mdx}\\\"",
     "deploy": "gatsby-plugin-s3 deploy"
