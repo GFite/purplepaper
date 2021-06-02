@@ -22,7 +22,7 @@ services:
       dockerfile: Dockerfile
     hostname: finx-io
     container_name: finx-io
-    command: bash -c 'yarn && yarn start'
+    command: bash -c 'yarn && yarn serve'
     environment:
       - SKIP_PREFLIGHT_CHECK=true
       - PORT=3000
