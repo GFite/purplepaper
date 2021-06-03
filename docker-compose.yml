@@ -1,5 +1,5 @@
 # Author: Dick Mule
-# Purpose: Compose file for CLI client node with web app (py environment)
+# Purpose: Compose file for react app and nginx container
 version: '3'
 volumes:
   node-modules:
@@ -22,10 +22,8 @@ services:
       dockerfile: Dockerfile
     hostname: finx-io
     container_name: finx-io
-    command: bash -c 'yarn && yarn add react-gtm-module && yarn start'
+    command: bash -c 'yarn && yarn start'
     environment:
-      - REACT_APP_AUTH0_DOMAIN=dev-h30jneic.us.auth0.com
-      - REACT_APP_AUTH0_CLIENT_ID=01wuvxu4zQZhRxA0zvsDBNkE8GfQ71Df
       - SKIP_PREFLIGHT_CHECK=true
       - PORT=3000
     volumes:

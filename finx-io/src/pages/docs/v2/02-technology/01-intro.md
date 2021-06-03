@@ -11,7 +11,7 @@ tags: architecture, documentation
 ## Top-Level Design
 
 We use Amazon Web Services ([AWS](https://aws.amazon.com)) as our cloud partner. Several times per day we ingest 
-large amounts of security data updates and we ingest it into our platform data repositories. We make this data available 
+large amounts of security data updates into the platform. We make this data available 
 with ultra-low latency to our calculation engines which run on a parallel compute grid.
 
 Our APIs connect directly to the parallel compute grid where on-demand calculations are made and results returned 

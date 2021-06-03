@@ -3,6 +3,7 @@ title: Batch Processing
 tags: technology, documentation
 ---
 
-# Introduction
+# Batch Processing Technical Documentation
 
-coming soon!
+We are working on refreshing this page. Check back soon for updated content, or [contact us](mailto:info@fiteanaltyics.com) 
+for information on our Batch services.

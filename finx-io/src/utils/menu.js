@@ -5,23 +5,24 @@ const menu = [
       {
         name: 'Security Analytics',
         link: '/docs/v2/methodology/security-analytics',
-        description: 'yield, spread, duration, sensitivity'
+        description: 'Yield, spread, duration, & sensitivity'
       },
       {
         name: 'Security Cash Flows',
         link: '/docs/v2/methodology/security-cash-flows',
-        description: 'high-fidelity cash flows for ALM'
+        description: 'High-fidelity cash flows for ALM'
       },
       {
         name: 'Portfolio Analytics',
         link: '/docs/v2/methodology/portfolio-analytics',
-        description: 'multi-asset portfolio composition and risk analysis'
+        description: 'Multi-asset portfolio composition & risk analysis'
       },
       {
         name: 'Performance Attribution',
         link: '/docs/v2/methodology/performance-attribution',
-        description: 'shift, twist, allocation and selection'
+        description: 'Shift, twist, allocation & selection'
       }
+
     ]
   },
   {
@@ -30,26 +31,26 @@ const menu = [
       {
         name: 'How It Works',
         link: '/how-it-works',
-        description: 'using our services'
+        description: 'Using our services'
       },
       {
         name: 'Methodology',
         link: '/docs/v2/methodology',
-        description: 'model documentation'
+        description: 'Model documentation'
       },
       {
         name: 'Technology', link: '/docs/v2/technology',
-        description: 'architecture'
+        description: 'Technical architecture'
       },
       {
         name: 'Security Coverage',
         link: '/docs/v2/security-coverage',
-        description: 'financial instrument data'
+        description: 'Financial instrument data'
       },
       {
         name: 'Corporate Litepaper',
         link: '/docs/v2/litepaper',
-        description: 'mission and approach'
+        description: 'Mission & approach'
       }
     ]
   },
@@ -57,7 +58,7 @@ const menu = [
     name: 'Developers',
     sublinks: [
       { name: 'GitHub', link: 'https://github.com/FiteAnalytics', target: '_blank' },
-      { name: 'Developer Guide', link: '/docs/v2/technology/developer-guide'}
+      { name: 'Developer Guide', link: '/docs/v2/technology/developer-guide'},
     ]
   },
   {
@@ -84,11 +85,11 @@ const menu = [
         link: '/faq'
       },
       {
-        name: 'Job  s',
+        name: 'Jobs',
         link: '/about#jobs'
       }
     ]
   }
-]
+];
 
-module.exports = menu
+module.exports = menu;

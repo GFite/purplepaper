@@ -257,7 +257,10 @@ const About = props => {
           <h2 style={{ fontFamily: 'Lato', paddingBottom: '4rem' }}>
             <span><strong>Batch Analytics and APIs </strong></span> for analyzing individual securities and portfolios.{' '}
           </h2>
-
+          <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
+            <h4><strong>Send us a small amount of information (security id, date, price) and we send you back a battery of analytics on any security we cover (over 30 million).<br/>
+                Send your portfolio holdings and/or transactions and receive detailed analysis and reports.</strong></h4>
+          </StyledSectionFlex>
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
               <h3>Batch Security Analytics</h3>
             <p>The <strong>Batch Security Analytics Service</strong> is a method to calculate large numbers of securities with a single
@@ -279,7 +282,9 @@ const About = props => {
                   <strong>Security Analytics Input File Example and Tutorial</strong> <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
             </div>
-            <br/>
+          </StyledSectionFlex>
+
+          <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
             <h3>Batch Portfolio Analytics</h3>
               <p>Portfolios may be submitted for analysis using the <strong>Batch Portfolio Analytics Service</strong>. Portfolio snapshots (holdings) and/or
             portfolio transaction history is submitted via batch submit files, or maintained over time. We accommodate multiple formats and input styles.</p>
@@ -300,6 +305,9 @@ const About = props => {
             <div style={{ display: 'flex', width: '100%', margin: 0 }}>
               <InternalLink to="/how-it-works/api-risk-sample">
                   <strong>Sample API Risk</strong> <span style={{ fontSize: '11px' }}>↗</span>
+              </InternalLink>
+              <InternalLink to="/how-it-works/api-cash-flow-sample">
+                  <strong>Sample API Cash Flow</strong> <span style={{ fontSize: '11px' }}>↗</span>
               </InternalLink>
             </div>
           </StyledSectionFlex>
