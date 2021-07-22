@@ -6,7 +6,7 @@ tags: coverage, documentation
 
 # Security Type Coverage
 
-The Fite Analytics cloud platform has over 30 million securities. We cover all sectors of the global bond markets, 
+The Fite Analytics cloud platform has over 3 million securities. We cover all sectors of the global bond markets, 
 from Savings Bonds to CLOs.
 
 We source data from multiple industry-leading providers, and we have distribution arrangements with our partners that 
@@ -40,6 +40,8 @@ We intend to have the most timely, accurate and comprehensive security database 
 
 ## Equities
 
-## Equity Derivatives
+## FX
+
+## Derivatives
 
 ## Crypto & ERC20 Tokens

@@ -40,7 +40,7 @@ such as curves, rates and prices.
 This would not have been possible without our partners, who are the gold standard in their own services: Intex, IHS 
 Markit, Standard & Poors, Exchange Data Int'l, LSEG Mergent, and the MSRB.
 
-One catch, however. That's a lot of data. Over 30 million securities, to be exact. Due to the fact that our 
+One catch, however. That's a lot of data. Over 3 million securities, to be exact. Due to the fact that our 
 service calculates very large sets of securities in short timeframes, we needed to make this data available with 
 extremely low latency and at a reasonable cost.
 
